@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>How URL's are Structured</title>
+  <meta name="description" content="ISPeL is an interactive system for personalization of learning. It uses topic-based authoring.">
+
+  <!---   <link rel="stylesheet" href="/ISPeL-content-machine-learning/css/tufte.css" --->
+  <link rel="stylesheet" href="../../../css/tufte.css">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not--><link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'><!-- Load up MathJax script if needed ... specify in /_data/options.yml file--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75587219-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/file1/file3/">
+  <link rel="alternate" type="application/rss+xml" title="ISPeL-content-machine-learning" href="http://localhost:7000/ISPeL-content-machine-learning/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+
+
+<header>
+    <nav class="group">
+    <a href="../../../">Web Applications</a>
+    <a href="http://ispel.cs.ecu.edu/" _target="blank">ISPeL</a>
+    <a href="http://seng5005.cs.ecu.edu/" _target="blank">Fall 2020</a>
+    <a href="https://github.com/vngudivada/ISPeL-content-machine-learning.git" _target="blank">GitHub</a>
+    </nav>
+</header>
+
+    <article class="group">
+      
+
+<h1>How url's are structured</h1>
+<p class="subtitle"></p>
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        e: "\\epsilon",
+        xti: "x^{(i)}",
+        yti: "y^{(i)}",
+        bfy: "{\\bf y}",
+        bfx: "{\\bf x}",
+        bfg: "{\\bf g}",
+        bfbeta: "{\\bf \\beta}",
+        tp: "\\tilde p",
+        pt: "p_\\theta",
+        E: "{\\mathbb{E}}",
+        Ind: "{\\mathbb{I}}",
+        KL: "{\\mathbb{KL}}",
+        Re: "{\\mathbb{R}}",
+        Dc: "{\\mathcal{D}}",
+        Tc: "{\\mathcal{T}}",
+        Xc: "{\\mathcal{X}}",
+        note: ["\\textcolor{blue}{[NOTE: #1]}",1]
+      }
+    }
+  });
+</script>
+
+
+<h2 id="scheme">Scheme</h2>
+<ul>
+  <li>
+    <font color="red">scheme</font>
+    <p>://login:password@address:port/path/to/resource?query_string#fragment</p>
+  </li>
+  <li>scheme: what protocol is being used?
+    <ul>
+      <li>http: standard web browsing, unsecured</li>
+      <li>https: standard web browsing, secured</li>
+      <li>ftp: file transfer protocol</li>
+      <li>others…</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>//</h2>
+<ul>
+  <li>scheme:<font color="red">//</font>login:password@address:port/path/to/resource?query_string#fragment</li>
+  <li>// indicates this is a “hierarchical URL”
+    <ul>
+      <li>required for hierarchical schemes, like http</li>
+      <li>not required for schemes like mailto</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="loginpassword">login:password</h2>
+<ul>
+  <li>scheme://<font color="red">login:password</font>@address:port/path/to/resource?query_string#fragment</li>
+  <li>login:password provides credentials for authentication
+    <ul>
+      <li>we won’t use this in our apps — almost all web applications</li>
+      <li>the password is optional, and so is this entire part</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="address">address</h2>
+<ul>
+  <li>scheme://login:password@<font color="red">address</font>:port/path/to/resource?query_string#fragment</li>
+  <li>address: what server are we accessing?
+    <ul>
+      <li>this can also be an IP address (<font color="red">127.0.0.1, your local address</font>)</li>
+      <li>this can even be an IPv6 address, but we won’t bother with this</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="port">port</h2>
+<ul>
+  <li>scheme://login:password@address:<font color="red">port</font>/path/to/resource?query_string#fragment</li>
+  <li>
+    <font color="red">port</font>
+    <p>:is a way to identify a specific <font color="red">process</font> to which an Internet or other network message is to be forwarded when it arrives at a server.</p>
+  </li>
+  <li>Different protocols have different port numbers:
+    <ul>
+      <li>FTP 21</li>
+      <li>HTTP 80</li>
+      <li>You can also define your web application port number. We will learn it when we reach the server part.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="pathtoresource">/path/to/resource</h2>
+<ul>
+  <li>scheme://login:password@address:port<font color="red">/path/to/resource</font>?query_string#fragment</li>
+  <li>
+    <font color="red">path/to/resource</font>
+    <p>: the name of the resource to be loaded</p>
+  </li>
+  <li>in some systems, these refer directly to files in the filesystem
+    <ul>
+      <li>Example: <a href="http://www.cs.ecu.edu/wu/README.md">http://www.cs.ecu.edu/wu/README.md</a></li>
+    </ul>
+  </li>
+  <li>in others, these paths are interpreted by the servers to indicate “virtual” resources
+    <ul>
+      <li>Get a photo and display</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="query_string">?query_string</h2>
+<ul>
+  <li>scheme://login:password@address:port/path/to/resource<font color="red">?query_string</font>#fragment</li>
+  <li>
+    <font color="red">query_string</font>
+    <p>provides a way to pass parameters to the resource</p>
+  </li>
+  <li>uses HTTP GET parameter mechanism or can be done in JavaScript</li>
+</ul>
+
+<h2 id="fragment">#fragment</h2>
+<ul>
+  <li>scheme://login:password@address:port/path/to/resource?query_string<font color="red">#fragment</font></li>
+  <li>
+    <font color="red">fragment</font>
+    <p>allows the URL to point to a fragment (piece) of the resource</p>
+  </li>
+  <li>common use: point to individual sections of a larger document
+    <ul>
+      <li>example: <a href="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods">http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods</a></li>
+      <li>note: this is handled on the client side, it is not even supposed to be sent to the server!</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="urls">URLs</h2>
+<ul>
+  <li>Usually, you can get some important information from a URL</li>
+  <li>Example: https://mail.google.com
+    <ul>
+      <li>https: protocol</li>
+      <li>Mail: mail server</li>
+      <li>Google.com: domain name</li>
+      <li>Com: Top Level Domain (TLD), generally intended to be used for commercial businesses</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="tld-and-urls-price">TLD and URLs Price</h2>
+<p>###Something you need to pay attention to:</p>
+<ul>
+  <li><a href="https://google.mail.com">https://google.mail.com</a>: this is clearly phishing website. Usually, hackers use this trick pretend this is google. Similarly, <a href="https://yahoo.mail.com">https://yahoo.mail.com</a>… If you know what is a domain name, you can easily tell.</li>
+  <li>TLD: Com vs net vs org
+    <ul>
+      <li>Com: usually commercial, e.g., google.com</li>
+      <li>Net: usually networking services and internet service providers, e.g., att.net</li>
+      <li>Org: usually non-profit organizations</li>
+    </ul>
+  </li>
+  <li>Of course there are some weird TLDs and cheaper price:
+    <ul>
+      <li>Let’s say if you want to register a URL for “piratenation”</li>
+      <li>You can check the price here: <a href="https://tld-list.com/">https://tld-list.com/</a></li>
+      <li>Price for each year</li>
+      <li>Some weird TLDs do have very cheap price</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="homework-1-part-1">Homework 1 (Part 1)</h2>
+<ul>
+  <li>Good news, you can have a free URL if you are an ECU student!</li>
+  <li>Apply a URL: <a href="https://piratepanel.ecu.edu/">https://piratepanel.ecu.edu/</a>
+    <ul>
+      <li>Your URL should be something like this: <a href="http://myweb.ecu.edu/student/pirateID">http://myweb.ecu.edu/student/pirateID</a></li>
+      <li>This one is mine: <a href="http://myweb.ecu.edu/wur18/">http://myweb.ecu.edu/wur18/</a></li>
+      <li>I will show you how to upload all your files later.</li>
+    </ul>
+  </li>
+  <li>Due…</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="../../">Index</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../">Prev</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../file4">Next</a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+    </article>
+    <footer>
+<hr class="slender">
+<div class="credits">
+This work is supported by the <a href="https://www.nsf.gov/" target="_blank">NSF</a> IUSE/PFE:RED award No. <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1730568" target="_blank">1730568</a>. Site created with <a href="//jekyllrb.com" target="_blank">Jekyll</a> using the <a href="//github.com/clayh53/tufte-jekyll" target="_blank">Tufte theme</a>. &copy; 2020
+</div>
+</footer>
+  </body>
+</html>

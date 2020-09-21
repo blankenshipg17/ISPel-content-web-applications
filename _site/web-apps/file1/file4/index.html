@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  <meta name="description" content="ISPeL is an interactive system for personalization of learning. It uses topic-based authoring.">
+
+  <!---   <link rel="stylesheet" href="/ISPeL-content-machine-learning/css/tufte.css" --->
+  <link rel="stylesheet" href="../../../css/tufte.css">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not--><link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'><!-- Load up MathJax script if needed ... specify in /_data/options.yml file--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75587219-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/file1/file4/">
+  <link rel="alternate" type="application/rss+xml" title="ISPeL-content-machine-learning" href="http://localhost:7000/ISPeL-content-machine-learning/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+
+
+<header>
+    <nav class="group">
+    <a href="../../../">Web Applications</a>
+    <a href="http://ispel.cs.ecu.edu/" _target="blank">ISPeL</a>
+    <a href="http://seng5005.cs.ecu.edu/" _target="blank">Fall 2020</a>
+    <a href="https://github.com/vngudivada/ISPeL-content-machine-learning.git" _target="blank">GitHub</a>
+    </nav>
+</header>
+
+    <article class="group">
+      
+
+<h1>Html</h1>
+<p class="subtitle"></p>
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        e: "\\epsilon",
+        xti: "x^{(i)}",
+        yti: "y^{(i)}",
+        bfy: "{\\bf y}",
+        bfx: "{\\bf x}",
+        bfg: "{\\bf g}",
+        bfbeta: "{\\bf \\beta}",
+        tp: "\\tilde p",
+        pt: "p_\\theta",
+        E: "{\\mathbb{E}}",
+        Ind: "{\\mathbb{I}}",
+        KL: "{\\mathbb{KL}}",
+        Re: "{\\mathbb{R}}",
+        Dc: "{\\mathcal{D}}",
+        Tc: "{\\mathcal{T}}",
+        Xc: "{\\mathcal{X}}",
+        note: ["\\textcolor{blue}{[NOTE: #1]}",1]
+      }
+    }
+  });
+</script>
+
+
+<h2 id="w3schools">W3Schools</h2>
+<ul>
+  <li>Books or Online Materials?</li>
+  <li>W3Schools is an educational website for learning web technologies online.</li>
+  <li>Many good tutorials: <a href="https://www.w3schools.com/">https://www.w3schools.com/</a></li>
+  <li>HTML part is based on w3schools tutorial: <a href="https://www.w3schools.com/html/html_intro.asp">https://www.w3schools.com/html/html_intro.asp</a></li>
+  <li>I will not cover all details, you are encouraged to check it by yourselves.</li>
+</ul>
+
+<h2 id="what-is-html">What is HTML?</h2>
+<ul>
+  <li>HTML is short for <font color="red">Hypertext Markup Language</font> and is the <font color="red">standard</font> markup language for creating Web pages.</li>
+  <li>HTML elements are the building blocks of HTML pages.</li>
+  <li>HTML elements are represented by <font color="red">tags</font>.</li>
+  <li>HTML tags label pieces of content such as “heading”, “paragraph”, “table”, and so on.</li>
+  <li>Browsers <font color="red">do not</font> display the HTML tags, but use them to render the content of the page. Content will be displayed, but tag will not be displayed.</li>
+</ul>
+
+<h2 id="html-history">HTML History</h2>
+<ul>
+  <li>HTML 3.2: Tables, text-flow around image…</li>
+  <li>HTML 4.01: multimedia options, scripting languages…</li>
+  <li>XHML 1.0: XML improvements (we will learn XML)</li>
+  <li>HTML 5: e.g. SVG, canvas and other virtual vector graphics are supported in HTML5, whereas in HTML, using vector graphics was only possible by using it in conjunction with different technologies like Flash, VML, and Silver-light, etc. (we will introduce canvas)</li>
+</ul>
+
+<p><img src="HTML.png" alt="" /></p>
+
+<h2 id="lets-do-this-first-example">Let’s do this: First example</h2>
+<ul>
+  <li>Editor: Sublime-<a href="http://tipsonubuntu.com/2017/05/30/install-sublime-text-3-ubuntu-16-04-official-way/">http://tipsonubuntu.com/2017/05/30/install-sublime-text-3-ubuntu-16-04-official-way/</a></li>
+  <li>Our first example: example_01.html</li>
+  <li>About this example-HTML tags:
+    <ul>
+      <li>
+        <font color="blue">&lt;h1&gt;</font>
+      </li>
+      <li>
+        <font color="blue">&lt;p&gt;</font>
+      </li>
+      <li>
+        <font color="blue">&lt;br&gt;</font>
+      </li>
+    </ul>
+  </li>
+  <li>HTML tags are not case sensitive: <font color="blue">&lt;P&gt;</font> means the same as <font color="blue">&lt;p&gt;</font>.</li>
+  <li>Some tags do not need a closing tag, e.g. <font color="blue">&lt;br&gt;</font></li>
+  <li>Even some tags are missing in your HTML file, a browser can still render everything correctly. Try to avoid missing tags, that is not professional.</li>
+</ul>
+
+<h2 id="lets-do-this-second-example">Let’s do this: second example</h2>
+<ul>
+  <li>Our second example: example_02.html</li>
+  <li>About this example_02 tags:
+    <ul>
+      <li>
+        <font color="blue">href</font>
+        <ul>
+          <li>(link) attribute</li>
+        </ul>
+      </li>
+      <li>
+        <font color="blue">&lt;p&gt;</font>
+      </li>
+      <li>
+        <font color="blue">&lt;br&gt;</font>
+      </li>
+      <li>
+        <font color="blue">&lt;img&gt;</font>
+        <p>two required attributes: src and alt.</p>
+      </li>
+    </ul>
+  </li>
+  <li>Try to quote attribute values
+    <ul>
+      <li>Good: <font color="blue">&lt;a href="https://www.ecu.edu/"&gt;</font></li>
+      <li>Not professional: <font color="blue">&lt;a href=https://www.ecu.edu/&gt;</font></li>
+    </ul>
+  </li>
+  <li>Double quotes around attribute values are the most common in HTML, but single quotes can also be used.
+    <ul>
+      <li>Weird but work: <font color="blue">&lt;p title='John "ShotGun" Nelson'&gt;</font></li>
+      <li>Common way: <font color="blue">&lt;p title="John 'ShotGun' Nelson"&gt;</font></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="lets-do-this-third-example">Let’s do this: third example</h2>
+<ul>
+  <li>Our third example: example_03.html</li>
+  <li>
+    <font color="blue">&lt;head&gt;</font>
+    <p>element contains meta information about the document</p>
+  </li>
+  <li>Different size of text</li>
+  <li>Define your own style (will talk more when we introduce CSS)</li>
+  <li>Space and new line do <font color="red">not</font> affect</li>
+  <li>Extra space: <font color="brown">&amp;nbsp;</font> (No-break space)
+    <ul>
+      <li>Extra two spaces: <font color="brown">&amp;ensp;</font></li>
+      <li>Extra four spaces: <font color="brown">&amp;emsp;</font></li>
+      <li>How to view your HTML source? Your browser is a debugger.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="common-basic-tags">Common Basic Tags</h2>
+<ul>
+  <li>Tag Descriptions
+    <ul>
+      <li>
+        <font color="blue">&lt;!DOCTYPE&gt;</font>
+        <ul>
+          <li>Defines the document type</li>
+        </ul>
+      </li>
+      <li>
+        <font color="blue">&lt;html&gt;</font>
+        <ul>
+          <li>Defines an HTML document</li>
+        </ul>
+      </li>
+      <li>
+        <font color="blue">&lt;head&gt;</font>
+        <ul>
+          <li>Defines information about the document</li>
+        </ul>
+      </li>
+      <li>
+        <font color="blue">&lt;title&gt;</font>
+        <ul>
+          <li>Defines a title for the document</li>
+        </ul>
+      </li>
+      <li>
+        <font color="blue">&lt;body&gt;</font>
+        <ul>
+          <li>Defines the document’s body</li>
+        </ul>
+      </li>
+      <li>
+        <font color="blue">&lt;h1&gt; to &lt;h6&gt;</font>
+        <ul>
+          <li>Defines HTML headings</li>
+        </ul>
+      </li>
+      <li>
+        <font color="blue">&lt;p&gt;</font>
+        <ul>
+          <li>Defines a paragraph</li>
+        </ul>
+      </li>
+      <li>
+        <font color="blue">&lt;br&gt;</font>
+        <ul>
+          <li>Inserts a single line break</li>
+        </ul>
+      </li>
+      <li>
+        <font color="blue">&lt;hr&gt;</font>
+        <ul>
+          <li>Defines a thematic change in the content</li>
+        </ul>
+      </li>
+      <li>
+        <font color="blue">&lt;!--...--&gt;</font>
+        <ul>
+          <li>Defines a comment</li>
+        </ul>
+      </li>
+      <li>
+        <font color="blue">&lt;img&gt;</font>
+        <ul>
+          <li>Defines an image in an HTML page.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="there-are-more-tags">There are more tags…</h2>
+<ul>
+  <li>For example, tags for Table</li>
+  <li>Example 4</li>
+  <li>Don’t worry about the meaning of <font color="blue">&lt;style&gt;</font>, we will learn it in the next class.</li>
+  <li>Other tags: <a href="https://www.w3schools.com/tags/ref_byfunc.asp">https://www.w3schools.com/tags/ref_byfunc.asp</a></li>
+  <li>Table generator: <a href="https://www.tablesgenerator.com/html_tables">https://www.tablesgenerator.com/html_tables</a></li>
+  <li>Tag Descriptions
+    <ul>
+      <li>
+        <font color="blue">&lt;table&gt;</font>
+        <ul>
+          <li>Defines a table</li>
+        </ul>
+      </li>
+      <li>
+        <font color="blue">&lt;caption&gt;</font>
+        <ul>
+          <li>Defines a table caption</li>
+        </ul>
+      </li>
+      <li>
+        <font color="blue">&lt;th&gt;</font>
+        <ul>
+          <li>Defines a header cell in a table</li>
+        </ul>
+      </li>
+      <li>
+        <font color="blue">&lt;tr&gt;</font>
+        <ul>
+          <li>Defines a row in a table</li>
+        </ul>
+      </li>
+      <li>
+        <font color="blue">&lt;td&gt;</font>
+        <ul>
+          <li>Defines a cell in a table</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td><a href="../../../">Index</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../">Prev</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="tree2">Next</a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+    </article>
+    <footer>
+<hr class="slender">
+<div class="credits">
+This work is supported by the <a href="https://www.nsf.gov/" target="_blank">NSF</a> IUSE/PFE:RED award No. <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1730568" target="_blank">1730568</a>. Site created with <a href="//jekyllrb.com" target="_blank">Jekyll</a> using the <a href="//github.com/clayh53/tufte-jekyll" target="_blank">Tufte theme</a>. &copy; 2020
+</div>
+</footer>
+  </body>
+</html>

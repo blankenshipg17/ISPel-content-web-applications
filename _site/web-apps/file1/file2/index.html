@@ -10,7 +10,7 @@
   <meta name="description" content="ISPeL is an interactive system for personalization of learning. It uses topic-based authoring.">
 
   <!---   <link rel="stylesheet" href="/ISPeL-content-machine-learning/css/tufte.css" --->
-  <link rel="stylesheet" href="../../css/tufte.css">
+  <link rel="stylesheet" href="../../../css/tufte.css">
 
   <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not--><link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'><!-- Load up MathJax script if needed ... specify in /_data/options.yml file--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML"></script><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -22,7 +22,7 @@
   ga('send', 'pageview');
   </script>
 
-  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/file2/">
+  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/file1/file2/">
   <link rel="alternate" type="application/rss+xml" title="ISPeL-content-machine-learning" href="http://localhost:7000/ISPeL-content-machine-learning/feed.xml" />
 </head>
 
@@ -32,7 +32,7 @@
 
 <header>
     <nav class="group">
-    <a href="../../">Web Applications</a>
+    <a href="../../../">Web Applications</a>
     <a href="http://ispel.cs.ecu.edu/" _target="blank">ISPeL</a>
     <a href="http://seng5005.cs.ecu.edu/" _target="blank">Fall 2020</a>
     <a href="https://github.com/vngudivada/ISPeL-content-machine-learning.git" _target="blank">GitHub</a>
@@ -86,9 +86,53 @@
 <p><img src="2-1.png" alt="" /></p>
 
 <ul>
-  <li>Figure credit: <a href="http://massivetechinterview.blogspot.com/2015/12/dns-internal.html">http://massivetechinterview.blogspot.com/2015/12/dns-internal.html</a>
-||<a href="../../../">Index</a>||| <a href="../">Prev</a>|||<a href="file3">Next</a>|||</li>
+  <li>Figure credit: <a href="http://massivetechinterview.blogspot.com/2015/12/dns-internal.html">http://massivetechinterview.blogspot.com/2015/12/dns-internal.html</a></li>
 </ul>
+
+<h2 id="question"><font color="red">Question</font>:</h2>
+<ul>
+  <li>Why don’t we use IP directly?
+    <ul>
+      <li>Because it is hard to remember…</li>
+    </ul>
+  </li>
+  <li>Also, not enough IP addresses: It is often case that one web server will handle sites on the same IPv4 address (different ports).</li>
+  <li>DNS attack:
+    <ul>
+      <li><a href="https://searchsecurity.techtarget.com/definition/DNS-attack">https://searchsecurity.techtarget.com/definition/DNS-attack</a></li>
+    </ul>
+  </li>
+  <li>However, sometimes, you need to use IP instead of URL:
+    <ul>
+      <li>If a website’s DNS system is down then you may still be able to access it via its IP address. This occurred during Twitter’s large outage back in 2016.</li>
+      <li>A particular system may only accept IP addresses, therefore you need to convert your URL to IP.</li>
+      <li>You want to find out more information about the URL including who owns it, where it resides, or simply check if the domain record is correct.</li>
+    </ul>
+  </li>
+  <li>Find your IP address:
+    <ul>
+      <li>Windows: cmd -&gt; ipconfig</li>
+      <li>Ubuntu: ip</li>
+    </ul>
+  </li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td><a href="../../../">Index</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../">Prev</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../file3">Next</a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
 
 
 
