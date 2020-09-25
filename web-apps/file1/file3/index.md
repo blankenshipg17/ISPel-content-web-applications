@@ -67,7 +67,7 @@ title: How URL's are Structured
   * Com: Top Level Domain (TLD), generally intended to be used for commercial businesses
 
 ## TLD and URLs Price
-###Something you need to pay attention to:
+### Something you need to pay attention to:
 * <https://google.mail.com>: this is clearly phishing website. Usually, hackers use this trick pretend this is google. Similarly, <https://yahoo.mail.com>... If you know what is a domain name, you can easily tell.
 * TLD: Com vs net vs org
   * Com: usually commercial, e.g., google.com
@@ -89,7 +89,7 @@ title: How URL's are Structured
 
 
   
-||| [Index](../../)||| [Prev](../)||| [Next](../file4)|||
+||| [Index](../../)||| [Prev](../file2)||| [Next](../file4)|||
 
 
 
