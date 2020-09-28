@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Design</title>
+  <meta name="description" content="ISPeL is an interactive system for personalization of learning. It uses topic-based authoring.">
+
+  <!---   <link rel="stylesheet" href="/ISPeL-content-machine-learning/css/tufte.css" --->
+  <link rel="stylesheet" href="../../../css/tufte.css">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not--><link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'><!-- Load up MathJax script if needed ... specify in /_data/options.yml file--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75587219-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/design/file4/">
+  <link rel="alternate" type="application/rss+xml" title="ISPeL-content-machine-learning" href="http://localhost:7000/ISPeL-content-machine-learning/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+
+
+<header>
+    <nav class="group">
+    <a href="../../../">Web Applications</a>
+    <a href="http://ispel.cs.ecu.edu/" _target="blank">ISPeL</a>
+    <a href="http://seng5005.cs.ecu.edu/" _target="blank">Fall 2020</a>
+    <a href="https://github.com/vngudivada/ISPeL-content-machine-learning.git" _target="blank">GitHub</a>
+    </nav>
+</header>
+
+    <article class="group">
+      
+
+<h1>Design</h1>
+<p class="subtitle"></p>
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        e: "\\epsilon",
+        xti: "x^{(i)}",
+        yti: "y^{(i)}",
+        bfy: "{\\bf y}",
+        bfx: "{\\bf x}",
+        bfg: "{\\bf g}",
+        bfbeta: "{\\bf \\beta}",
+        tp: "\\tilde p",
+        pt: "p_\\theta",
+        E: "{\\mathbb{E}}",
+        Ind: "{\\mathbb{I}}",
+        KL: "{\\mathbb{KL}}",
+        Re: "{\\mathbb{R}}",
+        Dc: "{\\mathcal{D}}",
+        Tc: "{\\mathcal{T}}",
+        Xc: "{\\mathcal{X}}",
+        note: ["\\textcolor{blue}{[NOTE: #1]}",1]
+      }
+    }
+  });
+</script>
+
+
+<h2 id="paper-prototyping">Paper Prototyping</h2>
+<ul>
+  <li>Software prototyping (wiki): Software prototyping is the activity of creating prototypes of software applications, i.e., incomplete versions of the software program being developed.
+    <ul>
+      <li>Demo functions</li>
+      <li>Can be completely different from your final product.</li>
+    </ul>
+  </li>
+  <li>Paper prototyping: created with paper, present your design ideas</li>
+  <li>Google also uses paper prototyping (from 3:25): <a href="https://www.youtube.com/watch?v=JMjozqJS44M">https://www.youtube.com/watch?v=JMjozqJS44M</a></li>
+</ul>
+
+<h2 id="paper-prototyping-how">Paper Prototyping: How</h2>
+<ul>
+  <li>Step 1: Create sketches / wireframes of the feature you’re working on</li>
+  <li>Step 2: Gather some paper, pens, markers, scissors, and maybe some cardboard if you have them.</li>
+  <li>Step 3. Cut out the individual components of your prototype.</li>
+  <li>Step 4. Play around with your prototype to make sure that you have all the pieces you need for what you want to test
+*Step 5. Create a video to record the user flow</li>
+</ul>
+
+<p>Based on: https://medium.com/@shengao/paper-prototyping-how-to-pros-cons-and-the-struggles-of-guerrilla-usability-testing-5546dd446d5e</p>
+
+<h2 id="paper-prototyping-example">Paper Prototyping: Example</h2>
+
+<ul>
+  <li>A video can help record the user flow of your paper prototyping</li>
+  <li>An example about mobile app: <a href="https://www.youtube.com/watch?v=y20E3qBmHpg">https://www.youtube.com/watch?v=y20E3qBmHpg</a></li>
+  <li>An example about web page paper prototyping: <a href="https://www.youtube.com/watch?v=0FCyKf_5qRU">https://www.youtube.com/watch?v=0FCyKf_5qRU</a></li>
+  <li>These videos are very good except it does not include color design.</li>
+  <li>Another video about user test using paper prototype testing: <a href="https://www.youtube.com/watch?v=1h0Fj04c_vM">https://www.youtube.com/watch?v=1h0Fj04c_vM</a></li>
+</ul>
+
+<h2 id="paper-prototyping-pros-vs-cons">Paper Prototyping Pros vs Cons</h2>
+<ul>
+  <li>What are the benefits of paper prototyping?
+    <ul>
+      <li>User flows: e.g., can simulate user interactions</li>
+      <li>Rapid sketches: can be done very fast</li>
+      <li>Easy and cheap: cost is very low and is not hard to create a prototype</li>
+    </ul>
+  </li>
+  <li>No need programming knowledge: draw and cut
+    <ul>
+      <li>What are the disadvantages?</li>
+      <li>A user may interact differently with paper compared with actual computer GUIs</li>
+      <li>Some interactivities are hard to be demoed. E.g., play a video.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="group-homework-3-part-1">Group Homework 3 (Part 1)</h2>
+<ul>
+  <li>“Is my classmate a vampire?” Project design
+    <ul>
+      <li>Decide based on four features (shadow, garlic, complexion, and accent)</li>
+      <li>A user can input his/her classmate features</li>
+      <li>Threshold-based method will be introduced in Homework 3 (Part 2).</li>
+    </ul>
+  </li>
+  <li>Create a paper prototype.</li>
+  <li>At least have <font color="red">four</font> web pages, such as team member introduction, with <font color="red">four</font> user interactions, such as classmate feature input form.</li>
+  <li>Record the user flow of your paper prototype (maybe with your phone)</li>
+  <li>
+    <font color="red">No need</font>
+    <p>to submit anything until HW3 Part 2 is introduced.</p>
+  </li>
+</ul>
+
+<h2 id="bootstrap-tutorial">BootStrap tutorial</h2>
+<ul>
+  <li>Based on: <a href="https://www.w3schools.com/booTsTrap/default.asp">https://www.w3schools.com/booTsTrap/default.asp</a></li>
+  <li>Bootstrap is a free front-end <font color="red">framework</font> for faster and easier web development</li>
+  <li>Bootstrap also gives you the ability to easily create responsive designs</li>
+  <li>
+    <font color="red">Responsive web design</font>
+    <p>is about creating web sites which automatically adjust themselves to look good on all devices, from small phones to large desktops. (mobile friendly)</p>
+  </li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="../../../">Index</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../file3">Prev</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../file5">Next</a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+    </article>
+    <footer>
+<hr class="slender">
+<div class="credits">
+This work is supported by the <a href="https://www.nsf.gov/" target="_blank">NSF</a> IUSE/PFE:RED award No. <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1730568" target="_blank">1730568</a>. Site created with <a href="//jekyllrb.com" target="_blank">Jekyll</a> using the <a href="//github.com/clayh53/tufte-jekyll" target="_blank">Tufte theme</a>. &copy; 2020
+</div>
+</footer>
+  </body>
+</html>

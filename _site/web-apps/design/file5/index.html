@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>BootStrap</title>
+  <meta name="description" content="ISPeL is an interactive system for personalization of learning. It uses topic-based authoring.">
+
+  <!---   <link rel="stylesheet" href="/ISPeL-content-machine-learning/css/tufte.css" --->
+  <link rel="stylesheet" href="../../../css/tufte.css">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not--><link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'><!-- Load up MathJax script if needed ... specify in /_data/options.yml file--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75587219-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/design/file5/">
+  <link rel="alternate" type="application/rss+xml" title="ISPeL-content-machine-learning" href="http://localhost:7000/ISPeL-content-machine-learning/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+
+
+<header>
+    <nav class="group">
+    <a href="../../../">Web Applications</a>
+    <a href="http://ispel.cs.ecu.edu/" _target="blank">ISPeL</a>
+    <a href="http://seng5005.cs.ecu.edu/" _target="blank">Fall 2020</a>
+    <a href="https://github.com/vngudivada/ISPeL-content-machine-learning.git" _target="blank">GitHub</a>
+    </nav>
+</header>
+
+    <article class="group">
+      
+
+<h1>Bootstrap</h1>
+<p class="subtitle"></p>
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        e: "\\epsilon",
+        xti: "x^{(i)}",
+        yti: "y^{(i)}",
+        bfy: "{\\bf y}",
+        bfx: "{\\bf x}",
+        bfg: "{\\bf g}",
+        bfbeta: "{\\bf \\beta}",
+        tp: "\\tilde p",
+        pt: "p_\\theta",
+        E: "{\\mathbb{E}}",
+        Ind: "{\\mathbb{I}}",
+        KL: "{\\mathbb{KL}}",
+        Re: "{\\mathbb{R}}",
+        Dc: "{\\mathcal{D}}",
+        Tc: "{\\mathcal{T}}",
+        Xc: "{\\mathcal{X}}",
+        note: ["\\textcolor{blue}{[NOTE: #1]}",1]
+      }
+    }
+  });
+</script>
+
+
+<h2 id="bootstrap-tutorial">BootStrap tutorial</h2>
+<ul>
+  <li>Based on: <a href="https://www.w3schools.com/booTsTrap/default.asp">https://www.w3schools.com/booTsTrap/default.asp</a></li>
+  <li>Bootstrap is a free front-end <font color="red">framework</font> for faster and easier web development</li>
+  <li>Bootstrap also gives you the ability to easily create responsive designs</li>
+  <li>
+    <font color="red">Responsive web design</font>
+    <p>is about creating web sites which automatically adjust themselves to look good on all devices, from small phones to large desktops. (mobile friendly)</p>
+  </li>
+</ul>
+
+<h2 id="bootstrap">BootStrap</h2>
+<ul>
+  <li>If you don’t want to download and host Bootstrap yourself, you can include it from a <font color="red">CDN</font> (Content Delivery Network).</li>
+  <li>
+    <p>MaxCDN provides CDN support for Bootstrap’s CSS and JavaScript. You must also include jQuery.</p>
+  </li>
+  <li>Example 11</li>
+  <li>Charset UTF-8, represent any character in the Unicode standard
+    <ul>
+      <li>A character in UTF8 can be from 1 to 4 bytes long. UTF-8 is backwards compatible with ASCII. UTF-8 is the preferred encoding for e-mail and web pages.</li>
+    </ul>
+  </li>
+  <li>UTF-16, encode the entire Unicode repertoire.
+    <ul>
+      <li>UTF-16 is used in major operating systems and environments, like Microsoft Windows, Java and .NET.</li>
+    </ul>
+  </li>
+</ul>
+<font color="blue">&lt;&lt;meta&gt;</font>
+<p>viewport element gives the browser instructions on how to control the page’s dimensions and scaling.</p>
+
+<p>Figure credit: https://www.w3schools.com/css/css_rwd_viewport.asp</p>
+
+<ul>
+  <li>“width=device-width” part sets the width of the page to follow the screen-width of the device.
+    <ul>
+      <li>Change based on the device type.</li>
+    </ul>
+  </li>
+  <li>“initial-scale=1.0” part sets the initial zoom level when the page is first loaded by the browser.</li>
+  <li>You need to load jQuery.js <font color="red">before</font> BootStrap.js.</li>
+  <li>bootstrap.min.css vs bootstrap.css
+    <ul>
+      <li>bootstrap.min.css has been minified. This means all the <font color="red">whitespace</font> and other <font color="red">extra characters</font> have been removed. This is commonly done for use in production, to reduce the size of the file. When developing, it is usually helpful to use the unminified version, it is readable.</li>
+      <li>Similarly, bootstrap.min.js vs bootstrap.js</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="bootstrap-grid-system">BootStrap Grid System</h2>
+
+<p>Allow maximum 12 columns.
+Used to define length of a column, can be applied to an HTML container, such as div.
+Follow the rules, automatically mobile-friendly.
+<img src="grid.png" alt="" /></p>
+
+<ul>
+  <li>The Bootstrap grid system has four classes:
+    <ul>
+      <li>
+        <font color="blue">xs</font>
+        <ul>
+          <li>(for phones - screens less than 768px wide)</li>
+        </ul>
+      </li>
+      <li>
+        <font color="blue">sm</font>
+        <ul>
+          <li>(for tablets - screens equal to or greater than 768px wide)</li>
+        </ul>
+      </li>
+      <li>
+        <font color="blue">md</font>
+        <ul>
+          <li>(for small laptops - screens equal to or greater than 992px wide)</li>
+        </ul>
+      </li>
+      <li>
+        <font color="blue">lg</font>
+        <ul>
+          <li>(for laptops and desktops - screens equal to or greater than 1200px wide)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <font color="blue">&lt;div class="row"&gt;</font>
+  </li>
+  <li>
+    <font color="blue">&lt;div class="col-*-*"&gt;&lt;/div&gt;</font>
+  </li>
+  <li>
+    <font color="blue">&lt;div class="col-*-*"&gt;&lt;/div&gt;</font>
+  </li>
+  <li>
+    <font color="blue">&lt;/div&gt;</font>
+  </li>
+  <li>For example: class=”col-sm-4”</li>
+  <li>Example 12
+    <ul>
+      <li>
+        <font color="blue">.container-fluid</font>
+        <ul>
+          <li>for a full width container, spanning the entire width of the viewport.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Demo the mobile-friendly test in Firefox and Google Chrome.</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td><a href="../../../">Index</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../file5">Prev</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../file7">Next</a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+    </article>
+    <footer>
+<hr class="slender">
+<div class="credits">
+This work is supported by the <a href="https://www.nsf.gov/" target="_blank">NSF</a> IUSE/PFE:RED award No. <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1730568" target="_blank">1730568</a>. Site created with <a href="//jekyllrb.com" target="_blank">Jekyll</a> using the <a href="//github.com/clayh53/tufte-jekyll" target="_blank">Tufte theme</a>. &copy; 2020
+</div>
+</footer>
+  </body>
+</html>
