@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Software Design and JavaScript</title>
+  <meta name="description" content="ISPeL is an interactive system for personalization of learning. It uses topic-based authoring.">
+
+  <!---   <link rel="stylesheet" href="/ISPeL-content-machine-learning/css/tufte.css" --->
+  <link rel="stylesheet" href="../../../css/tufte.css">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not--><link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'><!-- Load up MathJax script if needed ... specify in /_data/options.yml file--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75587219-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/MVC_JavaScript/file3/">
+  <link rel="alternate" type="application/rss+xml" title="ISPeL-content-machine-learning" href="http://localhost:7000/ISPeL-content-machine-learning/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+
+
+<header>
+    <nav class="group">
+    <a href="../../../">Web Applications</a>
+    <a href="http://ispel.cs.ecu.edu/" _target="blank">ISPeL</a>
+    <a href="http://seng5005.cs.ecu.edu/" _target="blank">Fall 2020</a>
+    <a href="https://github.com/vngudivada/ISPeL-content-machine-learning.git" _target="blank">GitHub</a>
+    </nav>
+</header>
+
+    <article class="group">
+      
+
+<h1>Software design and javascript</h1>
+<p class="subtitle"></p>
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        e: "\\epsilon",
+        xti: "x^{(i)}",
+        yti: "y^{(i)}",
+        bfy: "{\\bf y}",
+        bfx: "{\\bf x}",
+        bfg: "{\\bf g}",
+        bfbeta: "{\\bf \\beta}",
+        tp: "\\tilde p",
+        pt: "p_\\theta",
+        E: "{\\mathbb{E}}",
+        Ind: "{\\mathbb{I}}",
+        KL: "{\\mathbb{KL}}",
+        Re: "{\\mathbb{R}}",
+        Dc: "{\\mathcal{D}}",
+        Tc: "{\\mathcal{T}}",
+        Xc: "{\\mathcal{X}}",
+        note: ["\\textcolor{blue}{[NOTE: #1]}",1]
+      }
+    }
+  });
+</script>
+
+
+<h2 id="javascript-where">JavaScript: Where</h2>
+<ul>
+  <li>Example 16</li>
+  <li>JavaScript code must be inserted between <font color="blue">&lt;script&gt;</font> and <font color="blue">&lt;/script&gt;</font> tags.</li>
+  <li>Head and Body
+    <ul>
+      <li>All work.</li>
+      <li>Placing scripts at the bottom of the <font color="blue">&lt;body&gt;</font> element <font color="red">improves</font> the display speed, because script compilation slows down the display.</li>
+    </ul>
+  </li>
+  <li>External JavaScript <font color="red">advantages</font>:
+    <ul>
+      <li>It separates HTML and code</li>
+      <li>It makes HTML and JavaScript easier to read and maintain</li>
+      <li>Cached JavaScript files can speed up page loads</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="javascript-get-results-from-model">JavaScript: Get Results from Model</h2>
+<ul>
+  <li>Example 17</li>
+  <li>Functions.</li>
+  <li>Dynamically display results.</li>
+</ul>
+
+<h2 id="javascript-a-brief-history">JavaScript: A Brief History</h2>
+<ul>
+  <li>Developed for Netscape by Brendan Eich in 1995, first shipped with Netscape Navigator 2.0B3</li>
+  <li>JavaScript was created in <font color="red">2 weeks</font>!</li>
+  <li>Standardized as ECMAScript (trademarked scripting-language specification), although standard seems to be only loosely followed by browsers</li>
+  <li>Now the “assembly language of the web” (see <a href="http://www.hanselman.com/blog/JavaScriptIsAssemblyLanguageForTheWebSematicMarkupIsDeadCleanVsMachinecodedHTML.aspx">http://www.hanselman.com/blog/JavaScriptIsAssemblyLanguageForTheWebSematicMarkupIsDeadCleanVsMachinecodedHTML.aspx</a>)</li>
+</ul>
+
+<h2 id="javascript-language-basics">JavaScript: Language Basics</h2>
+<ul>
+  <li>Language looks very similar to C language family (including Java)</li>
+  <li>
+    <font color="red">Basic types</font>
+    <p>include numbers, arrays, objects, strings, booleans</p>
+  </li>
+  <li>You can also define a class.</li>
+</ul>
+
+<p><label for="MVC" class="margin-toggle">⊕</label>
+<input type="checkbox" id="MVC" class="margin-toggle" />
+<span class="marginnote"><img class="fullwidth" src="/ISPeL-content-machine-learning/web-apps/MVC_JavaScript/file3/js.png" alt="get syntax binds an object property to a function that will be called when that property is looked up. Figure credit: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes" /><br />
+    get syntax binds an object property to a function that will be called when that property is looked up. Figure credit: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+</span></p>
+
+<h2 id="javascript-output">JavaScript Output</h2>
+<ul>
+  <li>Example 18</li>
+  <li>Important for debugging</li>
+  <li>Four different ways to output information:
+    <ul>
+      <li>Writing into an HTML element, using innerHTML.</li>
+      <li>Writing into the HTML output using document.write().</li>
+      <li>Writing into an alert box, using window.alert().</li>
+      <li>Writing into the browser console, using console.log().</li>
+    </ul>
+  </li>
+  <li>document.write() after an HTML document is loaded, will <font color="red">delete</font> all existing HTML</li>
+  <li>The document.write() method should only be used for <font color="red">testing</font>.</li>
+  <li>For <font color="red">debugging</font> purposes, you can use the console.log() method to display data.</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="../../">Index</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../file2/">Prev</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../file4/">Next</a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+    </article>
+    <footer>
+<hr class="slender">
+<div class="credits">
+This work is supported by the <a href="https://www.nsf.gov/" target="_blank">NSF</a> IUSE/PFE:RED award No. <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1730568" target="_blank">1730568</a>. Site created with <a href="//jekyllrb.com" target="_blank">Jekyll</a> using the <a href="//github.com/clayh53/tufte-jekyll" target="_blank">Tufte theme</a>. &copy; 2020
+</div>
+</footer>
+  </body>
+</html>

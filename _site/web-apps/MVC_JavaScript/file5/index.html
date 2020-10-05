@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Software Design and JavaScript</title>
+  <meta name="description" content="ISPeL is an interactive system for personalization of learning. It uses topic-based authoring.">
+
+  <!---   <link rel="stylesheet" href="/ISPeL-content-machine-learning/css/tufte.css" --->
+  <link rel="stylesheet" href="../../../css/tufte.css">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not--><link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'><!-- Load up MathJax script if needed ... specify in /_data/options.yml file--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75587219-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/MVC_JavaScript/file5/">
+  <link rel="alternate" type="application/rss+xml" title="ISPeL-content-machine-learning" href="http://localhost:7000/ISPeL-content-machine-learning/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+
+
+<header>
+    <nav class="group">
+    <a href="../../../">Web Applications</a>
+    <a href="http://ispel.cs.ecu.edu/" _target="blank">ISPeL</a>
+    <a href="http://seng5005.cs.ecu.edu/" _target="blank">Fall 2020</a>
+    <a href="https://github.com/vngudivada/ISPeL-content-machine-learning.git" _target="blank">GitHub</a>
+    </nav>
+</header>
+
+    <article class="group">
+      
+
+<h1>Software design and javascript</h1>
+<p class="subtitle"></p>
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        e: "\\epsilon",
+        xti: "x^{(i)}",
+        yti: "y^{(i)}",
+        bfy: "{\\bf y}",
+        bfx: "{\\bf x}",
+        bfg: "{\\bf g}",
+        bfbeta: "{\\bf \\beta}",
+        tp: "\\tilde p",
+        pt: "p_\\theta",
+        E: "{\\mathbb{E}}",
+        Ind: "{\\mathbb{I}}",
+        KL: "{\\mathbb{KL}}",
+        Re: "{\\mathbb{R}}",
+        Dc: "{\\mathcal{D}}",
+        Tc: "{\\mathcal{T}}",
+        Xc: "{\\mathcal{X}}",
+        note: ["\\textcolor{blue}{[NOTE: #1]}",1]
+      }
+    }
+  });
+</script>
+
+
+<h2 id="group-activity-5-5-minutes">Group Activity 5: 5 minutes</h2>
+
+<ul>
+  <li>Work on Example 22
+Use Google Line chart to show the following data.</li>
+</ul>
+
+<h1 id="javascript-debug">JavaScript Debug</h1>
+<ul>
+  <li>Debugging is not easy. But fortunately, all modern browsers have a built-in JavaScript debugger.</li>
+  <li>Two main methods:
+    <ul>
+      <li>Console.log()</li>
+      <li>Setting Breaking points.</li>
+    </ul>
+  </li>
+  <li>Demo: setting breaking points.</li>
+</ul>
+
+<h2 id="javascript-coding-conventions">JavaScript Coding Conventions</h2>
+
+<ul>
+  <li>Coding conventions are style guidelines for programming. They typically cover:
+    <ul>
+      <li>Naming and declaration rules for variables and functions.</li>
+      <li>Rules for the use of white space, indentation, and comments.</li>
+      <li>Programming practices and principles</li>
+    </ul>
+  </li>
+  <li>Why? Example 23</li>
+  <li>Variable and function names:
+    <ul>
+      <li>camelCase: e.g. myDataTable, vampireModelFeature</li>
+      <li>snake_case: e.g. my_data_table, vampire_model_feature</li>
+    </ul>
+  </li>
+  <li>Spaces around operators. E.g.:
+    <ul>
+      <li>Always put spaces around operators ( = + - * / ), and after commas</li>
+      <li>var x = y + z;</li>
+      <li>var values = [“Volvo”, “Saab”, “Fiat”];</li>
+    </ul>
+  </li>
+  <li>No perfect rules. But we need a rule…</li>
+</ul>
+
+<h2 id="midterm-and-sample-questions">Midterm and Sample Questions</h2>
+<ul>
+  <li>Sample Questions available on Blackboard.</li>
+  <li>I will go through them on March 3.</li>
+  <li>Midterm will be on March 5. Regular class time.
+    <ul>
+      <li>20 multiple choice questions</li>
+      <li>4 short answer questions (do not require you to write a complete program)</li>
+      <li>Review slides and sample codes</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="json-basic">JSON: Basic</h2>
+<ul>
+  <li>JSON: JavaScript Object Notation</li>
+  <li>JSON is a syntax for storing and exchanging data</li>
+  <li>JSON is a lightweight data-interchange format</li>
+  <li>In JSON, values must be one of the following data types:
+    <ul>
+      <li>a string: “human”</li>
+      <li>a number: 10</li>
+      <li>an object (JSON object)</li>
+      <li>an array: [1,2,3,4,5 …]</li>
+      <li>a Boolean: True/False</li>
+      <li>Null: means empty</li>
+    </ul>
+  </li>
+  <li>
+    <font color="red"> Cannot</font>
+    <ul>
+      <li>a function</li>
+      <li>a date (usually use string in JSON for date)</li>
+      <li>Undefined variables</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="json">JSON</h2>
+<ul>
+  <li>Keys must be strings, and values must be a valid JSON data type</li>
+  <li>
+    <p>JSON objects: 
+{
+“employee”:{ “name”:”John”, “age”:30, “city”:”New York” }
+}</p>
+  </li>
+  <li>JSON Booleans: { “sale”:true }</li>
+  <li>JSON null: { “middlename”:null }</li>
+</ul>
+
+<p><label for="MVC" class="margin-toggle">⊕</label>
+<input type="checkbox" id="MVC" class="margin-toggle" />
+<span class="marginnote"><img class="fullwidth" src="/ISPeL-content-machine-learning/web-apps/MVC_JavaScript/file5/json.png" alt="Example: How to use a JSON file in html code. Figure credit: https://stackoverflow.com/questions/12070631/how-to-use-json-file-in-html-code" /><br />
+    Example: How to use a JSON file in html code. Figure credit: https://stackoverflow.com/questions/12070631/how-to-use-json-file-in-html-code
+</span></p>
+
+<ul>
+  <li>HW3: Model Example 24
+    <ul>
+      <li>JavaScript for loop</li>
+      <li>a++; =&gt; a = a + 1;</li>
+      <li>a–; =&gt; a = a – 1;</li>
+    </ul>
+  </li>
+  <li>We will learn how to send and receive JSON data when we introduce the server part.</li>
+  <li>If you want to pass a parameter to google.setOnLoadCallback()
+    <ul>
+      <li>google.setOnLoadCallback(function() { drawChart(input_data); });</li>
+    </ul>
+  </li>
+  <li>Be consistent for the same function…</li>
+  <li>In software engineering, dependency injection is a technique whereby one object (or static method) supplies the dependencies of another object (wiki).</li>
+</ul>
+
+<h2 id="javascript-loop">JavaScript: Loop</h2>
+<ul>
+  <li>Statement 1 is executed (one time) before the execution of the code block.</li>
+  <li>Statement 2 defines the condition for executing the code block.</li>
+  <li>Statement 3 is executed (every time) after the code block has been executed.</li>
+</ul>
+
+<p><img src="loop1.png" alt="" />
+<img src="loop2.png" alt="" /></p>
+
+<h2 id="homework-4-part-1">Homework 4 (Part 1)</h2>
+<ul>
+  <li>Implement “View”, “Model”, and “Control” parts of the “vampire app”</li>
+  <li>“View”
+    <ul>
+      <li>Visualization results in a pie chart</li>
+      <li>Need to update visualization results if “Model” logic is changed</li>
+    </ul>
+  </li>
+  <li>“Model” Logic
+    <ul>
+      <li>Threshold based:
+        <ul>
+          <li>No shadow +4, otherwise 0</li>
+          <li>Complexion pale +3, otherwise 0</li>
+          <li>No Garlic +3, otherwise 0</li>
+          <li>Total score &gt; 6, yes; &lt;=6 no</li>
+        </ul>
+      </li>
+      <li>Random guess: randomly decide if a student is a vampire.</li>
+      <li>(Optional) Learn more about how to build a decision tree to solve this problem if you want: https://www.youtube.com/watch?v=SXBG3RGr_Rc</li>
+    </ul>
+  </li>
+  <li>“Control”: a user should be able to choose different data processing methods (“Model” logic) with a list select box. Sample code introduced in Example 25.</li>
+  <li>Temporarily use data in Example 24  (classmate_data), I will introduce how to load data next week.</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="../../">Index</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../file4/">Prev</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../file6/">Next</a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+    </article>
+    <footer>
+<hr class="slender">
+<div class="credits">
+This work is supported by the <a href="https://www.nsf.gov/" target="_blank">NSF</a> IUSE/PFE:RED award No. <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1730568" target="_blank">1730568</a>. Site created with <a href="//jekyllrb.com" target="_blank">Jekyll</a> using the <a href="//github.com/clayh53/tufte-jekyll" target="_blank">Tufte theme</a>. &copy; 2020
+</div>
+</footer>
+  </body>
+</html>

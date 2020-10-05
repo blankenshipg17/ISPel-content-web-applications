@@ -56,6 +56,6 @@ Follow the rules, automatically mobile-friendly.
     * for a full width container, spanning the entire width of the viewport.
 * Demo the mobile-friendly test in Firefox and Google Chrome.
 
-||[Index](../../../)||| [Prev](../file5)|||[Next](../file7)|||
+||[Index](../../../)||| [Prev](../file4)|||[Next](../file6)|||
 
 

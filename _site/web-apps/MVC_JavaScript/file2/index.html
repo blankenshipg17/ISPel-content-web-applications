@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>topic-3</title>
+  <title>MVC and JavaScript</title>
   <meta name="description" content="ISPeL is an interactive system for personalization of learning. It uses topic-based authoring.">
 
   <!---   <link rel="stylesheet" href="/ISPeL-content-machine-learning/css/tufte.css" --->
-  <link rel="stylesheet" href="../../css/tufte.css">
+  <link rel="stylesheet" href="../../../css/tufte.css">
 
   <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not--><link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'><!-- Load up MathJax script if needed ... specify in /_data/options.yml file--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML"></script><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -22,7 +22,7 @@
   ga('send', 'pageview');
   </script>
 
-  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/file3/">
+  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/MVC_JavaScript/file2/">
   <link rel="alternate" type="application/rss+xml" title="ISPeL-content-machine-learning" href="http://localhost:7000/ISPeL-content-machine-learning/feed.xml" />
 </head>
 
@@ -32,7 +32,7 @@
 
 <header>
     <nav class="group">
-    <a href="../../">Web Applications</a>
+    <a href="../../../">Web Applications</a>
     <a href="http://ispel.cs.ecu.edu/" _target="blank">ISPeL</a>
     <a href="http://seng5005.cs.ecu.edu/" _target="blank">Fall 2020</a>
     <a href="https://github.com/vngudivada/ISPeL-content-machine-learning.git" _target="blank">GitHub</a>
@@ -42,7 +42,7 @@
     <article class="group">
       
 
-<h1>Topic-3</h1>
+<h1>Mvc and javascript</h1>
 <p class="subtitle"></p>
 
 
@@ -73,6 +73,73 @@
 </script>
 
 
+<h2 id="where-should-model-be-deployed-server-side-or-client-side">Where should “Model” be deployed? Server side or client side?</h2>
+<p><img src="MVC3.png" alt="" /></p>
+
+<h2 id="it-depends">It depends…</h2>
+
+<ul>
+  <li>One thousand users vs one million users?
+    <ul>
+      <li>Too many users.</li>
+      <li>Client.</li>
+    </ul>
+  </li>
+  <li>Heavy jobs handled by servers or clients?
+    <ul>
+      <li>Reduce the burden of a client device.</li>
+      <li>Server.</li>
+    </ul>
+  </li>
+  <li>Hotel example:
+    <ul>
+      <li>1 front desk, fast enough to help 10 clients check in =&gt; deploy on server</li>
+      <li>1 front desk, not fast enough to help 100 clients print check out receipts =&gt; deploy on client, mobile phone check out, email PDF</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="view-javascript">View: JavaScript</h2>
+<ul>
+  <li>This tutorial is based on https://www.w3schools.com/js/</li>
+  <li>JavaScript is the programming language of HTML and the Web.</li>
+  <li>JavaScript is the default scripting language for HTML.</li>
+  <li>JavaScript defines behavior: functional requirements and MVC.</li>
+  <li>JavaScript vs jQuery
+    <ul>
+      <li>Similar to CSS vs BootStrap</li>
+      <li>jQuery is a JavaScript library, we will learning</li>
+      <li>“Fundamental and necessary” vs “make your life easier”</li>
+    </ul>
+  </li>
+  <li>Example 15</li>
+  <li>HTML tag <font color="blue">&lt;button&gt;</font> defines a clickable button.</li>
+  <li>What can JavaScript do?
+    <ul>
+      <li>Change HTML content</li>
+      <li>Change HTML attribute value</li>
+      <li>Change HTML styles (CSS)</li>
+    </ul>
+  </li>
+  <li>“Inline” method to define behaviors.</li>
+  <li>Semicolon (;) is used to separate each line of your code.</li>
+  <li>We will learn how to dynamically generate the page contents.</li>
+</ul>
+
+<h2 id="group-activity-3-10-minutes">Group Activity 3: 10 minutes</h2>
+<ul>
+  <li>Work on Example 15</li>
+  <li>Add the third icon column
+    <ul>
+      <li>At first: human icon</li>
+      <li>Click button: replace John’s icon to vampire</li>
+      <li>Hint: use “.src” to replace image</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="ga3.png" alt="" /></p>
+
 <table>
   <tbody>
     <tr>
@@ -84,12 +151,13 @@
       <td><a href="../">Prev</a></td>
       <td> </td>
       <td> </td>
-      <td><a href="lin-reg2/">Next</a></td>
+      <td><a href="../file3/">Next</a></td>
       <td> </td>
       <td> </td>
     </tr>
   </tbody>
 </table>
+
 
 
     </article>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>BootStrap</title>
+  <meta name="description" content="ISPeL is an interactive system for personalization of learning. It uses topic-based authoring.">
+
+  <!---   <link rel="stylesheet" href="/ISPeL-content-machine-learning/css/tufte.css" --->
+  <link rel="stylesheet" href="../../../css/tufte.css">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not--><link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'><!-- Load up MathJax script if needed ... specify in /_data/options.yml file--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75587219-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/design/file6/">
+  <link rel="alternate" type="application/rss+xml" title="ISPeL-content-machine-learning" href="http://localhost:7000/ISPeL-content-machine-learning/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+
+
+<header>
+    <nav class="group">
+    <a href="../../../">Web Applications</a>
+    <a href="http://ispel.cs.ecu.edu/" _target="blank">ISPeL</a>
+    <a href="http://seng5005.cs.ecu.edu/" _target="blank">Fall 2020</a>
+    <a href="https://github.com/vngudivada/ISPeL-content-machine-learning.git" _target="blank">GitHub</a>
+    </nav>
+</header>
+
+    <article class="group">
+      
+
+<h1>Bootstrap</h1>
+<p class="subtitle"></p>
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        e: "\\epsilon",
+        xti: "x^{(i)}",
+        yti: "y^{(i)}",
+        bfy: "{\\bf y}",
+        bfx: "{\\bf x}",
+        bfg: "{\\bf g}",
+        bfbeta: "{\\bf \\beta}",
+        tp: "\\tilde p",
+        pt: "p_\\theta",
+        E: "{\\mathbb{E}}",
+        Ind: "{\\mathbb{I}}",
+        KL: "{\\mathbb{KL}}",
+        Re: "{\\mathbb{R}}",
+        Dc: "{\\mathcal{D}}",
+        Tc: "{\\mathcal{T}}",
+        Xc: "{\\mathcal{X}}",
+        note: ["\\textcolor{blue}{[NOTE: #1]}",1]
+      }
+    }
+  });
+</script>
+
+
+<h2 id="bootstrap-classes">BootStrap Classes</h2>
+
+<ul>
+  <li>BootStrap has many predefined styles stored in bootstrap.min.css.</li>
+  <li>How does BootStrap know which style to apply? =&gt; Class names:
+    <ul>
+      <li>class = “table” Adds basic styling to a table (padding, bottom borders, etc)</li>
+      <li>class = “table-hover” Creates a hoverable table (adds a grey background   color on table rows on hover)</li>
+      <li>class = “table-bordered” Adds borders on all sides of the table and cells</li>
+      <li>BootStrap all classes are listed at: <a href="https://www.w3schools.com/bootstrap/bootstrap_ref_all_classes.asp">https://www.w3schools.com/bootstrap/bootstrap_ref_all_classes.asp</a></li>
+    </ul>
+  </li>
+  <li>Here are four examples</li>
+</ul>
+
+<h2 id="bootstrap-table">BootStrap Table</h2>
+<ul>
+  <li>HTML table tags:
+    <ul>
+      <li>Use the HTML <font color="blue">&lt;table&gt;</font> element to define a table</li>
+      <li>Use the HTML <font color="blue">&lt;tr&gt;</font> element to define a table row</li>
+      <li>Use the HTML <font color="blue">&lt;td&gt;</font> element to define a table data</li>
+      <li>Use the HTML <font color="blue">&lt;th&gt;</font> element to define a table heading</li>
+      <li>Use the HTML <font color="blue">&lt;thead&gt;</font> element to group header content in an HTML table. After <font color="blue">&lt;table&gt;</font>, <font color="blue">&lt;caption&gt;</font>, before <font color="blue">&lt;tbody&gt;</font> (table body), <font color="blue">&lt;tfoot&gt;</font> (table footer), and <font color="blue">&lt;tr&gt;</font></li>
+    </ul>
+  </li>
+  <li>Example 13_1</li>
+  <li>One HTML element can have multiple classes:
+    <ul>
+      <li>It is like a person can be classified as your friend and teacher.</li>
+    </ul>
+  </li>
+  <li>Responsive Tables, defined in <font color="blue">&lt;div&gt;</font> instead of <font color="blue">&lt;table&gt;</font></li>
+</ul>
+
+<h2 id="group-activity-2">Group Activity 2</h2>
+<ul>
+  <li>5 minutes</li>
+  <li>Work on Example 13_1, second table</li>
+  <li>First row: italic</li>
+  <li>Other rows: hover -&gt;background color changes to green</li>
+  <li>Other tables should not be affected!</li>
+</ul>
+
+<p><img src="bootstrap.png" alt="" /></p>
+
+<h2 id="bootstrap-navigation-bar">BootStrap Navigation Bar</h2>
+<ul>
+  <li>Example 13</li>
+  <li>
+    <nav> tag defines a set of navigation links.
+</nav>
+  </li>
+  <li>A standard navigation bar is created with <font color="blue">&lt;nav class="navbar navbar-default"&gt;</font>.</li>
+  <li>Default style looks not bad: style hiding in BootStrap CSS</li>
+  <li>You can also define your own style.</li>
+  <li>Container vs container-fluid class:
+    <ul>
+      <li>The .container class provides a responsive fixed width container</li>
+      <li>The .container-fluid class provides a full width container, spanning the entire width of the viewport</li>
+    </ul>
+  </li>
+  <li>Vertical and other styles:
+    <ul>
+      <li><a href="https://getbootstrap.com/docs/4.0/components/navs/">https://getbootstrap.com/docs/4.0/components/navs/</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="bootstrap2.png" alt="" /></p>
+
+<h2 id="bootstrap-carousel">BootStrap Carousel </h2>
+<ul>
+  <li>Some examples:
+    <ul>
+      <li>https://m.ecu.edu/</li>
+      <li>https://www.amazon.com/</li>
+      <li>https://www.ebay.com/</li>
+    </ul>
+  </li>
+  <li>Also called slideshow</li>
+  <li>Example 14</li>
+  <li>The outermost <font color="blue">&lt;div&gt;</font>:</li>
+  <li>Carousels require the use of an id (in this case id=”myCarousel”) for carousel controls to function properly.</li>
+  <li>The class=”carousel” specifies that this <font color="blue">&lt;div&gt;</font> contains a carousel.</li>
+  <li>The data-ride=”carousel” attribute tells Bootstrap to begin animating the carousel immediately when the page loads.</li>
+</ul>
+
+<h2 id="bootstrap-carousel-1">BootStrap Carousel </h2>
+<ul>
+  <li>The “Indicators” part:
+    <ul>
+      <li>The indicators are the little dots at the bottom of each slide (which indicates how many slides there is in the carousel, and which slide the user are currently viewing).</li>
+      <li>The indicators are specified in an ordered list with class .carousel-indicators.</li>
+      <li>The data-target attribute points to the id of the carousel.</li>
+      <li>The data-slide-to attribute specifies which slide to go to, when clicking on the specific dot.</li>
+    </ul>
+  </li>
+  <li>The “Wrapper for slides” part:
+    <ul>
+      <li>The slides are specified in a <font color="blue">&lt;div&gt;</font> with class .carousel-inner.</li>
+      <li>The content of each slide is defined in a <font color="blue">&lt;div&gt;</font> with class .item. This can be text or images.</li>
+      <li>The .active class needs to be added to one of the slides. Otherwise, the carousel will not be visible.</li>
+    </ul>
+  </li>
+  <li>The “Left and right controls” part:
+    <ul>
+      <li>This code adds “left” and “right” buttons that allows the user to go back and forth between the slides manually.</li>
+      <li>The data-slide attribute accepts the keywords “prev” or “next”, which alters the slide position relative to its current position.</li>
+    </ul>
+  </li>
+  <li>BootStrap icons: <a href="https://getbootstrap.com/docs/3.3/components/">https://getbootstrap.com/docs/3.3/components/</a></li>
+</ul>
+
+<h3 id="why-did-we-waste-our-time-on-css-should-we-just-learn-bootstrap">Why did we “waste” our time on CSS? Should we just learn BootStrap?</h3>
+
+<h2 id="css-is-the-base">CSS is the base</h2>
+<ul>
+  <li>Here are some my personal opinions:
+    <ul>
+      <li>We still need CSS to define some our own styles, such as text color.</li>
+      <li>CSS is the fundamental part. If you understand CSS, then you can easily learn other frameworks.</li>
+      <li>If you do not learn CSS, you won’t learn how BootStrap works and modify some parts of BootStrap.</li>
+      <li>One day, you may find existing framework is not perfect and want to create your own framework. You need fundamental knowledge, such as CSS. E.g., React created by Facebook for dynamic content changing in a view (page)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="bootstrap-latest-version">Bootstrap Latest version</h2>
+<ul>
+  <li>4.4.1</li>
+  <li>Released 60 days ago</li>
+  <li>New things will pop up all the time. But the fundamental theory is the same.</li>
+  <li>For example, CSS vs Bootstrap</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td><a href="../../../">Index</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../file5">Prev</a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+    </article>
+    <footer>
+<hr class="slender">
+<div class="credits">
+This work is supported by the <a href="https://www.nsf.gov/" target="_blank">NSF</a> IUSE/PFE:RED award No. <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1730568" target="_blank">1730568</a>. Site created with <a href="//jekyllrb.com" target="_blank">Jekyll</a> using the <a href="//github.com/clayh53/tufte-jekyll" target="_blank">Tufte theme</a>. &copy; 2020
+</div>
+</footer>
+  </body>
+</html>
