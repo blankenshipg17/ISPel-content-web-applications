@@ -99,6 +99,113 @@
     Flowchart example based on: https://www.quora.com/What-is-the-difference-between-a-flowchart-and-an-algorithm-1/answer/Jane-Jacobs-7
 </span></p>
 
+<p><img src="flowchart1.png" alt="" /></p>
+
+<h2 id="bootstrap-select-list">BootStrap Select List</h2>
+<ul>
+  <li>Example 25</li>
+  <li>Select List: as known as drop-down list.
+    <ul>
+      <li>
+        <font color="blue">&lt;select&gt;</font>
+        <p>tag</p>
+      </li>
+    </ul>
+  </li>
+  <li>The value “-1” will deselect all options (if any).</li>
+  <li>HTML tag <font color="blue">&lt;label&gt;</font>: defines a label. Similar to Caption. Usually bind with clickable elements. We will learn more about this tag when we introduce <font color="blue">&lt;form&gt;</font></li>
+</ul>
+
+<h2 id="group-activity-6-5-minutes">Group Activity 6: 5 minutes</h2>
+<ul>
+  <li>Work on Example 25:</li>
+  <li>Complete the “hole” to display current selected option</li>
+  <li>Hint:
+    <ul>
+      <li>selectObject.selectedIndex =&gt; Return the selectedIndex property (starting from 0)</li>
+      <li>selectObject.selectedIndex = number =&gt; Set the selectedIndex property</li>
+      <li>selectObject.options =&gt; Return the option (contents)</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="ga.png" alt="" /></p>
+
+<h2 id="bootstrap-input-form">BootStrap Input Form</h2>
+<ul>
+  <li>Bootstrap supports the following form controls:
+    <ul>
+      <li>input</li>
+      <li>textarea</li>
+      <li>checkbox</li>
+      <li>radio</li>
+      <li>Select (example 25)</li>
+    </ul>
+  </li>
+  <li>HTML tag <font color="blue">&lt;form&gt;</font>  is used to create an HTML form for user input.</li>
+  <li>
+    <font color="red">form-group</font>
+    <p>class is the easiest way to add some structure to forms. It provides a flexible class that encourages proper grouping of labels, controls, optional help text, and form validation messaging.</p>
+  </li>
+  <li>We will learn how to build a JSON object based on input data when we learn jQuery.</li>
+  <li>Example 26</li>
+</ul>
+
+<h2 id="group-activity-7-7-minutes">Group Activity 7: 7 minutes</h2>
+<ul>
+  <li>Work on Example 26:</li>
+  <li>Complete the “hole” to display inputs</li>
+  <li>Hint:
+    <ul>
+      <li>document.getElementById(‘ID’).value to get the content of an <input /></li>
+      <li>document.getElementById(“ID”).checked to get which radio button or checkbox is checked.
+<img src="ga1.png" alt="" /></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="how-to-insert-rows-in-a-table">How to Insert Rows in a Table</h2>
+<ul>
+  <li>Example 27</li>
+  <li>table.rows.length shows the total length of your table</li>
+  <li>You table row and cell are starting from 0</li>
+</ul>
+
+<h2 id="homework-4">Homework 4</h2>
+<ul>
+  <li>Implement “View”, “Model”, and “Control” parts of the “vampire app”</li>
+  <li>“View”
+    <ul>
+      <li>Visualization results in a pie chart</li>
+      <li>Need to update visualization results if “Model” logic is changed</li>
+    </ul>
+  </li>
+  <li>“Model”
+    <ul>
+      <li>Threshold based:
+        <ul>
+          <li>No shadow +4, otherwise 0</li>
+          <li>Complexion pale +3, otherwise 0</li>
+          <li>No Garlic +3, otherwise 0</li>
+          <li>Total score &gt; 6, yes; &lt;=6 no</li>
+        </ul>
+      </li>
+      <li>Random guess: randomly decide if a student is a vampire.</li>
+      <li>(Optional) Learn more about how to build a decision tree to solve this problem if you want: <a href="https://www.youtube.com/watch?v=SXBG3RGr_Rc">https://www.youtube.com/watch?v=SXBG3RGr_Rc</a></li>
+    </ul>
+  </li>
+  <li>“Control”
+    <ul>
+      <li>a user should be able to choose different data processing methods (“Model” logic) with a list select box. Sample code introduced in Example 25.</li>
+      <li>A user should be able to upload and display a classmate information with a table. Example 26.</li>
+      <li>The table should be updated if a piece of new classmate information is input. Example 27.</li>
+    </ul>
+  </li>
+  <li>Existing student data: Example 24 (classmate_data).</li>
+  <li>A flowchart about your vampire app, try Microsoft Visio =&gt; onthehub free</li>
+  <li>Submit using Github, add Rui (ruiwu1990) and TA as collaborator, one github manager from your team. Due March 16</li>
+</ul>
+
 <table>
   <tbody>
     <tr>

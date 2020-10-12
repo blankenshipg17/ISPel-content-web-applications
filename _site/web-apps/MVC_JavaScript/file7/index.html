@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>MVC and JavaScript</title>
+  <meta name="description" content="ISPeL is an interactive system for personalization of learning. It uses topic-based authoring.">
+
+  <!---   <link rel="stylesheet" href="/ISPeL-content-machine-learning/css/tufte.css" --->
+  <link rel="stylesheet" href="../../../css/tufte.css">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not--><link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'><!-- Load up MathJax script if needed ... specify in /_data/options.yml file--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75587219-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/MVC_JavaScript/file7/">
+  <link rel="alternate" type="application/rss+xml" title="ISPeL-content-machine-learning" href="http://localhost:7000/ISPeL-content-machine-learning/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+
+
+<header>
+    <nav class="group">
+    <a href="../../../">Web Applications</a>
+    <a href="http://ispel.cs.ecu.edu/" _target="blank">ISPeL</a>
+    <a href="http://seng5005.cs.ecu.edu/" _target="blank">Fall 2020</a>
+    <a href="https://github.com/vngudivada/ISPeL-content-machine-learning.git" _target="blank">GitHub</a>
+    </nav>
+</header>
+
+    <article class="group">
+      
+
+<h1>Mvc and javascript</h1>
+<p class="subtitle"></p>
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        e: "\\epsilon",
+        xti: "x^{(i)}",
+        yti: "y^{(i)}",
+        bfy: "{\\bf y}",
+        bfx: "{\\bf x}",
+        bfg: "{\\bf g}",
+        bfbeta: "{\\bf \\beta}",
+        tp: "\\tilde p",
+        pt: "p_\\theta",
+        E: "{\\mathbb{E}}",
+        Ind: "{\\mathbb{I}}",
+        KL: "{\\mathbb{KL}}",
+        Re: "{\\mathbb{R}}",
+        Dc: "{\\mathcal{D}}",
+        Tc: "{\\mathcal{T}}",
+        Xc: "{\\mathcal{X}}",
+        note: ["\\textcolor{blue}{[NOTE: #1]}",1]
+      }
+    }
+  });
+</script>
+
+
+<h2 id="version-control-tools">Version Control Tools</h2>
+<ul>
+  <li>Popular Version Control Tools
+    <ul>
+      <li>Git</li>
+      <li>CVS</li>
+      <li>SVN</li>
+      <li>Mercurial</li>
+      <li>Monotone</li>
+    </ul>
+  </li>
+  <li>Functions:
+    <ul>
+      <li>Rollback to previous version</li>
+      <li>Commit update</li>
+      <li>Compare different versions</li>
+      <li>…</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="how-to-manage-your-software-version">How to manage your software version?</h2>
+<ul>
+  <li>Git
+    <ul>
+      <li>Pros</li>
+      <li>Super-fast and efficient performance.</li>
+      <li>Cross-platform</li>
+      <li>Code changes can be very easily and clearly tracked.</li>
+      <li>Easily maintainable and robust.</li>
+      <li>Offers an amazing command line utility known as git bash.</li>
+      <li>Also offers GIT GUI where you can very quickly re-scan, state change, sign off, commit &amp; push the code quickly with just a few clicks.</li>
+    </ul>
+  </li>
+  <li>Cons
+    <ul>
+      <li>Complex and bigger history log become difficult to understand.</li>
+      <li>Does not support keyword expansion and timestamp preservation.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="github-vs-git">Github vs Git</h2>
+<ul>
+  <li>What is Github: GitHub is a code hosting <font color="red">platform</font> for version control and collaboration. It lets you and others work together on projects from anywhere.</li>
+  <li>Git is a <font color="red">revision control system</font>, a tool to manage your source code history. GitHub is a hosting <font color="red">service</font> (working blackbox) for Git repositories. So they are not the same thing: Git is the tool, GitHub is the service for projects that use Git.</li>
+</ul>
+
+<h2 id="how-does-it-work">How does it work?</h2>
+<p><img src="hdiw.png" alt="" /></p>
+<ul>
+  <li>Figure credit: http://massivetechinterview.blogspot.com/2015/12/dns-internal.html</li>
+</ul>
+
+<h2 id="demo-github">Demo Github</h2>
+<ul>
+  <li>Add collaborators</li>
+  <li>Create a repository
+    <ul>
+      <li>Only one repo for this class</li>
+    </ul>
+  </li>
+  <li>Create a branch</li>
+  <li>Commit</li>
+  <li>Pull, issue, and merge</li>
+</ul>
+
+<h2 id="github-tutorial-miscellaneous">Github Tutorial: Miscellaneous</h2>
+<ul>
+  <li>gitignore file (demo)
+    <ul>
+      <li>If you create a file in your repository named .gitignore, Git uses it to determine which files and directories to ignore, before you make a commit.</li>
+      <li>A .gitignore file should be committed into your repository, in order to share the ignore rules with any other users that clone the repository.</li>
+      <li>E.g. <a href="https://gist.github.com/octocat/9257657">https://gist.github.com/octocat/9257657</a> and <a href="https://github.com/ruiwu1990/db_docker/blob/master/.gitignore">https://github.com/ruiwu1990/db_docker/blob/master/.gitignore</a></li>
+    </ul>
+  </li>
+  <li>README.md: we will learn more when we introduce the server part.
+    <ul>
+      <li>.md is short for markdown</li>
+      <li>Here is a good tutorial: <a href="https://daringfireball.net/projects/markdown/syntax">https://daringfireball.net/projects/markdown/syntax</a></li>
+      <li>A good template: <a href="https://gist.github.com/PurpleBooth/109311bb0361f32d87a2">https://gist.github.com/PurpleBooth/109311bb0361f32d87a2</a></li>
+    </ul>
+  </li>
+  <li>Conflicts: will happen if there are two different versions for the same line.
+    <ul>
+      <li>Try not to work on the same line or Github cannot know how to merge</li>
+      <li>If there is a conflict, you need to find the conflicts and remove or update the conflicting parts.</li>
+      <li>Tips: each team member works on different functions or classes or files or components (e.g., Flask blueprints)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="final-group-project-part-1">Final Group Project: Part 1</h2>
+<ul>
+  <li>Describe your final group project
+    <ul>
+      <li>Why: Introduce the motivation of your project.</li>
+      <li>What: ideas and problems to solve</li>
+    </ul>
+  </li>
+  <li>No less than 200 words.</li>
+  <li>Due…</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="../../">Index</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../file6/">Prev</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../file7/">Next</a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+    </article>
+    <footer>
+<hr class="slender">
+<div class="credits">
+This work is supported by the <a href="https://www.nsf.gov/" target="_blank">NSF</a> IUSE/PFE:RED award No. <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1730568" target="_blank">1730568</a>. Site created with <a href="//jekyllrb.com" target="_blank">Jekyll</a> using the <a href="//github.com/clayh53/tufte-jekyll" target="_blank">Tufte theme</a>. &copy; 2020
+</div>
+</footer>
+  </body>
+</html>
