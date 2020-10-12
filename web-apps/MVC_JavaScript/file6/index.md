@@ -55,7 +55,7 @@ title: MVC and JavaScript
 * Work on Example 26:
 * Complete the “hole” to display inputs
 * Hint:
-  * document.getElementById(‘ID').value to get the content of an <input>
+  * document.getElementById(‘ID').value to get the content of an &lt;input&gt;
   * document.getElementById(“ID").checked to get which radio button or checkbox is checked.
 ![](ga1.png)
 

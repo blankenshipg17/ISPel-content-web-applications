@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>jQurey</title>
+  <meta name="description" content="ISPeL is an interactive system for personalization of learning. It uses topic-based authoring.">
+
+  <!---   <link rel="stylesheet" href="/ISPeL-content-machine-learning/css/tufte.css" --->
+  <link rel="stylesheet" href="../../css/tufte.css">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not--><link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'><!-- Load up MathJax script if needed ... specify in /_data/options.yml file--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75587219-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/jQuery/">
+  <link rel="alternate" type="application/rss+xml" title="ISPeL-content-machine-learning" href="http://localhost:7000/ISPeL-content-machine-learning/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+
+
+<header>
+    <nav class="group">
+    <a href="../../">Web Applications</a>
+    <a href="http://ispel.cs.ecu.edu/" _target="blank">ISPeL</a>
+    <a href="http://seng5005.cs.ecu.edu/" _target="blank">Fall 2020</a>
+    <a href="https://github.com/vngudivada/ISPeL-content-machine-learning.git" _target="blank">GitHub</a>
+    </nav>
+</header>
+
+    <article class="group">
+      
+
+<h1>Jqurey</h1>
+<p class="subtitle"></p>
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        e: "\\epsilon",
+        xti: "x^{(i)}",
+        yti: "y^{(i)}",
+        bfy: "{\\bf y}",
+        bfx: "{\\bf x}",
+        bfg: "{\\bf g}",
+        bfbeta: "{\\bf \\beta}",
+        tp: "\\tilde p",
+        pt: "p_\\theta",
+        E: "{\\mathbb{E}}",
+        Ind: "{\\mathbb{I}}",
+        KL: "{\\mathbb{KL}}",
+        Re: "{\\mathbb{R}}",
+        Dc: "{\\mathcal{D}}",
+        Tc: "{\\mathcal{T}}",
+        Xc: "{\\mathcal{X}}",
+        note: ["\\textcolor{blue}{[NOTE: #1]}",1]
+      }
+    }
+  });
+</script>
+
+
+<h2 id="jquery-tutorial">jQuery Tutorial</h2>
+<ul>
+  <li>Based on: https://www.w3schools.com/JQuery/</li>
+  <li>jQuery is a JavaScript Library.</li>
+  <li>jQuery simplifies your programming: GET, POST request …</li>
+  <li>Many of the biggest companies on the Web use jQuery, such as:
+    <ul>
+      <li>Google</li>
+      <li>Microsoft</li>
+      <li>IBM</li>
+      <li>Netflix</li>
+    </ul>
+  </li>
+  <li>jQuery executes the same way in all major browsers.</li>
+  <li>Three versions:
+    <ul>
+      <li>Regular: jquery.js, Development version - this is for testing and development (uncompressed and readable code)</li>
+      <li>Minimized: jquery.min.js, Production version - this is for your live website because it has been minified and compressed</li>
+      <li>Slim: some features are removed, check this: https://stackoverflow.com/questions/35424053/what-are-the-differences-between-normal-and-slim-package-of-jquery, BootStrap 4 supports slim version</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="jquery-include">jQuery: Include</h2>
+<ul>
+  <li>Two popular ways to include jQuery from a CDN (Content Delivery Network):
+    <ul>
+      <li>Google: &amp;ls;script src=”https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js”&gt;&amp;ls;/script&gt;</li>
+      <li>Microsoft: &amp;ls;script src=”https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js”&gt;&amp;ls;/script&gt;</li>
+    </ul>
+  </li>
+  <li>CDN advantages:
+    <ul>
+      <li>Many users already have downloaded jQuery from Google or Microsoft when visiting another site. As a result, it will be loaded from cache when they visit your site, which leads to faster loading time. Also, most CDN’s will make sure that once a user requests a file from it, it will be served from the server closest to them, which also leads to faster loading time.</li>
+      <li>If you do not like CDN, you can download jQuery from: <a href="http://jquery.com/download/">http://jquery.com/download/</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="jquery-syntax">jQuery: Syntax</h2>
+<ul>
+  <li>The jQuery syntax is tailor-made for selecting HTML elements and performing some action on the element(s).</li>
+  <li>$(selector).action()
+    <ul>
+      <li>A $ sign to define/access jQuery</li>
+      <li>A (selector) to “query (or find)” HTML elements</li>
+      <li>A jQuery action() to be performed on the element(s)</li>
+    </ul>
+  </li>
+  <li>Example 28: <a href="https://jsfiddle.net/3kche5fy/">https://jsfiddle.net/3kche5fy/</a></li>
+  <li>ready(function(){}) the function will be triggered when something is ready (loaded). Or you may:
+    <ul>
+      <li>hide an element that is not created yet</li>
+      <li>Get the size of an image that is not loaded yet</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="jsfiddle">JSFiddle</h2>
+<ul>
+  <li><a href="https://jsfiddle.net/3kche5fy/1/">https://jsfiddle.net/3kche5fy/1/</a></li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td><a href="../../../">Index</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../">Prev</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="file2/">Next</a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+    </article>
+    <footer>
+<hr class="slender">
+<div class="credits">
+This work is supported by the <a href="https://www.nsf.gov/" target="_blank">NSF</a> IUSE/PFE:RED award No. <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1730568" target="_blank">1730568</a>. Site created with <a href="//jekyllrb.com" target="_blank">Jekyll</a> using the <a href="//github.com/clayh53/tufte-jekyll" target="_blank">Tufte theme</a>. &copy; 2020
+</div>
+</footer>
+  </body>
+</html>

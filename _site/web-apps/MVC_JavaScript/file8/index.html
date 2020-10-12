@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>MVC and JavaScript</title>
+  <meta name="description" content="ISPeL is an interactive system for personalization of learning. It uses topic-based authoring.">
+
+  <!---   <link rel="stylesheet" href="/ISPeL-content-machine-learning/css/tufte.css" --->
+  <link rel="stylesheet" href="../../../css/tufte.css">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not--><link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'><!-- Load up MathJax script if needed ... specify in /_data/options.yml file--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75587219-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/MVC_JavaScript/file8/">
+  <link rel="alternate" type="application/rss+xml" title="ISPeL-content-machine-learning" href="http://localhost:7000/ISPeL-content-machine-learning/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+
+
+<header>
+    <nav class="group">
+    <a href="../../../">Web Applications</a>
+    <a href="http://ispel.cs.ecu.edu/" _target="blank">ISPeL</a>
+    <a href="http://seng5005.cs.ecu.edu/" _target="blank">Fall 2020</a>
+    <a href="https://github.com/vngudivada/ISPeL-content-machine-learning.git" _target="blank">GitHub</a>
+    </nav>
+</header>
+
+    <article class="group">
+      
+
+<h1>Mvc and javascript</h1>
+<p class="subtitle"></p>
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        e: "\\epsilon",
+        xti: "x^{(i)}",
+        yti: "y^{(i)}",
+        bfy: "{\\bf y}",
+        bfx: "{\\bf x}",
+        bfg: "{\\bf g}",
+        bfbeta: "{\\bf \\beta}",
+        tp: "\\tilde p",
+        pt: "p_\\theta",
+        E: "{\\mathbb{E}}",
+        Ind: "{\\mathbb{I}}",
+        KL: "{\\mathbb{KL}}",
+        Re: "{\\mathbb{R}}",
+        Dc: "{\\mathcal{D}}",
+        Tc: "{\\mathcal{T}}",
+        Xc: "{\\mathcal{X}}",
+        note: ["\\textcolor{blue}{[NOTE: #1]}",1]
+      }
+    }
+  });
+</script>
+
+
+<h2 id="javascript-scoping">JavaScript: Scoping</h2>
+
+<ul>
+  <li>JavaScript has function-level scope. Different from C: block-level scope.</li>
+  <li>Demo</li>
+</ul>
+
+<p>function test(){
+        var a = 1+1;
+        return a;
+ }</p>
+
+<p>var x = 1;
+console.log(x); // 1
+if (true) {
+	var x = 2;
+	console.log(x); // 2
+}
+console.log(x); // 2</p>
+
+<p>function foo() {
+	var x = 1;
+	if (x) {
+		(function () {
+			var x = 2;
+			// some other code
+		}());
+	}
+	console.log(x); //1
+}</p>
+
+<h2 id="javascript-function-positions">JavaScript: Function positions</h2>
+
+<ul>
+  <li>The code inside the function will execute when “something” invokes (calls) the function:
+    <ul>
+      <li>When an event occurs (when a user clicks a button)</li>
+      <li>When it is invoked (called) from JavaScript code</li>
+      <li>Automatically (self invoked, recursive)</li>
+    </ul>
+  </li>
+  <li>Bugs:
+    <ul>
+      <li>How to define a function?
+        <ul>
+          <li>Expression: var x = function (a, b) {return a * b};
+<img src="png1.png" alt="" /></li>
+        </ul>
+      </li>
+      <li>When to call a function?</li>
+    </ul>
+  </li>
+  <li>
+    <p>Key: If you’re not calling anything until everything loads, you should be fine.</p>
+  </li>
+  <li>Based on : <a href="https://stackoverflow.com/questions/7609276/javascript-function-order-why-does-it-matter">https://stackoverflow.com/questions/7609276/javascript-function-order-why-does-it-matter</a></li>
+</ul>
+
+<h2 id="javascript-function-positions-and-hoisting">JavaScript: Function positions and Hoisting</h2>
+<p>1:
+bar(); //This won’t throw an error 
+function bar() {}</p>
+
+<p>foo(); //This will throw an error
+var foo = function() {}</p>
+
+<p>2:
+bar();
+function bar() {
+    foo(); //This will throw an error
+}
+var foo = function() {}</p>
+
+<p>3:
+bar();
+function bar() {
+    foo(); //This won’t throw an error
+}
+function foo() {}</p>
+
+<p>4:
+function bar() {
+    foo(); //This won’t throw an error
+}
+var foo = function() {}
+bar();</p>
+
+<ul>
+  <li>Hoisting is JavaScript’s default behavior of moving declarations to the top.</li>
+  <li>Move all variable declarations and function definition at the top, then value assignments.</li>
+</ul>
+
+<p>1:
+var foo = 42;</p>
+
+<p>//the interpreter turns it into this:
+var foo;
+foo = 42;</p>
+
+<p>2:
+var foo = 42;
+function bar() {}</p>
+
+<p>//turns into
+var foo; //Move to the top
+function bar() {}
+foo = 42;</p>
+
+<p>3:
+bar();
+var foo = 42;
+function bar() {}
+//=&gt;
+var foo;
+function bar() {}
+bar();
+foo = 42;</p>
+
+<h2 id="javascript-function-positions-and-hoisting-1">JavaScript: Function positions and Hoisting</h2>
+
+<p>1:
+bar();
+function bar() {}
+//turns to
+function bar() {}
+bar();</p>
+
+<p>2:
+var foo = function() {}
+foo();
+//=&gt;
+var foo;
+foo = function() {}
+foo();</p>
+
+<p>3:
+bar();
+function bar() {
+    foo();
+}
+var foo = function() {}
+//=&gt;
+function bar() {
+    foo();
+}
+var foo;
+bar(); // <font color="red">foo is used before defined</font>
+foo = function() {}</p>
+
+<h2 id="javascript-function-positions-and-hoisting-2">JavaScript: Function positions and Hoisting</h2>
+<p>3:
+bar();
+function bar() {
+    foo(); //This won’t throw an error
+}
+function foo() {}
+//=&gt;
+function bar() {
+    foo(); 
+}
+function foo() {}
+bar();</p>
+
+<p>4:
+function bar() {
+    foo(); //This won’t throw an error
+}
+var foo = function() {}
+bar();
+//=&gt;
+function bar() {
+    foo();
+}
+var foo;
+foo = function() {}
+bar();</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="../../">Index</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../file7/">Prev</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../file9/">Next</a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+    </article>
+    <footer>
+<hr class="slender">
+<div class="credits">
+This work is supported by the <a href="https://www.nsf.gov/" target="_blank">NSF</a> IUSE/PFE:RED award No. <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1730568" target="_blank">1730568</a>. Site created with <a href="//jekyllrb.com" target="_blank">Jekyll</a> using the <a href="//github.com/clayh53/tufte-jekyll" target="_blank">Tufte theme</a>. &copy; 2020
+</div>
+</footer>
+  </body>
+</html>

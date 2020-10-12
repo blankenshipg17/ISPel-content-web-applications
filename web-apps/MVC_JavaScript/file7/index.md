@@ -69,7 +69,7 @@ title: MVC and JavaScript
 
 
 
-||| [Index](../../)||| [Prev](../file6/)||| [Next](../file7/)|||
+||| [Index](../../)||| [Prev](../file6/)||| [Next](../file8/)|||
 
 
 
