@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>jQurey</title>
+  <title>Web Service and Flask</title>
   <meta name="description" content="ISPeL is an interactive system for personalization of learning. It uses topic-based authoring.">
 
   <!---   <link rel="stylesheet" href="/ISPeL-content-machine-learning/css/tufte.css" --->
@@ -22,7 +22,7 @@
   ga('send', 'pageview');
   </script>
 
-  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/jQuery/file5/">
+  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/web_service_and_flask/part8/">
   <link rel="alternate" type="application/rss+xml" title="ISPeL-content-machine-learning" href="http://localhost:7000/ISPeL-content-machine-learning/feed.xml" />
 </head>
 
@@ -42,7 +42,7 @@
     <article class="group">
       
 
-<h1>Jqurey</h1>
+<h1>Web service and flask</h1>
 <p class="subtitle"></p>
 
 
@@ -73,39 +73,66 @@
 </script>
 
 
-<h2 id="jquery-selector">jQuery: Selector</h2>
+<h2 id="http-server-response-codes">HTTP Server Response Codes</h2>
+
 <ul>
-  <li>Three common methods to select:
-    <ul>
-      <li>Element (tag): $(“p”)</li>
-      <li>Id: $(“#vampire_1”)</li>
-      <li>Class: $(“.human”)</li>
-    </ul>
+  <li>200-level codes = success!</li>
+  <li>300-level codes = redirections</li>
+  <li>400-level codes = client-side errors (e.g., the dreaded 404 error!)</li>
+  <li>500-level codes = server-side errors</li>
+</ul>
+
+<h2 id="http-server-response-codes-in-detail">HTTP Server Response Codes in Detail</h2>
+
+<ul>
+  <li>
+    <font color="red">200</font>
+    <p>(OK): Everything is fine, the response has the information you requested (if any)</p>
   </li>
-  <li>Other methods:
-    <ul>
-      <li>Current HTML element: $(this)</li>
-      <li>&lt;p&gt; elements with class=“human“: $(“p.human”)</li>
-      <li>First &lt;p&gt; element: $(“p:first”)</li>
-      <li>all elements with an href attribute: $(“[href]”)</li>
-      <li>More: <a href="https://www.w3schools.com/JQuery/jquery_selectors.asp">https://www.w3schools.com/JQuery/jquery_selectors.asp</a></li>
-      <li>Of course, you can define an Id for whatever element that you want to select.</li>
-    </ul>
+  <li>
+    <font color="red">400</font>
+    <p>(Bad Request): There is a problem in the client request, there may be error information in the response</p>
   </li>
-  <li>Example 28_1</li>
+  <li>
+    <font color="red">500</font>
+    <p>(Internal Server Error): There is a problem on the server side, there may be error information in the response (but, it may not help much unless you control the server)</p>
+  </li>
+  <li>
+    <font color="red">301</font>
+    <p>(Moved Permanently): Your request moves a resource, or you are asking for the moved resource</p>
+  </li>
+  <li>
+    <font color="red">404</font>
+    <p>(Not Found): You are asking for something that isn’t there, the server doesn’t know what it is</p>
+  </li>
+  <li>
+    <font color="red">410</font>
+    <p>(Gone): You are asking for something that used to be there that the server is aware of</p>
+  </li>
+  <li>
+    <font color="red">409</font>
+    <p>(Conflict): The client request would leave resources in an inconsistent state. For example, you may get a 409 response when uploading a file which is <font color="red">older</font> than the one already on the server resulting in a version control conflict.</p>
+  </li>
+  <li>
+    <font color="red">SOAP web services</font>
+    <p>just use <font color="red">200</font> for success and <font color="red">500</font> for all failures; to find out what went wrong, you need to look at the response</p>
+  </li>
+  <li>RESTful web services should use <font color="red">at least</font> 200, 400, and 500, and may use a large number of other response codes</li>
+  <li>Many 200 codes are used for normal operations, like deletes or requests that do not update client info</li>
 </ul>
 
 <table>
   <tbody>
     <tr>
       <td> </td>
-      <td><a href="../../../">Index</a></td>
+      <td> </td>
+      <td><a href="../../">Index</a></td>
       <td> </td>
       <td> </td>
-      <td><a href="../">Prev</a></td>
+      <td><a href="../part5">Prev</a></td>
       <td> </td>
       <td> </td>
-      <td><a href="../file2/">Next</a></td>
+      <td><a href="../part7">Next</a></td>
       <td> </td>
       <td> </td>
     </tr>

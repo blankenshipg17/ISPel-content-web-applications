@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Web Service and Flask</title>
+  <meta name="description" content="ISPeL is an interactive system for personalization of learning. It uses topic-based authoring.">
+
+  <!---   <link rel="stylesheet" href="/ISPeL-content-machine-learning/css/tufte.css" --->
+  <link rel="stylesheet" href="../../../css/tufte.css">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not--><link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'><!-- Load up MathJax script if needed ... specify in /_data/options.yml file--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75587219-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/web_service_and_flask/part5/">
+  <link rel="alternate" type="application/rss+xml" title="ISPeL-content-machine-learning" href="http://localhost:7000/ISPeL-content-machine-learning/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+
+
+<header>
+    <nav class="group">
+    <a href="../../../">Web Applications</a>
+    <a href="http://ispel.cs.ecu.edu/" _target="blank">ISPeL</a>
+    <a href="http://seng5005.cs.ecu.edu/" _target="blank">Fall 2020</a>
+    <a href="https://github.com/vngudivada/ISPeL-content-machine-learning.git" _target="blank">GitHub</a>
+    </nav>
+</header>
+
+    <article class="group">
+      
+
+<h1>Web service and flask</h1>
+<p class="subtitle"></p>
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        e: "\\epsilon",
+        xti: "x^{(i)}",
+        yti: "y^{(i)}",
+        bfy: "{\\bf y}",
+        bfx: "{\\bf x}",
+        bfg: "{\\bf g}",
+        bfbeta: "{\\bf \\beta}",
+        tp: "\\tilde p",
+        pt: "p_\\theta",
+        E: "{\\mathbb{E}}",
+        Ind: "{\\mathbb{I}}",
+        KL: "{\\mathbb{KL}}",
+        Re: "{\\mathbb{R}}",
+        Dc: "{\\mathcal{D}}",
+        Tc: "{\\mathcal{T}}",
+        Xc: "{\\mathcal{X}}",
+        note: ["\\textcolor{blue}{[NOTE: #1]}",1]
+      }
+    }
+  });
+</script>
+
+
+<h2 id="http-responses">HTTP Responses</h2>
+<ul>
+  <li>From “RESTful Web Services”
+HTTP/1.1 200 OK</li>
+</ul>
+
+<p>Date: Fri, 17 Nov 2006 15:36:32 GMT</p>
+
+<p>Server: Apache</p>
+
+<p>Last-Modified: Fri, 17 Nov 2006 09:05:32 GMT</p>
+
+<p>Etag: “7359b7-a7fa-455d8264</p>
+
+<p>Accept-Ranges: bytes</p>
+
+<p>Content-Length: 43302</p>
+
+<p>Content-Type: text/html</p>
+
+<p>X-Cache: MISS from www.oreilly.com</p>
+
+<p>Keep-Alive: timeout=15, max=1000</p>
+
+<p>Connection: Keep-Alive</p>
+
+<p>&lt;!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN”</p>
+
+<p>“http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd”&gt;</p>
+
+<p>&lt;html lang=”en”&gt;</p>
+
+<p>&lt;head&gt;
+…</p>
+
+<p>&lt;title&gt;oreilly.com – Welcome to O’Reilly Media, Inc.&lt;/title&gt;</p>
+
+<p>…</p>
+
+<h2 id="200">200</h2>
+
+<p>HTTP/1.1 <font color="red">200</font> OK</p>
+
+<p>Date: Fri, 17 Nov 2006 15:36:32 GMT</p>
+
+<p>Server: Apache</p>
+
+<p>Last-Modified: Fri, 17 Nov 2006 09:05:32 GMT</p>
+
+<p>Etag: “7359b7-a7fa-455d8264</p>
+
+<p>Accept-Ranges: bytes</p>
+
+<p>Content-Length: 43302</p>
+
+<p>Content-Type: text/html</p>
+
+<p>X-Cache: MISS from www.oreilly.com</p>
+
+<p>Keep-Alive: timeout=15, max=1000</p>
+
+<p>Connection: Keep-Alive</p>
+
+<p>&lt;!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN”</p>
+
+<p>“http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd”&gt;</p>
+
+<p>&lt;html lang=”en”&gt;</p>
+
+<p>&lt;head&gt;
+…</p>
+
+<p>&lt;title&gt;oreilly.com – Welcome to O’Reilly Media, Inc.&lt;/title&gt;</p>
+
+<p>…</p>
+
+<ul>
+  <li>HTTP Response Code: Numeric code indicating if the operation succeeded</li>
+</ul>
+
+<h2 id="date-connection">Date… Connection</h2>
+
+<p>HTTP/1.1 200 OK</p>
+
+<p>.<font color="red">Date: Fri, 17 Nov 2006 15:36:32 GMT</font></p>
+
+<p>.<font color="red">Server: Apache</font></p>
+
+<p>.<font color="red">Last-Modified: Fri, 17 Nov 2006 09:05:32 GMT</font></p>
+
+<p>.<font color="red">Etag: "7359b7-a7fa-455d8264</font></p>
+
+<p>.<font color="red">Accept-Ranges: bytes</font></p>
+
+<p>.<font color="red">Content-Length: 43302</font></p>
+
+<p>.<font color="red">Content-Type: text/html</font></p>
+
+<p>.<font color="red">X-Cache: MISS from www.oreilly.com</font></p>
+
+<p>.<font color="red">Keep-Alive: timeout=15, max=1000</font></p>
+
+<p>.<font color="red">Connection: Keep-Alive</font></p>
+
+<p>&lt;!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN”</p>
+
+<p>“http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd”&gt;</p>
+
+<p>&lt;html lang=”en”&gt;</p>
+
+<p>&lt;head&gt;
+…</p>
+
+<p>&lt;title&gt;oreilly.com – Welcome to O’Reilly Media, Inc.&lt;/title&gt;</p>
+
+<p>…</p>
+
+<ul>
+  <li>
+    <font color="red">HTTP Response Headers</font>
+    <p>: Similar to request headers, name/value metadata pairs with additional response information</p>
+  </li>
+</ul>
+
+<h2 id="doctype">!DOCTYPE…</h2>
+
+<p>HTTP/1.1 200 OK</p>
+
+<p>Date: Fri, 17 Nov 2006 15:36:32 GMT</p>
+
+<p>Server: Apache</p>
+
+<p>Last-Modified: Fri, 17 Nov 2006 09:05:32 GMT</p>
+
+<p>Etag: “7359b7-a7fa-455d8264</p>
+
+<p>Accept-Ranges: bytes</p>
+
+<p>Content-Length: 43302</p>
+
+<p>Content-Type: text/html</p>
+
+<p>X-Cache: MISS from www.oreilly.com</p>
+
+<p>Keep-Alive: timeout=15, max=1000</p>
+
+<p>Connection: Keep-Alive</p>
+
+<p>.<font color="red">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"</font></p>
+
+<p>.<font color="red">"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</font></p>
+
+<p>.<font color="red">&lt;html lang="en"&gt;</font></p>
+
+<p>.<font color="red">&lt;head&gt;</font></p>
+
+<p>.<font color="red">...</font></p>
+
+<p>.<font color="red">&lt;title&gt;oreilly.com -- Welcome to O'Reilly Media, Inc.&lt;/title&gt;</font></p>
+
+<p>.<font color="red">...</font></p>
+
+<ul>
+  <li>Entity-body, representation, payload: The actual result document, here starting from the DOCTYPE declaration</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="../../">Index</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../part4">Prev</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../part6">Next</a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+    </article>
+    <footer>
+<hr class="slender">
+<div class="credits">
+This work is supported by the <a href="https://www.nsf.gov/" target="_blank">NSF</a> IUSE/PFE:RED award No. <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1730568" target="_blank">1730568</a>. Site created with <a href="//jekyllrb.com" target="_blank">Jekyll</a> using the <a href="//github.com/clayh53/tufte-jekyll" target="_blank">Tufte theme</a>. &copy; 2020
+</div>
+</footer>
+  </body>
+</html>

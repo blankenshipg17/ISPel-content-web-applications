@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Web Service and Flask</title>
+  <meta name="description" content="ISPeL is an interactive system for personalization of learning. It uses topic-based authoring.">
+
+  <!---   <link rel="stylesheet" href="/ISPeL-content-machine-learning/css/tufte.css" --->
+  <link rel="stylesheet" href="../../../css/tufte.css">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not--><link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'><!-- Load up MathJax script if needed ... specify in /_data/options.yml file--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75587219-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/web_service_and_flask/part7/">
+  <link rel="alternate" type="application/rss+xml" title="ISPeL-content-machine-learning" href="http://localhost:7000/ISPeL-content-machine-learning/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+
+
+<header>
+    <nav class="group">
+    <a href="../../../">Web Applications</a>
+    <a href="http://ispel.cs.ecu.edu/" _target="blank">ISPeL</a>
+    <a href="http://seng5005.cs.ecu.edu/" _target="blank">Fall 2020</a>
+    <a href="https://github.com/vngudivada/ISPeL-content-machine-learning.git" _target="blank">GitHub</a>
+    </nav>
+</header>
+
+    <article class="group">
+      
+
+<h1>Web service and flask</h1>
+<p class="subtitle"></p>
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        e: "\\epsilon",
+        xti: "x^{(i)}",
+        yti: "y^{(i)}",
+        bfy: "{\\bf y}",
+        bfx: "{\\bf x}",
+        bfg: "{\\bf g}",
+        bfbeta: "{\\bf \\beta}",
+        tp: "\\tilde p",
+        pt: "p_\\theta",
+        E: "{\\mathbb{E}}",
+        Ind: "{\\mathbb{I}}",
+        KL: "{\\mathbb{KL}}",
+        Re: "{\\mathbb{R}}",
+        Dc: "{\\mathcal{D}}",
+        Tc: "{\\mathcal{T}}",
+        Xc: "{\\mathcal{X}}",
+        note: ["\\textcolor{blue}{[NOTE: #1]}",1]
+      }
+    }
+  });
+</script>
+
+
+<h2 id="template-engine-jinja2">Template Engine: Jinja2</h2>
+
+<ul>
+  <li>Jinja2 is a full featured template engine for <font color="red">Python</font>.</li>
+  <li>It has full <font color="red">unicode</font> support, an optional integrated sandboxed execution environment, widely used and <font color="red">BSD</font> licensed.</li>
+  <li>The BSD: originally developed at the University of California at Berkeley (UCB)—(1) one should not claim that they wrote the software if they did not write it and (2) one should not sue the developer if the software does not function as expected or as desired.</li>
+  <li>
+    <p>Flask uses Jinja2 to dynamically generate a html file.</p>
+  </li>
+  <li>Placeholders for the dynamic content, enclosed in  sections.</li>
+  <li>Example 36_1:
+    <ul>
+      <li>PLACE LINK HERE</li>
+      <li>How to avoid repeat code for navigation bar</li>
+      <li>base.html</li>
+    </ul>
+  </li>
+  <li>Display which one is activated.</li>
+  <li>Debugging information display.</li>
+  <li>Check variable value</li>
+  <li>Where Pin is used.</li>
+</ul>
+
+<h2 id="flask-and-soa">Flask and SOA</h2>
+
+<ul>
+  <li>A question about if two “get” requests.</li>
+  <li>To make it clear: Example 37.
+    <ul>
+      <li>PLACE LINK HERE</li>
+    </ul>
+  </li>
+  <li>Python:
+    <ul>
+      <li>time.sleep(N): wait for N seconds</li>
+    </ul>
+  </li>
+  <li>href=“/” does not mean the URL is only “/” =&gt; “127:0.0.1:5000/”</li>
+  <li>Similarly, href=“/background” does not mean the URL is only “/background” =&gt; “127:0.0.1:5000/<font color="red">background</font>”</li>
+  <li>Multithreading in JavaScript: <a href="https://medium.com/techtrument/multithreading-javascript-46156179cf9a">https://medium.com/techtrument/multithreading-javascript-46156179cf9a</a>
+    <ul>
+      <li>secure_filename(): “never trust user input”, avoid dangerous filenames (hacker attacks).</li>
+      <li>E.g.: filename = “../../../../home/username/.bashrc“
+        <ul>
+          <li>‘home_username_.bashrc’</li>
+        </ul>
+      </li>
+      <li>.bashrc is a shell script that Bash runs.</li>
+    </ul>
+  </li>
+  <li>How to define configuration attribute globally: <a href="http://exploreflask.com/en/latest/configuration.html">http://exploreflask.com/en/latest/configuration.html</a></li>
+</ul>
+
+<h2 id="cs50">CS50</h2>
+
+<ul>
+  <li>A possible IDE for coding collaboration: <a href="https://ide.cs50.io/">https://ide.cs50.io/</a></li>
+  <li>IP: 0.0.0.0, port: 80</li>
+</ul>
+
+<h2 id="preview-a-csv-file">Preview a CSV file</h2>
+<ul>
+  <li>Example 38
+    <ul>
+      <li>PLACE LINK HERE</li>
+    </ul>
+  </li>
+  <li>Organize uploaded data into a table
+    <ul>
+      <li>Jinja2: for loop</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="final-group-project-part-3">Final Group Project: Part 3</h2>
+
+<ul>
+  <li>This is your last homework.</li>
+  <li>Implement your web app based on your design in your Final Group Project: Part 2</li>
+  <li>Your application must use what we have learned in this class, such as Flask and jQuery,  and also have a database.</li>
+  <li>Demo Day:
+    <ul>
+      <li>24 groups in total, each team will have 6 minutes to present using WebEx Online</li>
+      <li>April 23 &amp; 28. The order will be randomly decided and announced after we introduce a random order web application example.</li>
+    </ul>
+  </li>
+  <li>Google Forms will be used to collect opinions from audience.
+README: team member names and emails</li>
+  <li>
+    <font color="red">Due...</font>
+  </li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="../../">Index</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../part6">Prev</a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+    </article>
+    <footer>
+<hr class="slender">
+<div class="credits">
+This work is supported by the <a href="https://www.nsf.gov/" target="_blank">NSF</a> IUSE/PFE:RED award No. <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1730568" target="_blank">1730568</a>. Site created with <a href="//jekyllrb.com" target="_blank">Jekyll</a> using the <a href="//github.com/clayh53/tufte-jekyll" target="_blank">Tufte theme</a>. &copy; 2020
+</div>
+</footer>
+  </body>
+</html>

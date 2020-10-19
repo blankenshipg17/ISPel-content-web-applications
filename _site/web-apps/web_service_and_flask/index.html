@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>jQurey</title>
+  <title>Web Service and Flask</title>
   <meta name="description" content="ISPeL is an interactive system for personalization of learning. It uses topic-based authoring.">
 
   <!---   <link rel="stylesheet" href="/ISPeL-content-machine-learning/css/tufte.css" --->
-  <link rel="stylesheet" href="../../../css/tufte.css">
+  <link rel="stylesheet" href="../../css/tufte.css">
 
   <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not--><link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'><!-- Load up MathJax script if needed ... specify in /_data/options.yml file--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML"></script><script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -22,7 +22,7 @@
   ga('send', 'pageview');
   </script>
 
-  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/jQuery/file4/">
+  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/web_service_and_flask/">
   <link rel="alternate" type="application/rss+xml" title="ISPeL-content-machine-learning" href="http://localhost:7000/ISPeL-content-machine-learning/feed.xml" />
 </head>
 
@@ -32,7 +32,7 @@
 
 <header>
     <nav class="group">
-    <a href="../../../">Web Applications</a>
+    <a href="../../">Web Applications</a>
     <a href="http://ispel.cs.ecu.edu/" _target="blank">ISPeL</a>
     <a href="http://seng5005.cs.ecu.edu/" _target="blank">Fall 2020</a>
     <a href="https://github.com/vngudivada/ISPeL-content-machine-learning.git" _target="blank">GitHub</a>
@@ -42,7 +42,7 @@
     <article class="group">
       
 
-<h1>Jqurey</h1>
+<h1>Web service and flask</h1>
 <p class="subtitle"></p>
 
 
@@ -73,39 +73,39 @@
 </script>
 
 
-<h2 id="jquery-selector">jQuery: Selector</h2>
+<h2 id="what-are-web-services">What are web services?</h2>
+
 <ul>
-  <li>Three common methods to select:
-    <ul>
-      <li>Element (tag): $(“p”)</li>
-      <li>Id: $(“#vampire_1”)</li>
-      <li>Class: $(“.human”)</li>
-    </ul>
-  </li>
-  <li>Other methods:
-    <ul>
-      <li>Current HTML element: $(this)</li>
-      <li>&lt;p&gt; elements with class=“human“: $(“p.human”)</li>
-      <li>First &lt;p&gt; element: $(“p:first”)</li>
-      <li>all elements with an href attribute: $(“[href]”)</li>
-      <li>More: <a href="https://www.w3schools.com/JQuery/jquery_selectors.asp">https://www.w3schools.com/JQuery/jquery_selectors.asp</a></li>
-      <li>Of course, you can define an Id for whatever element that you want to select.</li>
-    </ul>
-  </li>
-  <li>Example 28_1</li>
+  <li>A web service is a generic term for a software function that is <font color="red">hosted at a network addressable location</font>. E.g. randomly generate presentation orders of N teams. In this general sense it can imply a <font color="red">Cloud based service</font>, a Utility service or even a departmental application. The term web service can also be used in a more specific sense, such as a hosted service using <font color="red">SOAP</font> which is described using a WSDL (Web Services Description Language) document. It is this more specific meaning that is usually implied by the term web services. However, the more general term is often used by the <font color="red">JSON</font> community when describing JSON based services. JSON web services uses the term in its generic sense (IBM).</li>
+</ul>
+
+<h2 id="differences-soap-and-json">Differences: SOAP and JSON</h2>
+<ul>
+  <li>The content of a SOAP message is <font color="red">XML</font> data, whereas a JSON message contains <font color="red">JSON</font> data. JSON and XML are different encoding mechanisms for describing structured data. JSON tends to be a more <font color="red">efficient encoding mechanism</font>, so a typical JSON message will be <font color="red">smaller</font> than the equivalent XML message.
+JSON is <font color="red">easy to integrate</font> in JavaScript applications, but XML isn’t. This makes JSON a preferred data format with many web application developers.
+SOAP provides a mechanism to add <font color="red">Headers</font> to a message, and a family of specifications for qualities of service (such as security configuration, and distributed transactions). JSON <font color="red">does not</font> provide this mechanism, it instead relies on the services of the underlying HTTP network protocol. This results in fewer options for securing and configuring a workload.
+SOAP web services are described using <font color="red">WSDL documents</font> (an XML format). JSON web services are structured less formally; they tend to <font color="red">be loosely coupled</font> and prefer documentation by example.
+SOAP web services have an <font color="red">explicit error format</font> involving SOAP Fault messages. There’s no equivalent for JSON.</li>
+</ul>
+
+<h2 id="similarities-soap-and-json">Similarities: SOAP and JSON</h2>
+<ul>
+  <li>Implementation of JSON is often derived from the SOAP architecture, and shares many of the concepts and artifacts. E.g., The CICS IBM enterprise application servers.</li>
+  <li>Both involve offline utility programs that assist with mapping application data to and from the external data representation. For example, convert data into a database table.</li>
 </ul>
 
 <table>
   <tbody>
     <tr>
       <td> </td>
-      <td><a href="../../../">Index</a></td>
+      <td> </td>
+      <td><a href="../../">Index</a></td>
       <td> </td>
       <td> </td>
       <td><a href="../">Prev</a></td>
       <td> </td>
       <td> </td>
-      <td><a href="../file2/">Next</a></td>
+      <td><a href="part2">Next</a></td>
       <td> </td>
       <td> </td>
     </tr>

@@ -19,6 +19,7 @@ Web Applications available topics:
 2. [Design](design/)
 3. [MVC and JavaScript](MVC_JavaScript/)
 4. [jQuery](jQuery/)
+5. [Web Service and Flask](web_service_and_flask/)
 
 
 
