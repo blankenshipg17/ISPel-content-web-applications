@@ -20,6 +20,16 @@ Web Applications available topics:
 3. [MVC and JavaScript](MVC_JavaScript/)
 4. [jQuery](jQuery/)
 5. [Web Service and Flask](web_service_and_flask/)
+6. [Database and Flask](database_and_flask/)
+7. [Message and Flask](message_and_flask/)
+8. [REST and Software Architecture](REST_and_software_arch/)
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="script/ontology.js"></script>
+
+<!-- <div id="ontology_div"></div> -->
+<!-- <div></div> -->
+<body></body>
 
 
 

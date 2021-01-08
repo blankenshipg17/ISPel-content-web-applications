@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Database and Flask</title>
+  <meta name="description" content="ISPeL is an interactive system for personalization of learning. It uses topic-based authoring.">
+
+  <!---   <link rel="stylesheet" href="/ISPeL-content-machine-learning/css/tufte.css" --->
+  <link rel="stylesheet" href="../../../css/tufte.css">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not--><link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'><!-- Load up MathJax script if needed ... specify in /_data/options.yml file--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75587219-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/database_and_flask/part2/">
+  <link rel="alternate" type="application/rss+xml" title="ISPeL-content-machine-learning" href="http://localhost:7000/ISPeL-content-machine-learning/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+
+
+<header>
+    <nav class="group">
+    <a href="../../../">Web Applications</a>
+    <a href="http://ispel.cs.ecu.edu/" _target="blank">ISPeL</a>
+    <a href="http://seng5005.cs.ecu.edu/" _target="blank">Fall 2020</a>
+    <a href="https://github.com/vngudivada/ISPeL-content-machine-learning.git" _target="blank">GitHub</a>
+    </nav>
+</header>
+
+    <article class="group">
+      
+
+<h1>Database and flask</h1>
+<p class="subtitle"></p>
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        e: "\\epsilon",
+        xti: "x^{(i)}",
+        yti: "y^{(i)}",
+        bfy: "{\\bf y}",
+        bfx: "{\\bf x}",
+        bfg: "{\\bf g}",
+        bfbeta: "{\\bf \\beta}",
+        tp: "\\tilde p",
+        pt: "p_\\theta",
+        E: "{\\mathbb{E}}",
+        Ind: "{\\mathbb{I}}",
+        KL: "{\\mathbb{KL}}",
+        Re: "{\\mathbb{R}}",
+        Dc: "{\\mathcal{D}}",
+        Tc: "{\\mathcal{T}}",
+        Xc: "{\\mathcal{X}}",
+        note: ["\\textcolor{blue}{[NOTE: #1]}",1]
+      }
+    }
+  });
+</script>
+
+
+<h2 id="relational-db-advantages-vs-disadvantages">Relational DB Advantages vs Disadvantages</h2>
+
+<ul>
+  <li>Relational databases store data efficiently and avoid duplication.
+    <ul>
+      <li>Renaming a user role in this database is simple because role names exist in a single place. Immediately after a role name is changed in the roles table, all users that have a role_id that references the changed role will see the update.</li>
+    </ul>
+  </li>
+  <li>Having the data split into multiple tables can be a complication.
+    <ul>
+      <li>Producing a listing of users with their roles presents a small problem, because users and user roles need to be read from two tables and joined before they can be presented together. Relational database engines provide the support to perform <font color="red">join</font> operations between tables when necessary.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="relational-db-join-example">Relational DB: join example</h2>
+
+<p><img src="rdb.png" alt="" />
+<img src="rdb1.png" alt="" /></p>
+
+<ul>
+  <li>Connect order information with customer</li>
+  <li>Based on: <a href="http://www.sql-join.com/">http://www.sql-join.com/</a></li>
+</ul>
+
+<p><img src="rdb2.png" alt="" /></p>
+<ul>
+  <li>This is one example how to join (combine) two tables.
+Most relational DB engines <font color="red">support</font> join operations.</li>
+</ul>
+
+<h2 id="nosql-database">NoSQL Database</h2>
+
+<ul>
+  <li>Databases that do not follow the relational model described in the previous slides are collectively referred to as NoSQL databases.
+    <ul>
+      <li>NoSQL DB does not use the tabular relations.</li>
+      <li>NoSQL has the same purposes: storage and retrieval of data.</li>
+      <li>NoSQL databases uses <font color="red">collections</font> instead of tables and <font color="red">documents (such as BSON (Binary JSON) in MongoDB)</font> instead of records. <font color="red">MongoDB</font> represents JSON documents in binary-encoded format called BSON.</li>
+      <li>NoSQL databases are designed in a way that makes joins <font color="red">difficult</font>.</li>
+    </ul>
+  </li>
+  <li>
+    <font color="blue">{
+  "FirstName": "Bob", 
+  "Address": "5 Oak St.", 
+  "Hobby": "sailing"
+}</font>
+  </li>
+</ul>
+
+<p><label for="SVM" class="margin-toggle">⊕</label>
+<input type="checkbox" id="SVM" class="margin-toggle" />
+<span class="marginnote"><img class="fullwidth" src="/ISPeL-content-machine-learning/web-apps/database_and_flask/part2/noSQL.png" alt="Example database for reference." /><br />
+    Example database for reference.
+</span></p>
+
+<ul>
+  <li>An appropriate design for a NoSQL database: <font color="red">denormalization</font>, which reduces the number of tables at the expense of data duplication.</li>
+  <li>Bad news: a database with this structure has the role name explicitly stored with each user. Renaming a role can then turn out to be an <font color="red">expensive</font> operation that may require <font color="red">updating</font> a large number of documents. E.g., username -&gt; last name, first name.</li>
+  <li>Good news: Having the data duplicated allows for faster querying. Listing users and their roles is straightforward because no joins are needed.</li>
+</ul>
+
+<h2 id="relational-vs-nosql-database">Relational vs NoSQL Database</h2>
+
+<ul>
+  <li>
+    <font color="red">Data structure:</font>
+    <ul>
+      <li>Relational databases were built in an era where data was fairly <font color="red">structured and clearly defined</font> by their relationships. NoSQL databases are designed to handle <font color="red">unstructured</font> data (e.g., texts, social media posts, video, email) which makes up much of the data that exists today.</li>
+    </ul>
+  </li>
+  <li>
+    <font color="red">Scaling:</font>
+    <ul>
+      <li>It’s much <font color="red">cheaper</font> to scale a NoSQL database than a relational database because you can add capacity by scaling out over cheap, commodity servers. Relational databases, on the other hand, require a single server to host your entire database. To scale, you need to buy a bigger, more expensive server. Why single server? Some functions such as “join” are hard to be implemented with multiple servers.</li>
+    </ul>
+  </li>
+  <li>
+    <font color="red">Development model:</font>
+    <ul>
+      <li>NoSQL databases are usually <font color="red">open source</font> whereas relational databases typically are closed source with <font color="red">licensing fees</font> baked into the use of their software. With NoSQL, you can get started on a project without any heavy investments in software fees upfront.</li>
+    </ul>
+  </li>
+  <li>Based on MongoDB: <a href="https://www.mongodb.com/scale/nosql-vs-relational-databases">https://www.mongodb.com/scale/nosql-vs-relational-databases</a></li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="../../">Index</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../">Prev</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../part3/">Next</a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+    </article>
+    <footer>
+<hr class="slender">
+<div class="credits">
+This work is supported by the <a href="https://www.nsf.gov/" target="_blank">NSF</a> IUSE/PFE:RED award No. <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1730568" target="_blank">1730568</a>. Site created with <a href="//jekyllrb.com" target="_blank">Jekyll</a> using the <a href="//github.com/clayh53/tufte-jekyll" target="_blank">Tufte theme</a>. &copy; 2021
+</div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>REST and Software Architecture</title>
+  <meta name="description" content="ISPeL is an interactive system for personalization of learning. It uses topic-based authoring.">
+
+  <!---   <link rel="stylesheet" href="/ISPeL-content-machine-learning/css/tufte.css" --->
+  <link rel="stylesheet" href="../../../css/tufte.css">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not--><link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'><!-- Load up MathJax script if needed ... specify in /_data/options.yml file--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75587219-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/REST_and_software_arch/part3/">
+  <link rel="alternate" type="application/rss+xml" title="ISPeL-content-machine-learning" href="http://localhost:7000/ISPeL-content-machine-learning/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+
+
+<header>
+    <nav class="group">
+    <a href="../../../">Web Applications</a>
+    <a href="http://ispel.cs.ecu.edu/" _target="blank">ISPeL</a>
+    <a href="http://seng5005.cs.ecu.edu/" _target="blank">Fall 2020</a>
+    <a href="https://github.com/vngudivada/ISPeL-content-machine-learning.git" _target="blank">GitHub</a>
+    </nav>
+</header>
+
+    <article class="group">
+      
+
+<h1>Rest and software architecture</h1>
+<p class="subtitle"></p>
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        e: "\\epsilon",
+        xti: "x^{(i)}",
+        yti: "y^{(i)}",
+        bfy: "{\\bf y}",
+        bfx: "{\\bf x}",
+        bfg: "{\\bf g}",
+        bfbeta: "{\\bf \\beta}",
+        tp: "\\tilde p",
+        pt: "p_\\theta",
+        E: "{\\mathbb{E}}",
+        Ind: "{\\mathbb{I}}",
+        KL: "{\\mathbb{KL}}",
+        Re: "{\\mathbb{R}}",
+        Dc: "{\\mathcal{D}}",
+        Tc: "{\\mathcal{T}}",
+        Xc: "{\\mathcal{X}}",
+        note: ["\\textcolor{blue}{[NOTE: #1]}",1]
+      }
+    }
+  });
+</script>
+
+
+<h2 id="building-rest-providing-a-uniform-interface">Building REST: Providing a uniform interface</h2>
+<ul>
+  <li>Interface constraints allow a standard interface for all requests</li>
+  <li>Simplify maintenance</li>
+</ul>
+
+<p><img src="rest4.png" alt="" /></p>
+
+<h2 id="building-rest-code-on-demand">Building REST: Code on Demand</h2>
+<ul>
+  <li>Simplifies clients, Extendibility (add new components, new features)</li>
+  <li>Reduces visibility, increases complexity — this step is optional</li>
+</ul>
+
+<p><img src="rest.png" alt="" /></p>
+
+<h2 id="building-rest-the-rest-architecture">Building REST: The REST Architecture</h2>
+<h2 id="example-46">Example 46</h2>
+<ul>
+  <li>This example is about coding convention checking:
+    <ul>
+      <li><a href="https://github.com/ruiwu1990/coding_convention_tool">https://github.com/ruiwu1990/coding_convention_tool</a></li>
+    </ul>
+  </li>
+  <li>How to use external executable file in your application.
+    <ul>
+      <li>Python: subprocess</li>
+      <li>Four steps:
+        <ul>
+          <li>Prepare command</li>
+          <li>Open log files</li>
+          <li>Execute external file</li>
+          <li>Wait until it is done.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Pylint:<a href="https://www.pylint.org/">https://www.pylint.org/</a></li>
+  <li>Checkstyle: <a href="http://checkstyle.sourceforge.net/">http://checkstyle.sourceforge.net/</a></li>
+  <li>Some issues with Example 45. I will fix it and introduce it in our next class.</li>
+</ul>
+
+<h2 id="final-group-project-presentation">Final Group Project Presentation</h2>
+
+<ul>
+  <li>We will use the following two Google forms to grade your final group project presentations:
+    <ul>
+      <li>April 23: <a href="https://forms.gle/XXzVkBm67CViY8Sv7">https://forms.gle/XXzVkBm67CViY8Sv7</a></li>
+      <li>April 28: <a href="https://forms.gle/bHfCJuKbRUdB5K7i8">https://forms.gle/bHfCJuKbRUdB5K7i8</a></li>
+    </ul>
+  </li>
+  <li>Need to demo your web app</li>
+  <li>Rubric to grade your presentation</li>
+</ul>
+
+<h2 id="about-final-exam">About final exam</h2>
+<ul>
+  <li>CSCI 4710 and CSCI 6710: You can choose any day between April 30 – May 3.</li>
+  <li>
+    <font color="red">Closed book exam</font>
+  </li>
+  <li>Online Blackboard, 1 hour and 30 minutes</li>
+  <li>Similar to the midterm.
+    <ul>
+      <li>40 multiple choices questions</li>
+      <li>7 short answer questions for CSCI 4710, 8 short answer questions for CSCI 6710</li>
+    </ul>
+  </li>
+  <li>Final exam covers all the things we have learned this semester</li>
+  <li>No sample questions</li>
+  <li>I will upload a video about Docker by the end of this week, <font color="red">required</font></li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="../../">Index</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../part2/">Prev</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../part4">Next</a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+    </article>
+    <footer>
+<hr class="slender">
+<div class="credits">
+This work is supported by the <a href="https://www.nsf.gov/" target="_blank">NSF</a> IUSE/PFE:RED award No. <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1730568" target="_blank">1730568</a>. Site created with <a href="//jekyllrb.com" target="_blank">Jekyll</a> using the <a href="//github.com/clayh53/tufte-jekyll" target="_blank">Tufte theme</a>. &copy; 2021
+</div>
+</footer>
+  </body>
+</html>

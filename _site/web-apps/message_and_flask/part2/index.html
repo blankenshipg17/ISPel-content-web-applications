@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Message and Flask</title>
+  <meta name="description" content="ISPeL is an interactive system for personalization of learning. It uses topic-based authoring.">
+
+  <!---   <link rel="stylesheet" href="/ISPeL-content-machine-learning/css/tufte.css" --->
+  <link rel="stylesheet" href="../../../css/tufte.css">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not--><link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'><!-- Load up MathJax script if needed ... specify in /_data/options.yml file--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75587219-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/message_and_flask/part2/">
+  <link rel="alternate" type="application/rss+xml" title="ISPeL-content-machine-learning" href="http://localhost:7000/ISPeL-content-machine-learning/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+
+
+<header>
+    <nav class="group">
+    <a href="../../../">Web Applications</a>
+    <a href="http://ispel.cs.ecu.edu/" _target="blank">ISPeL</a>
+    <a href="http://seng5005.cs.ecu.edu/" _target="blank">Fall 2020</a>
+    <a href="https://github.com/vngudivada/ISPeL-content-machine-learning.git" _target="blank">GitHub</a>
+    </nav>
+</header>
+
+    <article class="group">
+      
+
+<h1>Message and flask</h1>
+<p class="subtitle"></p>
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        e: "\\epsilon",
+        xti: "x^{(i)}",
+        yti: "y^{(i)}",
+        bfy: "{\\bf y}",
+        bfx: "{\\bf x}",
+        bfg: "{\\bf g}",
+        bfbeta: "{\\bf \\beta}",
+        tp: "\\tilde p",
+        pt: "p_\\theta",
+        E: "{\\mathbb{E}}",
+        Ind: "{\\mathbb{I}}",
+        KL: "{\\mathbb{KL}}",
+        Re: "{\\mathbb{R}}",
+        Dc: "{\\mathcal{D}}",
+        Tc: "{\\mathcal{T}}",
+        Xc: "{\\mathcal{X}}",
+        note: ["\\textcolor{blue}{[NOTE: #1]}",1]
+      }
+    }
+  });
+</script>
+
+
+<h2 id="a-quick-introduction-to-xml">A quick introduction to XML</h2>
+
+<ul>
+  <li>XML: Extensible Markup Language (http://www.w3.org/XML/)</li>
+  <li>Derived from SGML (like HTML)</li>
+  <li>XML as a generic format for exchanging information: you can also use it for other applications besides web app
+    <ul>
+      <li>E.g. NoSQL DB</li>
+    </ul>
+  </li>
+  <li>XML comes with a suite of standards: XML DOM, XML-Schema, XPath, XQuery, etc…</li>
+</ul>
+
+<h2 id="an-example-of-xml-message">An example of XML message</h2>
+
+<p><img src="xml.png" alt="" /></p>
+
+<ul>
+  <li>Figure credit: <a href="https://www.javaworld.com/article/2075082/xml-messaging--part-1.html">https://www.javaworld.com/article/2075082/xml-messaging--part-1.html</a></li>
+</ul>
+
+<h2 id="a-quick-introduction-to-soap">A quick introduction to SOAP</h2>
+
+<ul>
+  <li>SOAP stands for Simple Object Access Protocol
+    <ul>
+      <li>an application communication protocol</li>
+      <li>a format for sending and receiving messages</li>
+      <li>platform independent</li>
+      <li>based on XML</li>
+    </ul>
+  </li>
+  <li>SOAP (<a href="http://www.w3.org/TR/soap/">http://www.w3.org/TR/soap/</a>) is an XML format for exchanging web services messages</li>
+  <li>Original Simple Object Access Protocol, now just SOAP</li>
+  <li>SOAP often goes with a variety of other technologies: all the XML technologies, plus all the WS technologies (referred to as WS-*)</li>
+  <li>SOAP provides a way to communicate between applications running on different operating systems, with different technologies and programming languages.</li>
+  <li>A SOAP message MUST be encoded using <font color="red">XML</font></li>
+  <li>A SOAP message MUST use the SOAP <font color="red">Envelope</font> namespace</li>
+  <li>A SOAP message MUST use the SOAP <font color="red">Encoding</font> namespace (Array element and the arrayType attribute used to encode Vector and Array java objects.)</li>
+</ul>
+
+<h2 id="soap-messages">SOAP Messages</h2>
+<p><img src="soap.png" alt="" /></p>
+<ul>
+  <li><a href="https://www.w3schools.com/xml/xml_soap.asp">https://www.w3schools.com/xml/xml_soap.asp</a></li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="../../">Index</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../">Prev</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../part3/">Next</a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+    </article>
+    <footer>
+<hr class="slender">
+<div class="credits">
+This work is supported by the <a href="https://www.nsf.gov/" target="_blank">NSF</a> IUSE/PFE:RED award No. <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1730568" target="_blank">1730568</a>. Site created with <a href="//jekyllrb.com" target="_blank">Jekyll</a> using the <a href="//github.com/clayh53/tufte-jekyll" target="_blank">Tufte theme</a>. &copy; 2021
+</div>
+</footer>
+  </body>
+</html>
