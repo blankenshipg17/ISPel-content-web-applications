@@ -62,7 +62,7 @@ A good tutorial: https://web.stanford.edu/class/msande91si/www-spr04/readings/we
 * 500-level codes = server-side errors
 * More details will be introduced.
 
-|||[Index](../../)||| [Prev](../file6/)|||
+|||[Index](../../)||| [Prev](../file5/)|||
 
 
 
