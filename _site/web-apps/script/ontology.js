@@ -10,6 +10,7 @@ var dataset = {
  
       {name:"URL and HTML", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/"},
       {name:"Web Application", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/#web-application"},
+      {name:"W3C", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/#web-application"},
       {name:"IP Address", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/#w3c"},
       {name:"Domain Name System", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/#ip-address"},
       {name:"How it Works", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file2/#domain-name-system"},
@@ -28,13 +29,13 @@ var dataset = {
       {name:"HTML DOM", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file5/#html-dom"},
       {name:"Transport Protocols", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file6/#transport-protocols"},
       {name:"Other HTTP Request Types", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file6/#other-http-request-types"},
-      {name:"HTTP Server Response Codes", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file6/#http-server-response-codes"},
+      {name:"HTTP Server Response Codes", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file6/#http-server-response-codes"}
   
       
   ],
   edges:[
       {source: 0, target: 1},
-      {source: 0, target: 2},
+      {source: 1, target: 2},
       {source: 0, target: 3},
       {source: 3, target: 4},
       {source: 3, target: 5},
