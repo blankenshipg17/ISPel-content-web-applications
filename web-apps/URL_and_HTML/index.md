@@ -1,66 +1,53 @@
 ---
-layout: post
-title: URL and HTML
+layout: default
+title: Web Applications
 ---
-## What techniques and languages?
-* Backend:
-  * PostgreSQL: database
-  * Flask: backend framework
-  * Python: programming language (popular: <http://pypl.github.io/PYPL.html>)
-* Frontend:
-  * JavaScript: programming language (a joke: <http://vanilla-js.com/>) (language C vs Python)
-  * jQuery: a JavaScript library designed to simplify HTML DOM tree traversal and manipulation
-  * HTML: Hypertext Markup Language
-  * BootStrap: front-end framework for developing websites and web applications
-  * Reactjs: A JavaScript library for building user interfaces
-* Full stack developer means you should know both.
-
-## Web application
-
-![](URLandHTML_1.png)
-
-* Imahe source: <http://teaching.shu.ac.uk/aces/rh1/de/web_based_systems_architectures_1_tutorial_files/image004.gif>
-
-## W3C
-* The World Wide Web Consortium is the <font color=red>main</font> international standards organization for the World Wide Web.
-* We will use it for some definitions.
-* <https://www.w3.org/>
-
-* Uniform Resource Locators (URLs)
-* Uniform Resource Identifiers (URIs, aka URLs) are short strings that identify resources in the web: documents, images, downloadable files, services, electronic mailboxes, and other resources.
-* It is similar to a mailing address.
-
-* More details, see <http://www.w3.org/Addressing/>
-* Examples:
-  * <http://www.amazon.com>
-  * <http://www.ecu.edu/cs-acad/registrar/General-Information.cfm>
-  * <http://www.sensor.nevada.edu/NRDC/>
-
-* Domain Name
-* A domain name is an <font color=red>identification</font> string that defines a <font color=red>realm</font> of administrative autonomy, authority or control within the Internet (Wiki).
-* For example, 
-  * URL: www.example.com/index
-  * Domain name: example.com
-
-## IP Address
-* An Internet Protocol <font color=red>address</font> (IP address) is a <font color=red>numerical</font> label assigned to each device connected to a computer network that uses the Internet Protocol for communication (Wiki).
-* A <font color=red>unique</font> identifier given to every machine that connects to the internet. 
-* Typical IPv4 addresses resemble the following: 192.x.x.x while IPv6 addresses look similar to: fdc4:xxxx:xxxx::/48.
-* It is also similar to a mailing address.
+<span class="newthought">Web Applications</span>
 
 
-|||[Index](../../)||| [Prev](../)||| [Next](file2)|||
+Relevant topics and the dependencies between topics have been identified. The prerequisites for topics have been integrated into the layout of the material so that learners can personalize their path of study within each topic.  
+
+As a guide to the learner, each module below begins with an Introduction that describes the preliminaries for the topic and this is where we suggest that every learner should begin.  {% include sidenote.html id="note-pgm" note="The materials presented are based on the ontology constructed by [Dr. Rui Wu](http://www.cs.ecu.edu/wu/),  [Grayson Blankenship]() and other research members of the ISPeL System Project Team funded by the [NSF](https://www.nsf.gov) as part of the [PPSE](https://ppse.ecu.edu/)" %}
+
+
+A learner can proceed as they are inclined within the module to create their own path among the topics.   The concepts within the modules are intended to be discovered in any order.  
+
+
+Web Applications available topics: 
+
+1. [URL and HTML](file1/)
+- [Web Application](file1/#web-application)
+- [W3C](file1/#w3c)
+- [IP Address](file1/#ip-address)
+- [Domain Name System](file2/#domain-name-system)
+- [How it Works](file2/#how-does-it-work)
+- [How URL's are Structured](file3/#how-url's-are-structured)
+- [URLs](file3/#urls)
+- [TLD and URLs Price](file3/#tld-and-urls-price)
+- [Homework 1 (Part 1)](file3/#homework-1-part-1)
+- [W3Schools](file4/#w3schools)
+- [HTML](file4/#what-is-html)
+- [HTML Examples](file4/#lets-do-this-first-example)
+- [Common Basic Tags](file4/#common-basic-tags)
+- [Rules](file5/#here-are-some-rules)
+- [Homework 1 (Part 1)](file5/#homework-1-part-1)
+- [Homework 1 (Part 2)](file5/#homework-1-part-2)
+- [How to Upload Files to Your URL](file5/#how-to-upload-files-to-your-url)
+- [HTML DOM](file5/#html-dom)
+- [Transport Protocols](file6/#transport-protocols)
+- [Other HTTP Request Types](file6/#other-http-request-types)
+- [HTTP Server Response Codes](file6/#http-server-response-codes)
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="script/ontology.js"></script>
+
+<!-- <div id="ontology_div"></div> -->
+<!-- <div></div> -->
+<body></body>
 
 
 
+|||[Index](../)||| [Prev](../)|||[Next](/file1/)|||
 
-
-
-
-
-
-
-
-
-
+|||[Web Applications](../)|||
 

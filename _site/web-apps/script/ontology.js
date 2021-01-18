@@ -1,8 +1,10 @@
 var w = 1500;
 var h = 1500;
+
 var color_original = '#4c72ff';
 var color_root_node = '#ff0000';
 var color_hover = '#93de94';
+
 // just update this part
 // input topics as nodes
 // define links as edges, e.g. if you have 5 topics
@@ -12,53 +14,14 @@ var dataset = {
   nodes:[
  
       {name:"URL and HTML", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/",color:color_root_node},
-      {name:"Web Application", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/#web-application",color:color_original},
-      {name:"W3C", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/#web-application",color:color_original},
-      {name:"IP Address", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/#w3c",color:color_original},
-      {name:"Domain Name System", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/#ip-address",color:color_original},
-      {name:"How it Works", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file2/#domain-name-system",color:color_original},
-      // {name:"How URL's are Structured", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file2/#how-does-it-work"},
-      // {name:"URLs", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file3/#how-url's-are-structured"},
-      // {name:"TLD and URLs Price", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file3/#tld-and-urls-price"},
-      // {name:"Homework 1 (Part 1)", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file3/#homework-1-part-1"},
-      // {name:"W3Schools", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file4/#w3schools"},
-      // {name:"HTML", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file4/#what-is-html"},
-      // {name:"HTML Examples", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file4/#lets-do-this-first-example"},
-      // {name:"Common Basic Tags", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file4/#common-basic-tags"},
-      // {name:"Rules", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file5/#here-are-some-rules"},
-      // {name:"Homework 1 (Part 1)", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file5/#homework-1-part-1"},
-      // {name:"Homework 1 (Part 2)", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file5/#homework-1-part-2"},
-      // {name:"How to Upload Files to Your URL", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file5/#how-to-upload-files-to-your-url"},
-      // {name:"HTML DOM", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file5/#html-dom"},
-      // {name:"Transport Protocols", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file6/#transport-protocols"},
-      // {name:"Other HTTP Request Types", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file6/#other-http-request-types"},
-      // {name:"HTTP Server Response Codes", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file6/#http-server-response-codes"}
+      {name:"Design", url:base_url+"/ISPeL-content-machine-learning/web-apps/design/",color:color_original},
+      
   
       
   ],
   edges:[
-      {source: 0, target: 1},
-      {source: 1, target: 2},
-      {source: 0, target: 3},
-      {source: 3, target: 4},
-      {source: 3, target: 5},
-      // {source: 3, target: 6},
-      // {source: 3, target: 7},
-      // {source: 7, target: 8},
-      // {source: 0, target: 9},
-      // {source: 0, target: 10},
-      // {source: 9, target: 15},
-      // {source: 9, target: 16},
-      // {source: 0, target: 11},
-      // {source: 11, target: 12},
-      // {source: 11, target: 13},
-      // {source: 11, target: 14},
-      // {source: 12, target: 17},
-      // {source: 0, target: 18},
-      // {source: 18, target: 19},
-      // {source: 18, target: 20},
-      // {source: 20, target: 21}
-      
+      {source: 0, target: 1}
+    
   ]
 };
 
@@ -100,7 +63,6 @@ var nodes = svg.selectAll("circle")
         .append("circle")
         .attr("r", 10)
         .style("fill", color_original)
-        // .style("fill", function (d) { return d.color; })
         .call(force.drag);
         
 var label = svg.selectAll(".mytext")

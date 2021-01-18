@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>URL and HTML</title>
+  <title>Web Applications</title>
   <meta name="description" content="ISPeL is an interactive system for personalization of learning. It uses topic-based authoring.">
 
   <!---   <link rel="stylesheet" href="/ISPeL-content-machine-learning/css/tufte.css" --->
@@ -40,124 +40,81 @@
 </header>
 
     <article class="group">
-      
+      <p><span class="newthought">Web Applications</span></p>
 
-<h1>Url and html</h1>
-<p class="subtitle"></p>
+<p>Relevant topics and the dependencies between topics have been identified. The prerequisites for topics have been integrated into the layout of the material so that learners can personalize their path of study within each topic.</p>
 
+<p>As a guide to the learner, each module below begins with an Introduction that describes the preliminaries for the topic and this is where we suggest that every learner should begin.  <label for="note-pgm" class="margin-toggle sidenote-number"></label><input type="checkbox" id="note-pgm" class="margin-toggle" /><span class="sidenote">The materials presented are based on the ontology constructed by <a href="http://www.cs.ecu.edu/wu/">Dr. Rui Wu</a>,  <a href="">Grayson Blankenship</a> and other research members of the ISPeL System Project Team funded by the <a href="https://www.nsf.gov">NSF</a> as part of the <a href="https://ppse.ecu.edu/">PPSE</a></span></p>
 
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    TeX: {
-      Macros: {
-        e: "\\epsilon",
-        xti: "x^{(i)}",
-        yti: "y^{(i)}",
-        bfy: "{\\bf y}",
-        bfx: "{\\bf x}",
-        bfg: "{\\bf g}",
-        bfbeta: "{\\bf \\beta}",
-        tp: "\\tilde p",
-        pt: "p_\\theta",
-        E: "{\\mathbb{E}}",
-        Ind: "{\\mathbb{I}}",
-        KL: "{\\mathbb{KL}}",
-        Re: "{\\mathbb{R}}",
-        Dc: "{\\mathcal{D}}",
-        Tc: "{\\mathcal{T}}",
-        Xc: "{\\mathcal{X}}",
-        note: ["\\textcolor{blue}{[NOTE: #1]}",1]
-      }
-    }
-  });
-</script>
+<p>A learner can proceed as they are inclined within the module to create their own path among the topics.   The concepts within the modules are intended to be discovered in any order.</p>
 
+<p>Web Applications available topics:</p>
 
-<h2 id="what-techniques-and-languages">What techniques and languages?</h2>
-<ul>
-  <li>Backend:
+<ol>
+  <li><a href="file1/">URL and HTML</a>
     <ul>
-      <li>PostgreSQL: database</li>
-      <li>Flask: backend framework</li>
-      <li>Python: programming language (popular: <a href="http://pypl.github.io/PYPL.html">http://pypl.github.io/PYPL.html</a>)</li>
+      <li><a href="file1/#web-application">Web Application</a></li>
+      <li><a href="file1/#w3c">W3C</a></li>
+      <li><a href="file1/#ip-address">IP Address</a></li>
+      <li><a href="file2/#domain-name-system">Domain Name System</a></li>
+      <li><a href="file2/#how-does-it-work">How it Works</a></li>
+      <li><a href="file3/#how-url's-are-structured">How URL’s are Structured</a></li>
+      <li><a href="file3/#urls">URLs</a></li>
+      <li><a href="file3/#tld-and-urls-price">TLD and URLs Price</a></li>
+      <li><a href="file3/#homework-1-part-1">Homework 1 (Part 1)</a></li>
+      <li><a href="file4/#w3schools">W3Schools</a></li>
+      <li><a href="file4/#what-is-html">HTML</a></li>
+      <li><a href="file4/#lets-do-this-first-example">HTML Examples</a></li>
+      <li><a href="file4/#common-basic-tags">Common Basic Tags</a></li>
+      <li><a href="file5/#here-are-some-rules">Rules</a></li>
+      <li><a href="file5/#homework-1-part-1">Homework 1 (Part 1)</a></li>
+      <li><a href="file5/#homework-1-part-2">Homework 1 (Part 2)</a></li>
+      <li><a href="file5/#how-to-upload-files-to-your-url">How to Upload Files to Your URL</a></li>
+      <li><a href="file5/#html-dom">HTML DOM</a></li>
+      <li><a href="file6/#transport-protocols">Transport Protocols</a></li>
+      <li><a href="file6/#other-http-request-types">Other HTTP Request Types</a></li>
+      <li><a href="file6/#http-server-response-codes">HTTP Server Response Codes</a></li>
     </ul>
   </li>
-  <li>Frontend:
-    <ul>
-      <li>JavaScript: programming language (a joke: <a href="http://vanilla-js.com/">http://vanilla-js.com/</a>) (language C vs Python)</li>
-      <li>jQuery: a JavaScript library designed to simplify HTML DOM tree traversal and manipulation</li>
-      <li>HTML: Hypertext Markup Language</li>
-      <li>BootStrap: front-end framework for developing websites and web applications</li>
-      <li>Reactjs: A JavaScript library for building user interfaces</li>
-    </ul>
-  </li>
-  <li>Full stack developer means you should know both.</li>
-</ul>
+</ol>
 
-<h2 id="web-application">Web application</h2>
+<script src="http://d3js.org/d3.v3.min.js"></script>
 
-<p><img src="URLandHTML_1.png" alt="" /></p>
+<script src="script/ontology.js"></script>
 
-<ul>
-  <li>Imahe source: <a href="http://teaching.shu.ac.uk/aces/rh1/de/web_based_systems_architectures_1_tutorial_files/image004.gif">http://teaching.shu.ac.uk/aces/rh1/de/web_based_systems_architectures_1_tutorial_files/image004.gif</a></li>
-</ul>
-
-<h2 id="w3c">W3C</h2>
-<ul>
-  <li>The World Wide Web Consortium is the <font color="red">main</font> international standards organization for the World Wide Web.</li>
-  <li>We will use it for some definitions.</li>
-  <li>
-    <p><a href="https://www.w3.org/">https://www.w3.org/</a></p>
-  </li>
-  <li>Uniform Resource Locators (URLs)</li>
-  <li>Uniform Resource Identifiers (URIs, aka URLs) are short strings that identify resources in the web: documents, images, downloadable files, services, electronic mailboxes, and other resources.</li>
-  <li>
-    <p>It is similar to a mailing address.</p>
-  </li>
-  <li>More details, see <a href="http://www.w3.org/Addressing/">http://www.w3.org/Addressing/</a></li>
-  <li>Examples:
-    <ul>
-      <li><a href="http://www.amazon.com">http://www.amazon.com</a></li>
-      <li><a href="http://www.ecu.edu/cs-acad/registrar/General-Information.cfm">http://www.ecu.edu/cs-acad/registrar/General-Information.cfm</a></li>
-      <li><a href="http://www.sensor.nevada.edu/NRDC/">http://www.sensor.nevada.edu/NRDC/</a></li>
-    </ul>
-  </li>
-  <li>Domain Name</li>
-  <li>A domain name is an <font color="red">identification</font> string that defines a <font color="red">realm</font> of administrative autonomy, authority or control within the Internet (Wiki).</li>
-  <li>For example,
-    <ul>
-      <li>URL: www.example.com/index</li>
-      <li>Domain name: example.com</li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="ip-address">IP Address</h2>
-<ul>
-  <li>An Internet Protocol <font color="red">address</font> (IP address) is a <font color="red">numerical</font> label assigned to each device connected to a computer network that uses the Internet Protocol for communication (Wiki).</li>
-  <li>A <font color="red">unique</font> identifier given to every machine that connects to the internet.</li>
-  <li>Typical IPv4 addresses resemble the following: 192.x.x.x while IPv6 addresses look similar to: fdc4:xxxx:xxxx::/48.</li>
-  <li>It is also similar to a mailing address.</li>
-</ul>
+<!-- <div id="ontology_div"></div> -->
+<!-- <div></div> -->
+<body></body>
 
 <table>
   <tbody>
     <tr>
       <td> </td>
       <td> </td>
-      <td><a href="../../">Index</a></td>
+      <td><a href="../">Index</a></td>
       <td> </td>
       <td> </td>
       <td><a href="../">Prev</a></td>
       <td> </td>
       <td> </td>
-      <td><a href="file2">Next</a></td>
+      <td><a href="/file1/">Next</a></td>
       <td> </td>
       <td> </td>
     </tr>
   </tbody>
 </table>
 
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="../">Web Applications</a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
 
 
     </article>

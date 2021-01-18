@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>URL and HTML</title>
+  <meta name="description" content="ISPeL is an interactive system for personalization of learning. It uses topic-based authoring.">
+
+  <!---   <link rel="stylesheet" href="/ISPeL-content-machine-learning/css/tufte.css" --->
+  <link rel="stylesheet" href="../../../css/tufte.css">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not--><link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'><!-- Load up MathJax script if needed ... specify in /_data/options.yml file--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75587219-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file1/">
+  <link rel="alternate" type="application/rss+xml" title="ISPeL-content-machine-learning" href="http://localhost:7000/ISPeL-content-machine-learning/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+
+
+<header>
+    <nav class="group">
+    <a href="../../../">Web Applications</a>
+    <a href="http://ispel.cs.ecu.edu/" _target="blank">ISPeL</a>
+    <a href="http://seng5005.cs.ecu.edu/" _target="blank">Fall 2020</a>
+    <a href="https://github.com/vngudivada/ISPeL-content-machine-learning.git" _target="blank">GitHub</a>
+    </nav>
+</header>
+
+    <article class="group">
+      
+
+<h1>Url and html</h1>
+<p class="subtitle"></p>
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        e: "\\epsilon",
+        xti: "x^{(i)}",
+        yti: "y^{(i)}",
+        bfy: "{\\bf y}",
+        bfx: "{\\bf x}",
+        bfg: "{\\bf g}",
+        bfbeta: "{\\bf \\beta}",
+        tp: "\\tilde p",
+        pt: "p_\\theta",
+        E: "{\\mathbb{E}}",
+        Ind: "{\\mathbb{I}}",
+        KL: "{\\mathbb{KL}}",
+        Re: "{\\mathbb{R}}",
+        Dc: "{\\mathcal{D}}",
+        Tc: "{\\mathcal{T}}",
+        Xc: "{\\mathcal{X}}",
+        note: ["\\textcolor{blue}{[NOTE: #1]}",1]
+      }
+    }
+  });
+</script>
+
+
+<h2 id="what-techniques-and-languages">What techniques and languages?</h2>
+<ul>
+  <li>Backend:
+    <ul>
+      <li>PostgreSQL: database</li>
+      <li>Flask: backend framework</li>
+      <li>Python: programming language (popular: <a href="http://pypl.github.io/PYPL.html">http://pypl.github.io/PYPL.html</a>)</li>
+    </ul>
+  </li>
+  <li>Frontend:
+    <ul>
+      <li>JavaScript: programming language (a joke: <a href="http://vanilla-js.com/">http://vanilla-js.com/</a>) (language C vs Python)</li>
+      <li>jQuery: a JavaScript library designed to simplify HTML DOM tree traversal and manipulation</li>
+      <li>HTML: Hypertext Markup Language</li>
+      <li>BootStrap: front-end framework for developing websites and web applications</li>
+      <li>Reactjs: A JavaScript library for building user interfaces</li>
+    </ul>
+  </li>
+  <li>Full stack developer means you should know both.</li>
+</ul>
+
+<h2 id="web-application">Web application</h2>
+
+<p><img src="URLandHTML_1.png" alt="" /></p>
+
+<ul>
+  <li>Imahe source: <a href="http://teaching.shu.ac.uk/aces/rh1/de/web_based_systems_architectures_1_tutorial_files/image004.gif">http://teaching.shu.ac.uk/aces/rh1/de/web_based_systems_architectures_1_tutorial_files/image004.gif</a></li>
+</ul>
+
+<h2 id="w3c">W3C</h2>
+<ul>
+  <li>The World Wide Web Consortium is the <font color="red">main</font> international standards organization for the World Wide Web.</li>
+  <li>We will use it for some definitions.</li>
+  <li>
+    <p><a href="https://www.w3.org/">https://www.w3.org/</a></p>
+  </li>
+  <li>Uniform Resource Locators (URLs)</li>
+  <li>Uniform Resource Identifiers (URIs, aka URLs) are short strings that identify resources in the web: documents, images, downloadable files, services, electronic mailboxes, and other resources.</li>
+  <li>
+    <p>It is similar to a mailing address.</p>
+  </li>
+  <li>More details, see <a href="http://www.w3.org/Addressing/">http://www.w3.org/Addressing/</a></li>
+  <li>Examples:
+    <ul>
+      <li><a href="http://www.amazon.com">http://www.amazon.com</a></li>
+      <li><a href="http://www.ecu.edu/cs-acad/registrar/General-Information.cfm">http://www.ecu.edu/cs-acad/registrar/General-Information.cfm</a></li>
+      <li><a href="http://www.sensor.nevada.edu/NRDC/">http://www.sensor.nevada.edu/NRDC/</a></li>
+    </ul>
+  </li>
+  <li>Domain Name</li>
+  <li>A domain name is an <font color="red">identification</font> string that defines a <font color="red">realm</font> of administrative autonomy, authority or control within the Internet (Wiki).</li>
+  <li>For example,
+    <ul>
+      <li>URL: www.example.com/index</li>
+      <li>Domain name: example.com</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="ip-address">IP Address</h2>
+<ul>
+  <li>An Internet Protocol <font color="red">address</font> (IP address) is a <font color="red">numerical</font> label assigned to each device connected to a computer network that uses the Internet Protocol for communication (Wiki).</li>
+  <li>A <font color="red">unique</font> identifier given to every machine that connects to the internet.</li>
+  <li>Typical IPv4 addresses resemble the following: 192.x.x.x while IPv6 addresses look similar to: fdc4:xxxx:xxxx::/48.</li>
+  <li>It is also similar to a mailing address.</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="../../">Index</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../">Prev</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="file2">Next</a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+    </article>
+    <footer>
+<hr class="slender">
+<div class="credits">
+This work is supported by the <a href="https://www.nsf.gov/" target="_blank">NSF</a> IUSE/PFE:RED award No. <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1730568" target="_blank">1730568</a>. Site created with <a href="//jekyllrb.com" target="_blank">Jekyll</a> using the <a href="//github.com/clayh53/tufte-jekyll" target="_blank">Tufte theme</a>. &copy; 2021
+</div>
+</footer>
+  </body>
+</html>

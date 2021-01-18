@@ -1,79 +1,55 @@
 ---
-layout: post
-title: Design
+layout: default
+title: Web Applications
 ---
-
-## Overview
-* Form your team
-* Web Page Design
-* Paper Prototype
-* CSS
-* Bootstrap
-* Contents design
-
-## Form your team
-* Don’t wait until the weekend to form your team.
-* 2 - 3 students in each team.
-  * Group homework
-  * Group project
-  * Group activities.
-  
-* Group project: Implement a web application with at least:
-* Backend:
-  * PostgreSQL
-  * Flask
-  * Python
-* Frontend:
-  * JavaScript
-  * Jquery
-  * Reactjs
-  * HTML
-  * BootStrap
-* April 21 and 23 Demo, your show time
-  * Top 3 team will be announced based on your ranking
-  * More details will be announced
-
-## Web Page Design
-* Many things you need to consider: layout, color design, contents… 
-* First, there is a job named “web designer”: https://study.com/articles/Web_Designer_Job_Description_Duties_and_Requirements.html
-* Possible rules you may follow:
-  * Clean and only highlight important things
-  * Logo, make people easy to remember your website
-  * Fixed sidebar navigation
-  * …
-* There is no such a rule always working…
-* If you feel comfortable, that is good enough for <font color=red>this class</font>.
-
-## Web Page Design: Flat Design
-* Wiki: flat design is a minimalist user interface (UI) design genre, or design language, commonly used in graphical user interfaces.
-* Interface design emphasizing minimum use of stylistic elements
-  * Avoid: illusion of three dimensions, e.g. use of drop shadows, gradients or textures
-  * Use: bold shapes, colors, images (e.g., icons)
-
-* Examples: 
-  * <http://www.sensor.nevada.edu/NRDC/>
-    * Every time you load the webpage, the background image will be different.
-  * <https://github.com/>
-    * A super important version control application
-  * <https://d3js.org/>
-    * A very powerful data visualization library
-
-* Flat design <font color=red>advantages</font>:
-  * It is easier to <font color=red>quickly convey</font> information while still looking visually appealing and approachable. 
-  * It makes it easier to design an interface that is <font color=red>responsive</font> to changes in browser size across different devices. 
-  * It enables a user to <font color=red>focus</font> on the contents.
-  * With minimal design elements, websites are able to load <font color=red>faster and resize easily</font>.
-  * Still look sharp on <font color=red>high-definition</font> screens.
- 
-## Form your team
-* If you do not have a team, please stay after the class for 5 minutes.
-* If you do have a team, email me team member names and email addresses.
+<span class="newthought">Web Applications</span>
 
 
-||[Index](../../../)||| [Prev](../)|||[Next](file2)|||
+Relevant topics and the dependencies between topics have been identified. The prerequisites for topics have been integrated into the layout of the material so that learners can personalize their path of study within each topic.  
+
+As a guide to the learner, each module below begins with an Introduction that describes the preliminaries for the topic and this is where we suggest that every learner should begin.  {% include sidenote.html id="note-pgm" note="The materials presented are based on the ontology constructed by [Dr. Rui Wu](http://www.cs.ecu.edu/wu/),  [Grayson Blankenship]() and other research members of the ISPeL System Project Team funded by the [NSF](https://www.nsf.gov) as part of the [PPSE](https://ppse.ecu.edu/)" %}
+
+
+A learner can proceed as they are inclined within the module to create their own path among the topics.   The concepts within the modules are intended to be discovered in any order.  
+
+
+Web Applications available topics: 
+
+1. [Design](file1)
+- [Overview](file1/#overview)
+- [Web Page Design](file1/#web-page-design)
+- [Flat Design](file1/#web-page-design-flat-design)
+- [CSS](file2/#what-is-css)
+- [ID vs Class](file2/#id-vs-class)
+- [How to insert CSS](file2/#how-to-insert-css)
+- [Where to Define Style](file2/#where-to-define-your-style)
+- [CSS Colors](file3/#css-colors)
+- [Horizontal Navigation Bar](file3/#css-examples-horizontal-navigation-bar)
+- [Group Activity 1](file3/#group-activity-1-5-minutes)
+- [Vertical Navigation Bar](file3/#css-examples-vertical-navigation-bar)
+- [Homework 2](file3/#homework-2)
+- [Paper Prototyping](file4/#paper-prototyping)
+- [Paper Prototyping Pros vs Cons](file4/#paper-prototyping-pros-vs-cons)
+- [Group Homework 3 (Part 1)](file4/#group-homework-3-part-1)
+- [BootStrap](file5/#bootstrap-tutorial)
+- [BootStrap Grid System](file5/#bootstrap-grid-system)
+- [BootStrap Classes](file6/#bootstrap-classes)
+- [BootStrap Table](file6/#bootstrap-table)
+- [Group Activity 2](file6/#group-activity-2)
+- [BootStrap Navigation Bar](file6/#bootstrap-navigation-bar)
+- [BootStrap Carousel](file6/#bootstrap-carousel)
+
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="script/ontology.js"></script>
+
+<!-- <div id="ontology_div"></div> -->
+<!-- <div></div> -->
+<body></body>
 
 
 
+|||[Index](../)||| [Prev](../)|||[Next](file1/)|||
 
-
+|||[Web Applications](../)|||
 

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Design</title>
+  <title>Web Applications</title>
   <meta name="description" content="ISPeL is an interactive system for personalization of learning. It uses topic-based authoring.">
 
   <!---   <link rel="stylesheet" href="/ISPeL-content-machine-learning/css/tufte.css" --->
@@ -40,162 +40,82 @@
 </header>
 
     <article class="group">
-      
+      <p><span class="newthought">Web Applications</span></p>
 
-<h1>Design</h1>
-<p class="subtitle"></p>
+<p>Relevant topics and the dependencies between topics have been identified. The prerequisites for topics have been integrated into the layout of the material so that learners can personalize their path of study within each topic.</p>
 
+<p>As a guide to the learner, each module below begins with an Introduction that describes the preliminaries for the topic and this is where we suggest that every learner should begin.  <label for="note-pgm" class="margin-toggle sidenote-number"></label><input type="checkbox" id="note-pgm" class="margin-toggle" /><span class="sidenote">The materials presented are based on the ontology constructed by <a href="http://www.cs.ecu.edu/wu/">Dr. Rui Wu</a>,  <a href="">Grayson Blankenship</a> and other research members of the ISPeL System Project Team funded by the <a href="https://www.nsf.gov">NSF</a> as part of the <a href="https://ppse.ecu.edu/">PPSE</a></span></p>
 
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    TeX: {
-      Macros: {
-        e: "\\epsilon",
-        xti: "x^{(i)}",
-        yti: "y^{(i)}",
-        bfy: "{\\bf y}",
-        bfx: "{\\bf x}",
-        bfg: "{\\bf g}",
-        bfbeta: "{\\bf \\beta}",
-        tp: "\\tilde p",
-        pt: "p_\\theta",
-        E: "{\\mathbb{E}}",
-        Ind: "{\\mathbb{I}}",
-        KL: "{\\mathbb{KL}}",
-        Re: "{\\mathbb{R}}",
-        Dc: "{\\mathcal{D}}",
-        Tc: "{\\mathcal{T}}",
-        Xc: "{\\mathcal{X}}",
-        note: ["\\textcolor{blue}{[NOTE: #1]}",1]
-      }
-    }
-  });
-</script>
+<p>A learner can proceed as they are inclined within the module to create their own path among the topics.   The concepts within the modules are intended to be discovered in any order.</p>
 
+<p>Web Applications available topics:</p>
 
-<h2 id="overview">Overview</h2>
-<ul>
-  <li>Form your team</li>
-  <li>Web Page Design</li>
-  <li>Paper Prototype</li>
-  <li>CSS</li>
-  <li>Bootstrap</li>
-  <li>Contents design</li>
-</ul>
-
-<h2 id="form-your-team">Form your team</h2>
-<ul>
-  <li>Don’t wait until the weekend to form your team.</li>
-  <li>2 - 3 students in each team.
+<ol>
+  <li><a href="file1">Design</a>
     <ul>
-      <li>Group homework</li>
-      <li>Group project</li>
-      <li>Group activities.</li>
+      <li><a href="file1/#overview">Overview</a></li>
+      <li><a href="file1/#web-page-design">Web Page Design</a></li>
+      <li><a href="file1/#web-page-design-flat-design">Flat Design</a></li>
+      <li><a href="file2/#what-is-css">CSS</a></li>
+      <li><a href="file2/#id-vs-class">ID vs Class</a></li>
+      <li><a href="file2/#how-to-insert-css">How to insert CSS</a></li>
+      <li><a href="file2/#where-to-define-your-style">Where to Define Style</a></li>
+      <li><a href="file3/#css-colors">CSS Colors</a></li>
+      <li><a href="file3/#css-examples-horizontal-navigation-bar">Horizontal Navigation Bar</a></li>
+      <li><a href="file3/#group-activity-1-5-minutes">Group Activity 1</a></li>
+      <li><a href="file3/#css-examples-vertical-navigation-bar">Vertical Navigation Bar</a></li>
+      <li><a href="file3/#homework-2">Homework 2</a></li>
+      <li><a href="file4/#paper-prototyping">Paper Prototyping</a></li>
+      <li><a href="file4/#paper-prototyping-pros-vs-cons">Paper Prototyping Pros vs Cons</a></li>
+      <li><a href="file4/#group-homework-3-part-1">Group Homework 3 (Part 1)</a></li>
+      <li><a href="file5/#bootstrap-tutorial">BootStrap</a></li>
+      <li><a href="file5/#bootstrap-grid-system">BootStrap Grid System</a></li>
+      <li><a href="file6/#bootstrap-classes">BootStrap Classes</a></li>
+      <li><a href="file6/#bootstrap-table">BootStrap Table</a></li>
+      <li><a href="file6/#group-activity-2">Group Activity 2</a></li>
+      <li><a href="file6/#bootstrap-navigation-bar">BootStrap Navigation Bar</a></li>
+      <li><a href="file6/#bootstrap-carousel">BootStrap Carousel</a></li>
     </ul>
   </li>
-  <li>Group project: Implement a web application with at least:</li>
-  <li>Backend:
-    <ul>
-      <li>PostgreSQL</li>
-      <li>Flask</li>
-      <li>Python</li>
-    </ul>
-  </li>
-  <li>Frontend:
-    <ul>
-      <li>JavaScript</li>
-      <li>Jquery</li>
-      <li>Reactjs</li>
-      <li>HTML</li>
-      <li>BootStrap</li>
-    </ul>
-  </li>
-  <li>April 21 and 23 Demo, your show time
-    <ul>
-      <li>Top 3 team will be announced based on your ranking</li>
-      <li>More details will be announced</li>
-    </ul>
-  </li>
-</ul>
+</ol>
 
-<h2 id="web-page-design">Web Page Design</h2>
-<ul>
-  <li>Many things you need to consider: layout, color design, contents…</li>
-  <li>First, there is a job named “web designer”: https://study.com/articles/Web_Designer_Job_Description_Duties_and_Requirements.html</li>
-  <li>Possible rules you may follow:
-    <ul>
-      <li>Clean and only highlight important things</li>
-      <li>Logo, make people easy to remember your website</li>
-      <li>Fixed sidebar navigation</li>
-      <li>…</li>
-    </ul>
-  </li>
-  <li>There is no such a rule always working…</li>
-  <li>If you feel comfortable, that is good enough for <font color="red">this class</font>.</li>
-</ul>
+<script src="http://d3js.org/d3.v3.min.js"></script>
 
-<h2 id="web-page-design-flat-design">Web Page Design: Flat Design</h2>
-<ul>
-  <li>Wiki: flat design is a minimalist user interface (UI) design genre, or design language, commonly used in graphical user interfaces.</li>
-  <li>Interface design emphasizing minimum use of stylistic elements
-    <ul>
-      <li>Avoid: illusion of three dimensions, e.g. use of drop shadows, gradients or textures</li>
-      <li>Use: bold shapes, colors, images (e.g., icons)</li>
-    </ul>
-  </li>
-  <li>Examples:
-    <ul>
-      <li><a href="http://www.sensor.nevada.edu/NRDC/">http://www.sensor.nevada.edu/NRDC/</a>
-        <ul>
-          <li>Every time you load the webpage, the background image will be different.</li>
-        </ul>
-      </li>
-      <li><a href="https://github.com/">https://github.com/</a>
-        <ul>
-          <li>A super important version control application</li>
-        </ul>
-      </li>
-      <li><a href="https://d3js.org/">https://d3js.org/</a>
-        <ul>
-          <li>A very powerful data visualization library</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>Flat design <font color="red">advantages</font>:
-    <ul>
-      <li>It is easier to <font color="red">quickly convey</font> information while still looking visually appealing and approachable.</li>
-      <li>It makes it easier to design an interface that is <font color="red">responsive</font> to changes in browser size across different devices.</li>
-      <li>It enables a user to <font color="red">focus</font> on the contents.</li>
-      <li>With minimal design elements, websites are able to load <font color="red">faster and resize easily</font>.</li>
-      <li>Still look sharp on <font color="red">high-definition</font> screens.</li>
-    </ul>
-  </li>
-</ul>
+<script src="script/ontology.js"></script>
 
-<h2 id="form-your-team-1">Form your team</h2>
-<ul>
-  <li>If you do not have a team, please stay after the class for 5 minutes.</li>
-  <li>If you do have a team, email me team member names and email addresses.</li>
-</ul>
+<!-- <div id="ontology_div"></div> -->
+<!-- <div></div> -->
+<body></body>
 
 <table>
   <tbody>
     <tr>
       <td> </td>
-      <td><a href="../../../">Index</a></td>
+      <td> </td>
+      <td><a href="../">Index</a></td>
       <td> </td>
       <td> </td>
       <td><a href="../">Prev</a></td>
       <td> </td>
       <td> </td>
-      <td><a href="file2">Next</a></td>
+      <td><a href="file1/">Next</a></td>
       <td> </td>
       <td> </td>
     </tr>
   </tbody>
 </table>
 
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="../">Web Applications</a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
 
 
     </article>

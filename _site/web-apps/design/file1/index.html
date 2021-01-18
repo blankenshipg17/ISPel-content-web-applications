@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Design</title>
+  <meta name="description" content="ISPeL is an interactive system for personalization of learning. It uses topic-based authoring.">
+
+  <!---   <link rel="stylesheet" href="/ISPeL-content-machine-learning/css/tufte.css" --->
+  <link rel="stylesheet" href="../../../css/tufte.css">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not--><link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'><!-- Load up MathJax script if needed ... specify in /_data/options.yml file--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75587219-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/design/file1/">
+  <link rel="alternate" type="application/rss+xml" title="ISPeL-content-machine-learning" href="http://localhost:7000/ISPeL-content-machine-learning/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+
+
+<header>
+    <nav class="group">
+    <a href="../../../">Web Applications</a>
+    <a href="http://ispel.cs.ecu.edu/" _target="blank">ISPeL</a>
+    <a href="http://seng5005.cs.ecu.edu/" _target="blank">Fall 2020</a>
+    <a href="https://github.com/vngudivada/ISPeL-content-machine-learning.git" _target="blank">GitHub</a>
+    </nav>
+</header>
+
+    <article class="group">
+      
+
+<h1>Design</h1>
+<p class="subtitle"></p>
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        e: "\\epsilon",
+        xti: "x^{(i)}",
+        yti: "y^{(i)}",
+        bfy: "{\\bf y}",
+        bfx: "{\\bf x}",
+        bfg: "{\\bf g}",
+        bfbeta: "{\\bf \\beta}",
+        tp: "\\tilde p",
+        pt: "p_\\theta",
+        E: "{\\mathbb{E}}",
+        Ind: "{\\mathbb{I}}",
+        KL: "{\\mathbb{KL}}",
+        Re: "{\\mathbb{R}}",
+        Dc: "{\\mathcal{D}}",
+        Tc: "{\\mathcal{T}}",
+        Xc: "{\\mathcal{X}}",
+        note: ["\\textcolor{blue}{[NOTE: #1]}",1]
+      }
+    }
+  });
+</script>
+
+
+<h2 id="overview">Overview</h2>
+<ul>
+  <li>Form your team</li>
+  <li>Web Page Design</li>
+  <li>Paper Prototype</li>
+  <li>CSS</li>
+  <li>Bootstrap</li>
+  <li>Contents design</li>
+</ul>
+
+<h2 id="form-your-team">Form your team</h2>
+<ul>
+  <li>Don’t wait until the weekend to form your team.</li>
+  <li>2 - 3 students in each team.
+    <ul>
+      <li>Group homework</li>
+      <li>Group project</li>
+      <li>Group activities.</li>
+    </ul>
+  </li>
+  <li>Group project: Implement a web application with at least:</li>
+  <li>Backend:
+    <ul>
+      <li>PostgreSQL</li>
+      <li>Flask</li>
+      <li>Python</li>
+    </ul>
+  </li>
+  <li>Frontend:
+    <ul>
+      <li>JavaScript</li>
+      <li>Jquery</li>
+      <li>Reactjs</li>
+      <li>HTML</li>
+      <li>BootStrap</li>
+    </ul>
+  </li>
+  <li>April 21 and 23 Demo, your show time
+    <ul>
+      <li>Top 3 team will be announced based on your ranking</li>
+      <li>More details will be announced</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="web-page-design">Web Page Design</h2>
+<ul>
+  <li>Many things you need to consider: layout, color design, contents…</li>
+  <li>First, there is a job named “web designer”: https://study.com/articles/Web_Designer_Job_Description_Duties_and_Requirements.html</li>
+  <li>Possible rules you may follow:
+    <ul>
+      <li>Clean and only highlight important things</li>
+      <li>Logo, make people easy to remember your website</li>
+      <li>Fixed sidebar navigation</li>
+      <li>…</li>
+    </ul>
+  </li>
+  <li>There is no such a rule always working…</li>
+  <li>If you feel comfortable, that is good enough for <font color="red">this class</font>.</li>
+</ul>
+
+<h2 id="web-page-design-flat-design">Web Page Design: Flat Design</h2>
+<ul>
+  <li>Wiki: flat design is a minimalist user interface (UI) design genre, or design language, commonly used in graphical user interfaces.</li>
+  <li>Interface design emphasizing minimum use of stylistic elements
+    <ul>
+      <li>Avoid: illusion of three dimensions, e.g. use of drop shadows, gradients or textures</li>
+      <li>Use: bold shapes, colors, images (e.g., icons)</li>
+    </ul>
+  </li>
+  <li>Examples:
+    <ul>
+      <li><a href="http://www.sensor.nevada.edu/NRDC/">http://www.sensor.nevada.edu/NRDC/</a>
+        <ul>
+          <li>Every time you load the webpage, the background image will be different.</li>
+        </ul>
+      </li>
+      <li><a href="https://github.com/">https://github.com/</a>
+        <ul>
+          <li>A super important version control application</li>
+        </ul>
+      </li>
+      <li><a href="https://d3js.org/">https://d3js.org/</a>
+        <ul>
+          <li>A very powerful data visualization library</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Flat design <font color="red">advantages</font>:
+    <ul>
+      <li>It is easier to <font color="red">quickly convey</font> information while still looking visually appealing and approachable.</li>
+      <li>It makes it easier to design an interface that is <font color="red">responsive</font> to changes in browser size across different devices.</li>
+      <li>It enables a user to <font color="red">focus</font> on the contents.</li>
+      <li>With minimal design elements, websites are able to load <font color="red">faster and resize easily</font>.</li>
+      <li>Still look sharp on <font color="red">high-definition</font> screens.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="form-your-team-1">Form your team</h2>
+<ul>
+  <li>If you do not have a team, please stay after the class for 5 minutes.</li>
+  <li>If you do have a team, email me team member names and email addresses.</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td><a href="../../../">Index</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../">Prev</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../file2">Next</a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+    </article>
+    <footer>
+<hr class="slender">
+<div class="credits">
+This work is supported by the <a href="https://www.nsf.gov/" target="_blank">NSF</a> IUSE/PFE:RED award No. <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1730568" target="_blank">1730568</a>. Site created with <a href="//jekyllrb.com" target="_blank">Jekyll</a> using the <a href="//github.com/clayh53/tufte-jekyll" target="_blank">Tufte theme</a>. &copy; 2021
+</div>
+</footer>
+  </body>
+</html>
