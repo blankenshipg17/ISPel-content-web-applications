@@ -47,7 +47,7 @@ title: jQurey
   * <https://davidwalsh.name/canvas-demos>
 
 
-||[Index](../../../)||| [Prev](../)|||[Next](../file3/)|||
+||[Index](../../../)||| [Prev](../file1/)|||[Next](../file3/)|||
 
 
 

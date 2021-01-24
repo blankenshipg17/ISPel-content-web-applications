@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>MVC and JavaScript</title>
+  <title>jQurey</title>
   <meta name="description" content="ISPeL is an interactive system for personalization of learning. It uses topic-based authoring.">
 
   <!---   <link rel="stylesheet" href="/ISPeL-content-machine-learning/css/tufte.css" --->
@@ -22,7 +22,7 @@
   ga('send', 'pageview');
   </script>
 
-  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/MVC_JavaScript/file9/">
+  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/jQuery/file1/">
   <link rel="alternate" type="application/rss+xml" title="ISPeL-content-machine-learning" href="http://localhost:7000/ISPeL-content-machine-learning/feed.xml" />
 </head>
 
@@ -42,7 +42,7 @@
     <article class="group">
       
 
-<h1>Mvc and javascript</h1>
+<h1>Jqurey</h1>
 <p class="subtitle"></p>
 
 
@@ -73,47 +73,80 @@
 </script>
 
 
-<h2 id="business-listing-and-content-design">Business Listing and Content Design</h2>
-
+<h2 id="jquery-tutorial">jQuery Tutorial</h2>
 <ul>
-  <li>The meaning of SEO (search engine optimization) is the process of making changes to your website design and content in order to help it appear in the search engines.</li>
+  <li>Based on: https://www.w3schools.com/JQuery/</li>
+  <li>jQuery is a JavaScript Library.</li>
+  <li>jQuery simplifies your programming: GET, POST request …</li>
+  <li>Many of the biggest companies on the Web use jQuery, such as:
+    <ul>
+      <li>Google</li>
+      <li>Microsoft</li>
+      <li>IBM</li>
+      <li>Netflix</li>
+    </ul>
+  </li>
+  <li>jQuery executes the same way in all major browsers.</li>
+  <li>Three versions:
+    <ul>
+      <li>Regular: jquery.js, Development version - this is for testing and development (uncompressed and readable code)</li>
+      <li>Minimized: jquery.min.js, Production version - this is for your live website because it has been minified and compressed</li>
+      <li>Slim: some features are removed, check this: https://stackoverflow.com/questions/35424053/what-are-the-differences-between-normal-and-slim-package-of-jquery, BootStrap 4 supports slim version</li>
+    </ul>
+  </li>
 </ul>
 
-<p><label for="MVC" class="margin-toggle">⊕</label>
-<input type="checkbox" id="MVC" class="margin-toggle" />
-<span class="marginnote"><img class="fullwidth" src="/ISPeL-content-machine-learning/web-apps/MVC_JavaScript/file9/png1.png" alt="Figure credit: https://www.lyfemarketing.com/blog/what-does-seo-mean/" /><br />
-    Figure credit: https://www.lyfemarketing.com/blog/what-does-seo-mean/
-</span></p>
-
+<h2 id="jquery-include">jQuery: Include</h2>
 <ul>
-  <li>SERP stands for Search Engine Results Page.</li>
-  <li>How to improve your business listing?
+  <li>Two popular ways to include jQuery from a CDN (Content Delivery Network):
     <ul>
-      <li>Google Business Listing (free for basic but you can also pay): <a href="https://www.google.com/business/">https://www.google.com/business/</a></li>
-      <li>Address is very important.</li>
-      <li>Think like a customer-&gt;keywords</li>
-      <li>Mobile friendly</li>
-      <li>Content is important. Highlight your business. Repeat keywords. Pure image index page should be avoided.</li>
-      <li>Avoid spam links (links inserted into a website with the intent of manipulating search engine result pages.).</li>
+      <li>Google: &amp;ls;script src=”https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js”&gt;&amp;ls;/script&gt;</li>
+      <li>Microsoft: &amp;ls;script src=”https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js”&gt;&amp;ls;/script&gt;</li>
     </ul>
   </li>
-  <li>Also, social media, such as Facebook and Linkedin, impacts SEO.
+  <li>CDN advantages:
     <ul>
-      <li>Improve website traffic.</li>
-      <li>Social media profiles will be ranked too.</li>
+      <li>Many users already have downloaded jQuery from Google or Microsoft when visiting another site. As a result, it will be loaded from cache when they visit your site, which leads to faster loading time. Also, most CDN’s will make sure that once a user requests a file from it, it will be served from the server closest to them, which also leads to faster loading time.</li>
+      <li>If you do not like CDN, you can download jQuery from: <a href="http://jquery.com/download/">http://jquery.com/download/</a></li>
     </ul>
   </li>
+</ul>
+
+<h2 id="jquery-syntax">jQuery: Syntax</h2>
+<ul>
+  <li>The jQuery syntax is tailor-made for selecting HTML elements and performing some action on the element(s).</li>
+  <li>$(selector).action()
+    <ul>
+      <li>A $ sign to define/access jQuery</li>
+      <li>A (selector) to “query (or find)” HTML elements</li>
+      <li>A jQuery action() to be performed on the element(s)</li>
+    </ul>
+  </li>
+  <li>Example 28: <a href="https://jsfiddle.net/3kche5fy/">https://jsfiddle.net/3kche5fy/</a></li>
+  <li>ready(function(){}) the function will be triggered when something is ready (loaded). Or you may:
+    <ul>
+      <li>hide an element that is not created yet</li>
+      <li>Get the size of an image that is not loaded yet</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="jsfiddle">JSFiddle</h2>
+<ul>
+  <li><a href="https://jsfiddle.net/3kche5fy/1/">https://jsfiddle.net/3kche5fy/1/</a></li>
 </ul>
 
 <table>
   <tbody>
     <tr>
       <td> </td>
+      <td><a href="../../../">Index</a></td>
       <td> </td>
-      <td><a href="../../">Index</a></td>
+      <td> </td>
+      <td><a href="../">Prev</a></td>
       <td> </td>
       <td> </td>
-      <td><a href="../file7/">Prev</a></td>
+      <td><a href="../file2/">Next</a></td>
       <td> </td>
       <td> </td>
     </tr>

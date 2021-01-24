@@ -1,5 +1,5 @@
-var w = 1500;
-var h = 1500;
+var w = 500;
+var h = 500;
 
 var color_original = '#4c72ff';
 var color_root_node = '#ff0000';
@@ -15,12 +15,20 @@ var dataset = {
  
       {name:"URL and HTML", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/",color:color_root_node},
       {name:"Design", url:base_url+"/ISPeL-content-machine-learning/web-apps/design/",color:color_original},
+      {name:"MVC and JavaScript", url:base_url+"/ISPeL-content-machine-learning/web-apps/MVC_JavaScript/",color:color_original},
+      {name:"Software Design and JavaScript", url:base_url+"/ISPeL-content-machine-learning/web-apps/software_design_and_javaScript/",color:color_original},
+      {name:"jQuery", url:base_url+"/ISPeL-content-machine-learning/web-apps/jQuery/",color:color_original},
       
   
       
   ],
   edges:[
-      {source: 0, target: 1}
+      {source: 0, target: 1},
+      {source: 1, target: 2},
+      {source: 1, target: 3},
+      {source: 2, target: 3},
+      {source: 2, target: 4},
+      {source: 3, target: 4}
     
   ]
 };

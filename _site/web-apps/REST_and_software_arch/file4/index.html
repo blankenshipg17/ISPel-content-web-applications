@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Software Design and JavaScript</title>
+  <meta name="description" content="ISPeL is an interactive system for personalization of learning. It uses topic-based authoring.">
+
+  <!---   <link rel="stylesheet" href="/ISPeL-content-machine-learning/css/tufte.css" --->
+  <link rel="stylesheet" href="../../../css/tufte.css">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not--><link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'><!-- Load up MathJax script if needed ... specify in /_data/options.yml file--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75587219-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/REST_and_software_arch/file4/">
+  <link rel="alternate" type="application/rss+xml" title="ISPeL-content-machine-learning" href="http://localhost:7000/ISPeL-content-machine-learning/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+
+
+<header>
+    <nav class="group">
+    <a href="../../../">Web Applications</a>
+    <a href="http://ispel.cs.ecu.edu/" _target="blank">ISPeL</a>
+    <a href="http://seng5005.cs.ecu.edu/" _target="blank">Fall 2020</a>
+    <a href="https://github.com/vngudivada/ISPeL-content-machine-learning.git" _target="blank">GitHub</a>
+    </nav>
+</header>
+
+    <article class="group">
+      
+
+<h1>Software design and javascript</h1>
+<p class="subtitle"></p>
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        e: "\\epsilon",
+        xti: "x^{(i)}",
+        yti: "y^{(i)}",
+        bfy: "{\\bf y}",
+        bfx: "{\\bf x}",
+        bfg: "{\\bf g}",
+        bfbeta: "{\\bf \\beta}",
+        tp: "\\tilde p",
+        pt: "p_\\theta",
+        E: "{\\mathbb{E}}",
+        Ind: "{\\mathbb{I}}",
+        KL: "{\\mathbb{KL}}",
+        Re: "{\\mathbb{R}}",
+        Dc: "{\\mathcal{D}}",
+        Tc: "{\\mathcal{T}}",
+        Xc: "{\\mathcal{X}}",
+        note: ["\\textcolor{blue}{[NOTE: #1]}",1]
+      }
+    }
+  });
+</script>
+
+
+<h2 id="javascript-basic">JavaScript Basic</h2>
+
+<ul>
+  <li>In HTML, JavaScript programs are executed by the web browser.</li>
+  <li>A JavaScript program is a list of programming statements.
+    <ul>
+      <li>Values: var x = 8;</li>
+      <li>Operators: var x = 8;</li>
+      <li>Expressions: any valid set of literals, variables, operators, and expressions that evaluates to a single value. E.g., x = 7; 3+4
+        <ul>
+          <li>Conditional Expressions: var status = (age &gt;= 18) ? “adult” : “minor”</li>
+        </ul>
+      </li>
+      <li>Keywords: for, if … else</li>
+      <li>Comments: after //, won’t be executed.</li>
+    </ul>
+  </li>
+  <li>Semicolons (;) separate JavaScript statements.</li>
+  <li>For best readability, programmers often like to avoid code lines longer than 80 characters. =&gt; break a line after an operator.</li>
+  <li>Example 19</li>
+</ul>
+
+<p><label for="MVC" class="margin-toggle">⊕</label>
+<input type="checkbox" id="MVC" class="margin-toggle" />
+<span class="marginnote"><img class="fullwidth" src="/ISPeL-content-machine-learning/web-apps/MVC_JavaScript/file4/js1.png" alt="Object literal Example Figure Credit: &lt;https://www.dyn-web.com/tutorials/object-literal/&gt;" /><br />
+    Object literal Example
+Figure Credit: <a href="https://www.dyn-web.com/tutorials/object-literal/">https://www.dyn-web.com/tutorials/object-literal/</a>
+</span></p>
+
+<h2 id="group-activity-4-5-minutes">Group Activity 4: 5 minutes</h2>
+<ul>
+  <li>Work on Example 19</li>
+  <li>&lt;form&gt;, &lt;label&gt; and &lt;input&gt; are new, we will come back to them later</li>
+  <li>Decide if vampire based on user input values:
+    <ul>
+      <li>A user should be able to input numbers</li>
+      <li>The same logic should be applied to determine if a student is a vampire or not.
+        <ul>
+          <li>var status = (galic+shadow &gt;= 2) ? “no” : “not sure”;</li>
+        </ul>
+      </li>
+      <li>Hint: use .value to get value of an &lt;input&gt; element and parseInt(String) to convert a string to an integer.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="ga.png" alt="" /></p>
+
+<h2 id="basic-data-visualization-google-chart">Basic Data Visualization: Google Chart</h2>
+<ul>
+  <li>Last class, I showed you “View” components using tables.</li>
+  <li>Example 20</li>
+  <li>A <font color="red">callback function</font> is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.</li>
+  <li>Google Chart four steps:
+    <ul>
+      <li>Import external library</li>
+      <li>Prepare your data in a datatable</li>
+      <li>Choose a visualization method</li>
+      <li>Create an HTML element to render the chart</li>
+    </ul>
+  </li>
+</ul>
+
+<p><label for="MVC" class="margin-toggle">⊕</label>
+<input type="checkbox" id="MVC" class="margin-toggle" />
+<span class="marginnote"><img class="fullwidth" src="/ISPeL-content-machine-learning/web-apps/MVC_JavaScript/file4/googlechart.png" alt="Callback function chart example" /><br />
+    Callback function chart example
+</span></p>
+
+<h2 id="basic-data-visualization-hw3-view-example">Basic Data Visualization: HW3 View Example</h2>
+<ul>
+  <li>Example 21</li>
+  <li>Dynamically update Google Chart.</li>
+  <li>If … else … statement
+    <ul>
+      <li>Use if to specify a block of code to be executed, if a specified condition is <font color="red">true</font></li>
+      <li>Use else to specify a block of code to be executed, if the same condition is <font color="red">false</font></li>
+      <li>Use else if to specify a new condition to test, if the first condition is false</li>
+      <li>Use switch to specify many alternative blocks of code to be executed</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="basic-data-visualization-hw3-view-example-1">Basic Data Visualization: HW3 View Example</h2>
+<ul>
+  <li>JavaScript array.
+    <ul>
+      <li>var array_name = [item1, item2, …];</li>
+      <li>Arrary_name[0];</li>
+    </ul>
+  </li>
+  <li>JavaScript Date data type.
+    <ul>
+      <li>new Date(year, month, …)</li>
+      <li>7 numbers specify year, month, day, hour, minute, second, and millisecond (in that order):
+        <ul>
+          <li>var d = new Date(2018, 11, 24, 10, 33, 30, 0);</li>
+          <li>11 means December, because month is starting from 0</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Can also be defined as the below table. E.g., var d = new Date(“2015-03-25”);</li>
+  <li>var oneDay = 24<em>60</em>60<em>1000; // hours</em>minutes<em>seconds</em>milliseconds</li>
+  <li>var diffDays = Math.abs((dat1.getTime() - dat2.getTime())/(oneDay)); alert(diffDays); //calculate differences</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="../../">Index</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../file3/">Prev</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../file5/">Next</a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+    </article>
+    <footer>
+<hr class="slender">
+<div class="credits">
+This work is supported by the <a href="https://www.nsf.gov/" target="_blank">NSF</a> IUSE/PFE:RED award No. <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1730568" target="_blank">1730568</a>. Site created with <a href="//jekyllrb.com" target="_blank">Jekyll</a> using the <a href="//github.com/clayh53/tufte-jekyll" target="_blank">Tufte theme</a>. &copy; 2021
+</div>
+</footer>
+  </body>
+</html>

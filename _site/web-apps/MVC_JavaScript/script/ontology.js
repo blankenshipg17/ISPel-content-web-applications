@@ -1,5 +1,5 @@
-var w = 500;
-var h = 500;
+var w = 1000;
+var h = 1000;
 
 var color_original = '#4c72ff';
 var color_root_node = '#ff0000';
@@ -13,23 +13,38 @@ var base_url = 'http://127.0.0.1:7000';
 var dataset = {
   nodes:[
  
-      {name:"URL and HTML", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/",color:color_root_node},
-      {name:"Design", url:base_url+"/ISPeL-content-machine-learning/web-apps/design/",color:color_original},
-      {name:"MVC and JavaScript", url:base_url+"/ISPeL-content-machine-learning/web-apps/MVC_JavaScript/",color:color_original},
-      {name:"Software Design and JavaScript", url:base_url+"/ISPeL-content-machine-learning/web-apps/software_design_and_javaScript/",color:color_original},
-      {name:"jQuery", url:base_url+"/ISPeL-content-machine-learning/web-apps/jQuery/",color:color_original},
-      
+      {name:"MVC and JavaScript", url:base_url+"/ISPeL-content-machine-learning/web-apps/MVC_JavaScript/file1/",color:color_root_node},
+      {name:"Functional vs Non-function Requirements", url:base_url+"/ISPeL-content-machine-learning/web-apps/MVC_JavaScript/file1/#functional-vs-non-function-requirements",color:color_original},
+      {name:"Software Developer and Customer", url:base_url+"/ISPeL-content-machine-learning/web-apps/MVC_JavaScript/file1/#software-developer-and-customer",color:color_original},
+      {name:"Model", url:base_url+"/ISPeL-content-machine-learning/web-apps/MVC_JavaScript/file1/#model",color:color_original},
+      {name:"View", url:base_url+"/ISPeL-content-machine-learning/web-apps/MVC_JavaScript/file1/#view",color:color_original},
+      {name:"Control", url:base_url+"/ISPeL-content-machine-learning/web-apps/MVC_JavaScript/file1/#control",color:color_original},
+      {name:"Advantages of MVC Architecture", url:base_url+"/ISPeL-content-machine-learning/web-apps/MVC_JavaScript/file1/#what-are-the-advantages-of-mvc-architecture",color:color_original},
+      {name:"MVC Example: Is my roommate a vampire?", url:base_url+"/ISPeL-content-machine-learning/web-apps/MVC_JavaScript/file1/#mvc-example-is-my-roommate-a-vampire",color:color_original},
+      {name:"Group Homework 3 (Part 2)", url:base_url+"/ISPeL-content-machine-learning/web-apps/MVC_JavaScript/file1/#group-homework-3-part-2",color:color_original},
+      {name:"Where should “Model” be deployed?", url:base_url+"/ISPeL-content-machine-learning/web-apps/MVC_JavaScript/file2/#where-should-model-be-deployed",color:color_original},
+      {name:"View: JavaScript", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file2/#view-javascript",color:color_original},
+      {name:"Group Activity 3", url:base_url+"/ISPeL-content-machine-learning/web-apps/MVC_JavaScript/file2/#group-activity-3-10-minutes",color:color_original},
   
       
   ],
   edges:[
       {source: 0, target: 1},
       {source: 1, target: 2},
-      {source: 1, target: 3},
       {source: 2, target: 3},
       {source: 2, target: 4},
-      {source: 3, target: 4}
-    
+      {source: 2, target: 5},
+      {source: 3, target: 4},
+      {source: 4, target: 5},
+      {source: 3, target: 6},
+      {source: 5, target: 6},
+      {source: 6, target: 7},
+      {source: 0, target: 8},
+      {source: 3, target: 9},
+      {source: 4, target: 10},
+      {source: 6, target: 11}
+      
+      
   ]
 };
 

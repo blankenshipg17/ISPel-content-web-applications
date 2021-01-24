@@ -1,5 +1,5 @@
-var w = 500;
-var h = 500;
+var w = 1000;
+var h = 1000;
 
 var color_original = '#4c72ff';
 var color_root_node = '#ff0000';
@@ -13,11 +13,17 @@ var base_url = 'http://127.0.0.1:7000';
 var dataset = {
   nodes:[
  
-      {name:"URL and HTML", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/",color:color_root_node},
-      {name:"Design", url:base_url+"/ISPeL-content-machine-learning/web-apps/design/",color:color_original},
-      {name:"MVC and JavaScript", url:base_url+"/ISPeL-content-machine-learning/web-apps/MVC_JavaScript/",color:color_original},
-      {name:"Software Design and JavaScript", url:base_url+"/ISPeL-content-machine-learning/web-apps/software_design_and_javaScript/",color:color_original},
-      {name:"jQuery", url:base_url+"/ISPeL-content-machine-learning/web-apps/jQuery/",color:color_original},
+      {name:"jQuery", url:base_url+"/ISPeL-content-machine-learning/web-apps/jQuery/file1/",color:color_root_node},
+      {name:"jQuery: Include", url:base_url+"/ISPeL-content-machine-learning/web-apps/jQuery/file1/#jquery-include",color:color_original},
+      {name:"jQuery: Syntax", url:base_url+"/ISPeL-content-machine-learning/web-apps/jQuery/file1/#jquery-syntax",color:color_original},
+      {name:"JSFiddle", url:base_url+"/ISPeL-content-machine-learning/web-apps/jQuery/file1/#jsfiddle",color:color_original},
+      {name:"jQuery: Selector", url:base_url+"/ISPeL-content-machine-learning/web-apps/jQuery/file2/#jquery-selector",color:color_original},
+      {name:"HTML Canvas & Data Visualization Example", url:base_url+"/ISPeL-content-machine-learning/web-apps/jQuery/file2/#html-canvas-&-data-visualization-example",color:color_original},
+      {name:"Hands-on Activity: Fill Canvas with Color", url:base_url+"/ISPeL-content-machine-learning/web-apps/jQuery/file2/#hands-on-activity-fill-canvas-with-color",color:color_original},
+      {name:"Hands-on Activity: jQuery Events", url:base_url+"/ISPeL-content-machine-learning/web-apps/jQuery/file3/#hands-on-activity-jquery-events",color:color_original},
+      {name:"Final Group Project: Part 2 Design", url:base_url+"/ISPeL-content-machine-learning/web-apps/jQuery/file3/#final-group-project-part-2-design",color:color_original},
+      {name:"BootStrap Modal", url:base_url+"/ISPeL-content-machine-learning/web-apps/jQuery/file3/#bootstrap-modal",color:color_original}
+   
       
   
       
@@ -25,11 +31,14 @@ var dataset = {
   edges:[
       {source: 0, target: 1},
       {source: 1, target: 2},
-      {source: 1, target: 3},
-      {source: 2, target: 3},
+      {source: 0, target: 3},
       {source: 2, target: 4},
-      {source: 3, target: 4}
-    
+      {source: 0, target: 5},
+      {source: 0, target: 6},
+      {source: 6, target: 7},
+      {source: 0, target: 8},
+      {source: 0, target: 9}
+      
   ]
 };
 

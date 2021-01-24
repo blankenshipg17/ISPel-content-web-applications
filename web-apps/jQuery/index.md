@@ -1,48 +1,43 @@
 ---
-layout: post
-title: jQurey
+layout: default
+title: Web Applications
 ---
+<span class="newthought">Web Applications</span>
 
-## jQuery Tutorial
-* Based on: https://www.w3schools.com/JQuery/
-* jQuery is a JavaScript Library.
-* jQuery simplifies your programming: GET, POST request …
-* Many of the biggest companies on the Web use jQuery, such as:
-  * Google
-  * Microsoft
-  * IBM
-  * Netflix
-* jQuery executes the same way in all major browsers.
-* Three versions:
-  * Regular: jquery.js, Development version - this is for testing and development (uncompressed and readable code)
-  * Minimized: jquery.min.js, Production version - this is for your live website because it has been minified and compressed
-  * Slim: some features are removed, check this: https://stackoverflow.com/questions/35424053/what-are-the-differences-between-normal-and-slim-package-of-jquery, BootStrap 4 supports slim version
 
-## jQuery: Include
-* Two popular ways to include jQuery from a CDN (Content Delivery Network):
-  * Google: &ls;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt;&ls;/script&gt;
-  * Microsoft: &ls;script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"&gt;&ls;/script&gt;
-* CDN advantages:
-  * Many users already have downloaded jQuery from Google or Microsoft when visiting another site. As a result, it will be loaded from cache when they visit your site, which leads to faster loading time. Also, most CDN's will make sure that once a user requests a file from it, it will be served from the server closest to them, which also leads to faster loading time.
-  * If you do not like CDN, you can download jQuery from: <http://jquery.com/download/>
+Relevant topics and the dependencies between topics have been identified. The prerequisites for topics have been integrated into the layout of the material so that learners can personalize their path of study within each topic.  
 
-## jQuery: Syntax
-* The jQuery syntax is tailor-made for selecting HTML elements and performing some action on the element(s).
-* $(selector).action()
-  * A $ sign to define/access jQuery
-  * A (selector) to "query (or find)" HTML elements
-  * A jQuery action() to be performed on the element(s)
-* Example 28: <https://jsfiddle.net/3kche5fy/>
-* ready(function(){}) the function will be triggered when something is ready (loaded). Or you may:
-  * hide an element that is not created yet
-  * Get the size of an image that is not loaded yet
+As a guide to the learner, each module below begins with an Introduction that describes the preliminaries for the topic and this is where we suggest that every learner should begin.  {% include sidenote.html id="note-pgm" note="The materials presented are based on the ontology constructed by [Dr. Rui Wu](http://www.cs.ecu.edu/wu/),  [Grayson Blankenship]() and other research members of the ISPeL System Project Team funded by the [NSF](https://www.nsf.gov) as part of the [PPSE](https://ppse.ecu.edu/)" %}
 
-## JSFiddle
-* <https://jsfiddle.net/3kche5fy/1/>
 
-||[Index](../../../)||| [Prev](../)|||[Next](file2/)|||
+A learner can proceed as they are inclined within the module to create their own path among the topics.   The concepts within the modules are intended to be discovered in any order.  
+
+
+Web Applications available topics: 
+
+5. [jQuery](file1/)
+- [jQuery: Include](file1/#jquery-include)
+- [jQuery: Syntax](file1/#jquery-syntax)
+- [JSFiddle](file1/#jsfiddle)
+- [jQuery: Selector](file2/#jquery-selector)
+- [HTML Canvas & Data Visualization Example](file2/#html-canvas-&-data-visualization-example)
+- [Hands-on Activity: Fill Canvas with Color](file2/#hands-on-activity-fill-canvas-with-color)
+- [Hands-on Activity: jQuery Events](file3/#hands-on-activity-jquery-events)
+- [Final Group Project: Part 2 Design](file3/#final-group-project-part-2-design)
+- [BootStrap Modal](file3/#bootstrap-modal)
 
 
 
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="script/ontology.js"></script>
 
+<!-- <div id="ontology_div"></div> -->
+<!-- <div></div> -->
+<body></body>
+
+
+
+|||[Index](../)||| [Prev](../)|||[Next](file1/)|||
+
+|||[Web Applications](../)|||
 
