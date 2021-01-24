@@ -18,7 +18,7 @@ title: URL and HTML
 ## <font color=red>Question</font>:
 * Why don’t we use IP directly?
   * Because it is hard to remember…
-* Also, not enough IP addresses: It is often case that one web server will handle sites on the same IPv4 address (different ports).
+* It is often case that multiple web server components (e.g. login, data visualization,...) will handle sites on the same IPv4 address with different ports.
 * DNS attack:
   * <https://searchsecurity.techtarget.com/definition/DNS-attack>
 * However, sometimes, you need to use IP instead of URL:
@@ -27,7 +27,7 @@ title: URL and HTML
   * You want to find out more information about the URL including who owns it, where it resides, or simply check if the domain record is correct.
 * Find your IP address:
   * Windows: cmd -> ipconfig
-  * Ubuntu: ip
+  * Ubuntu: ip a
 
 ||[Index](../../../)||| [Prev](../)|||[Next](../file3)|||
 

@@ -4,7 +4,7 @@ title: How URL's are Structured
 ---
 
 ## Scheme
-* <font color=red>scheme</font>://login:password@address:port/path/to/resource?query_string#fragment
+* <mark>scheme</mark>://login:password@address:port/path/to/resource?query_string#fragment
 * scheme: what protocol is being used?
   * http: standard web browsing, unsecured
   * https: standard web browsing, secured
@@ -64,7 +64,7 @@ title: How URL's are Structured
   * https: protocol
   * Mail: mail server
   * Google.com: domain name
-  * Com: Top Level Domain (TLD), generally intended to be used for commercial businesses
+  * Com: Top Level Domain (TLD), generally intended to be used for commercial businesses (similarly, .gov means goverment and .org means nonprofit organizations)
 
 ## TLD and URLs Price
 ### Something you need to pay attention to:
@@ -73,6 +73,8 @@ title: How URL's are Structured
   * Com: usually commercial, e.g., google.com
   * Net: usually networking services and internet service providers, e.g., att.net
   * Org: usually non-profit organizations
+  * Edu: education institution
+  * Gov: goverment
 * Of course there are some weird TLDs and cheaper price:
   * Let’s say if you want to register a URL for “piratenation”
   * You can check the price here: <https://tld-list.com/>
@@ -85,7 +87,7 @@ title: How URL's are Structured
   * Your URL should be something like this: <http://myweb.ecu.edu/student/pirateID>
   * This one is mine: <http://myweb.ecu.edu/wur18/>
   * I will show you how to upload all your files later.
-* Due...
+* Due <mark>Feb. 5</mark>
 
 
   
