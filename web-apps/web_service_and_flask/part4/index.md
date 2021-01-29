@@ -77,7 +77,7 @@ Connection: keep-alive
 * <font color=red>Path:</font> 
   * The part to the right of the server name, given as a URL/URI, lets us tell the server what resource we are requesting
 
-## Host...
+## Host
 
 GET /index.html HTTP/1.1
 

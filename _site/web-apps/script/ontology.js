@@ -1,5 +1,5 @@
 var w = 500;
-var h = 500;
+var h = 350;
 
 var color_original = '#4c72ff';
 var color_root_node = '#ff0000';
@@ -18,6 +18,7 @@ var dataset = {
       {name:"MVC and JavaScript", url:base_url+"/ISPeL-content-machine-learning/web-apps/MVC_JavaScript/",color:color_original},
       {name:"Software Design and JavaScript", url:base_url+"/ISPeL-content-machine-learning/web-apps/software_design_and_javaScript/",color:color_original},
       {name:"jQuery", url:base_url+"/ISPeL-content-machine-learning/web-apps/jQuery/",color:color_original},
+      {name:"Webservice and Flask", url:base_url+"/ISPeL-content-machine-learning/web-apps/web_service_and_flask/",color:color_original},
       
   
       
@@ -28,7 +29,8 @@ var dataset = {
       {source: 1, target: 3},
       {source: 2, target: 3},
       {source: 2, target: 4},
-      {source: 3, target: 4}
+      {source: 3, target: 4},
+      {source: 4, target: 5}
     
   ]
 };

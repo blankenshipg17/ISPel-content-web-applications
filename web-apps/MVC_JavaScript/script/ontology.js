@@ -1,5 +1,5 @@
-var w = 1000;
-var h = 1000;
+var w = 800;
+var h = 500;
 
 var color_original = '#4c72ff';
 var color_root_node = '#ff0000';

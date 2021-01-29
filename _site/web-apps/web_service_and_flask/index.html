@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Web Service and Flask</title>
+  <title>Web Applications</title>
   <meta name="description" content="ISPeL is an interactive system for personalization of learning. It uses topic-based authoring.">
 
   <!---   <link rel="stylesheet" href="/ISPeL-content-machine-learning/css/tufte.css" --->
@@ -40,78 +40,83 @@
 </header>
 
     <article class="group">
-      
+      <p><span class="newthought">Web Applications</span></p>
 
-<h1>Web service and flask</h1>
-<p class="subtitle"></p>
+<p>Relevant topics and the dependencies between topics have been identified. The prerequisites for topics have been integrated into the layout of the material so that learners can personalize their path of study within each topic.</p>
 
+<p>As a guide to the learner, each module below begins with an Introduction that describes the preliminaries for the topic and this is where we suggest that every learner should begin.  <label for="note-pgm" class="margin-toggle sidenote-number"></label><input type="checkbox" id="note-pgm" class="margin-toggle" /><span class="sidenote">The materials presented are based on the ontology constructed by <a href="http://www.cs.ecu.edu/wu/">Dr. Rui Wu</a>,  <a href="">Grayson Blankenship</a> and other research members of the ISPeL System Project Team funded by the <a href="https://www.nsf.gov">NSF</a> as part of the <a href="https://ppse.ecu.edu/">PPSE</a></span></p>
 
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    TeX: {
-      Macros: {
-        e: "\\epsilon",
-        xti: "x^{(i)}",
-        yti: "y^{(i)}",
-        bfy: "{\\bf y}",
-        bfx: "{\\bf x}",
-        bfg: "{\\bf g}",
-        bfbeta: "{\\bf \\beta}",
-        tp: "\\tilde p",
-        pt: "p_\\theta",
-        E: "{\\mathbb{E}}",
-        Ind: "{\\mathbb{I}}",
-        KL: "{\\mathbb{KL}}",
-        Re: "{\\mathbb{R}}",
-        Dc: "{\\mathcal{D}}",
-        Tc: "{\\mathcal{T}}",
-        Xc: "{\\mathcal{X}}",
-        note: ["\\textcolor{blue}{[NOTE: #1]}",1]
-      }
-    }
-  });
-</script>
+<p>A learner can proceed as they are inclined within the module to create their own path among the topics.   The concepts within the modules are intended to be discovered in any order.</p>
 
+<p>Web Applications available topics:</p>
 
-<h2 id="what-are-web-services">What are web services?</h2>
+<ol>
+  <li><a href="part1/">Webservice and Flask</a>
+    <ul>
+      <li><a href="part1/#what-are-web-services">What are web services?</a></li>
+      <li><a href="part1/#differences-soap-and-json">Differences: SOAP and JSON</a></li>
+      <li><a href="part1/#similarities-soap-and-json">Similarities: SOAP and JSON</a></li>
+      <li><a href="part2/#what-is-service-oriented-architecture-soa">What is Service-Oriented Architecture (SOA)?</a></li>
+      <li><a href="part2/#flask-and-soa">Flask and SOA</a></li>
+      <li><a href="part3/#what-are-soa-advantages">SOA Advantages</a></li>
+      <li><a href="part3/#what-are-soa-disadvantages">SOA Disadvantages</a></li>
+      <li><a href="part4/#web-services-transport-protocols">Web Services Transport Protocols</a></li>
+      <li><a href="part4/#http-requests">HTTP Requests</a></li>
+      <li><a href="part4/#get">GET</a></li>
+      <li><a href="part4/#index-html">/index.html</a></li>
+      <li><a href="part4/#host">Host</a></li>
+      <li><a href="part5/#http-responses">HTTP Responses</a></li>
+      <li><a href="part5/#200">200</a></li>
+      <li><a href="part5/#date-connection">Date… Connection</a></li>
+      <li><a href="part5/#doctype">!DOCTYPE</a></li>
+      <li><a href="part6/#http-server-response-codes">HTTP Server Response Codes</a></li>
+      <li><a href="part6/#http-server-response-codes-in-detail">HTTP Server Response Codes in Detail</a></li>
+      <li><a href="part7/#template-engine-jinja2">Template Engine: Jinja2</a></li>
+      <li><a href="part7/#flask-and-soa">Flask and SOA Cont.</a></li>
+      <li><a href="part7/#cs50">CS50</a></li>
+      <li><a href="part7/#preview-a-csv-file">Preview a CSV file</a></li>
+      <li><a href="part7/#final-group-project-part-3">Final Group Project: Part 3</a></li>
+    </ul>
+  </li>
+</ol>
 
-<ul>
-  <li>A web service is a generic term for a software function that is <font color="red">hosted at a network addressable location</font>. E.g. randomly generate presentation orders of N teams. In this general sense it can imply a <font color="red">Cloud based service</font>, a Utility service or even a departmental application. The term web service can also be used in a more specific sense, such as a hosted service using <font color="red">SOAP</font> which is described using a WSDL (Web Services Description Language) document. It is this more specific meaning that is usually implied by the term web services. However, the more general term is often used by the <font color="red">JSON</font> community when describing JSON based services. JSON web services uses the term in its generic sense (IBM).</li>
-</ul>
+<script src="http://d3js.org/d3.v3.min.js"></script>
 
-<h2 id="differences-soap-and-json">Differences: SOAP and JSON</h2>
-<ul>
-  <li>The content of a SOAP message is <font color="red">XML</font> data, whereas a JSON message contains <font color="red">JSON</font> data. JSON and XML are different encoding mechanisms for describing structured data. JSON tends to be a more <font color="red">efficient encoding mechanism</font>, so a typical JSON message will be <font color="red">smaller</font> than the equivalent XML message.
-JSON is <font color="red">easy to integrate</font> in JavaScript applications, but XML isn’t. This makes JSON a preferred data format with many web application developers.
-SOAP provides a mechanism to add <font color="red">Headers</font> to a message, and a family of specifications for qualities of service (such as security configuration, and distributed transactions). JSON <font color="red">does not</font> provide this mechanism, it instead relies on the services of the underlying HTTP network protocol. This results in fewer options for securing and configuring a workload.
-SOAP web services are described using <font color="red">WSDL documents</font> (an XML format). JSON web services are structured less formally; they tend to <font color="red">be loosely coupled</font> and prefer documentation by example.
-SOAP web services have an <font color="red">explicit error format</font> involving SOAP Fault messages. There’s no equivalent for JSON.</li>
-</ul>
+<script src="script/ontology.js"></script>
 
-<h2 id="similarities-soap-and-json">Similarities: SOAP and JSON</h2>
-<ul>
-  <li>Implementation of JSON is often derived from the SOAP architecture, and shares many of the concepts and artifacts. E.g., The CICS IBM enterprise application servers.</li>
-  <li>Both involve offline utility programs that assist with mapping application data to and from the external data representation. For example, convert data into a database table.</li>
-</ul>
+<!-- <div id="ontology_div"></div> -->
+<!-- <div></div> -->
+<body></body>
 
 <table>
   <tbody>
     <tr>
       <td> </td>
       <td> </td>
-      <td><a href="../../">Index</a></td>
+      <td><a href="file path">Index</a></td>
       <td> </td>
       <td> </td>
-      <td><a href="../">Prev</a></td>
+      <td><a href="file path">Prev</a></td>
       <td> </td>
       <td> </td>
-      <td><a href="part2">Next</a></td>
+      <td><a href="file path">Next</a></td>
       <td> </td>
       <td> </td>
     </tr>
   </tbody>
 </table>
 
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="../">Web Applications</a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
 
 
     </article>

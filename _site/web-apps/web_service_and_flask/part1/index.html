@@ -22,7 +22,7 @@
   ga('send', 'pageview');
   </script>
 
-  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/web_service_and_flask/part8/">
+  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/web_service_and_flask/part1/">
   <link rel="alternate" type="application/rss+xml" title="ISPeL-content-machine-learning" href="http://localhost:7000/ISPeL-content-machine-learning/feed.xml" />
 </head>
 
@@ -73,52 +73,25 @@
 </script>
 
 
-<h2 id="http-server-response-codes">HTTP Server Response Codes</h2>
+<h2 id="what-are-web-services">What are web services?</h2>
 
 <ul>
-  <li>200-level codes = success!</li>
-  <li>300-level codes = redirections</li>
-  <li>400-level codes = client-side errors (e.g., the dreaded 404 error!)</li>
-  <li>500-level codes = server-side errors</li>
+  <li>A web service is a generic term for a software function that is <font color="red">hosted at a network addressable location</font>. E.g. randomly generate presentation orders of N teams. In this general sense it can imply a <font color="red">Cloud based service</font>, a Utility service or even a departmental application. The term web service can also be used in a more specific sense, such as a hosted service using <font color="red">SOAP</font> which is described using a WSDL (Web Services Description Language) document. It is this more specific meaning that is usually implied by the term web services. However, the more general term is often used by the <font color="red">JSON</font> community when describing JSON based services. JSON web services uses the term in its generic sense (IBM).</li>
 </ul>
 
-<h2 id="http-server-response-codes-in-detail">HTTP Server Response Codes in Detail</h2>
-
+<h2 id="differences-soap-and-json">Differences: SOAP and JSON</h2>
 <ul>
-  <li>
-    <font color="red">200</font>
-    <p>(OK): Everything is fine, the response has the information you requested (if any)</p>
-  </li>
-  <li>
-    <font color="red">400</font>
-    <p>(Bad Request): There is a problem in the client request, there may be error information in the response</p>
-  </li>
-  <li>
-    <font color="red">500</font>
-    <p>(Internal Server Error): There is a problem on the server side, there may be error information in the response (but, it may not help much unless you control the server)</p>
-  </li>
-  <li>
-    <font color="red">301</font>
-    <p>(Moved Permanently): Your request moves a resource, or you are asking for the moved resource</p>
-  </li>
-  <li>
-    <font color="red">404</font>
-    <p>(Not Found): You are asking for something that isn’t there, the server doesn’t know what it is</p>
-  </li>
-  <li>
-    <font color="red">410</font>
-    <p>(Gone): You are asking for something that used to be there that the server is aware of</p>
-  </li>
-  <li>
-    <font color="red">409</font>
-    <p>(Conflict): The client request would leave resources in an inconsistent state. For example, you may get a 409 response when uploading a file which is <font color="red">older</font> than the one already on the server resulting in a version control conflict.</p>
-  </li>
-  <li>
-    <font color="red">SOAP web services</font>
-    <p>just use <font color="red">200</font> for success and <font color="red">500</font> for all failures; to find out what went wrong, you need to look at the response</p>
-  </li>
-  <li>RESTful web services should use <font color="red">at least</font> 200, 400, and 500, and may use a large number of other response codes</li>
-  <li>Many 200 codes are used for normal operations, like deletes or requests that do not update client info</li>
+  <li>The content of a SOAP message is <font color="red">XML</font> data, whereas a JSON message contains <font color="red">JSON</font> data. JSON and XML are different encoding mechanisms for describing structured data. JSON tends to be a more <font color="red">efficient encoding mechanism</font>, so a typical JSON message will be <font color="red">smaller</font> than the equivalent XML message.
+JSON is <font color="red">easy to integrate</font> in JavaScript applications, but XML isn’t. This makes JSON a preferred data format with many web application developers.
+SOAP provides a mechanism to add <font color="red">Headers</font> to a message, and a family of specifications for qualities of service (such as security configuration, and distributed transactions). JSON <font color="red">does not</font> provide this mechanism, it instead relies on the services of the underlying HTTP network protocol. This results in fewer options for securing and configuring a workload.
+SOAP web services are described using <font color="red">WSDL documents</font> (an XML format). JSON web services are structured less formally; they tend to <font color="red">be loosely coupled</font> and prefer documentation by example.
+SOAP web services have an <font color="red">explicit error format</font> involving SOAP Fault messages. There’s no equivalent for JSON.</li>
+</ul>
+
+<h2 id="similarities-soap-and-json">Similarities: SOAP and JSON</h2>
+<ul>
+  <li>Implementation of JSON is often derived from the SOAP architecture, and shares many of the concepts and artifacts. E.g., The CICS IBM enterprise application servers.</li>
+  <li>Both involve offline utility programs that assist with mapping application data to and from the external data representation. For example, convert data into a database table.</li>
 </ul>
 
 <table>
@@ -129,10 +102,10 @@
       <td><a href="../../">Index</a></td>
       <td> </td>
       <td> </td>
-      <td><a href="../part5">Prev</a></td>
+      <td><a href="../">Prev</a></td>
       <td> </td>
       <td> </td>
-      <td><a href="../part7">Next</a></td>
+      <td><a href="../part2">Next</a></td>
       <td> </td>
       <td> </td>
     </tr>

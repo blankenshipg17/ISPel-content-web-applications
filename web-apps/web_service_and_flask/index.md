@@ -1,35 +1,56 @@
 ---
-layout: post
-title: Web Service and Flask
+layout: default
+title: Web Applications
 ---
-## What are web services?
-
-* A web service is a generic term for a software function that is <font color=red>hosted at a network addressable location</font>. E.g. randomly generate presentation orders of N teams. In this general sense it can imply a <font color=red>Cloud based service</font>, a Utility service or even a departmental application. The term web service can also be used in a more specific sense, such as a hosted service using <font color=red>SOAP</font> which is described using a WSDL (Web Services Description Language) document. It is this more specific meaning that is usually implied by the term web services. However, the more general term is often used by the <font color=red>JSON</font> community when describing JSON based services. JSON web services uses the term in its generic sense (IBM).
-
-## Differences: SOAP and JSON
-* The content of a SOAP message is <font color=red>XML</font> data, whereas a JSON message contains <font color=red>JSON</font> data. JSON and XML are different encoding mechanisms for describing structured data. JSON tends to be a more <font color=red>efficient encoding mechanism</font>, so a typical JSON message will be <font color=red>smaller</font> than the equivalent XML message.
-JSON is <font color=red>easy to integrate</font> in JavaScript applications, but XML isn't. This makes JSON a preferred data format with many web application developers.
-SOAP provides a mechanism to add <font color=red>Headers</font> to a message, and a family of specifications for qualities of service (such as security configuration, and distributed transactions). JSON <font color=red>does not</font> provide this mechanism, it instead relies on the services of the underlying HTTP network protocol. This results in fewer options for securing and configuring a workload.
-SOAP web services are described using <font color=red>WSDL documents</font> (an XML format). JSON web services are structured less formally; they tend to <font color=red>be loosely coupled</font> and prefer documentation by example.
-SOAP web services have an <font color=red>explicit error format</font> involving SOAP Fault messages. There's no equivalent for JSON.
-
-## Similarities: SOAP and JSON
-* Implementation of JSON is often derived from the SOAP architecture, and shares many of the concepts and artifacts. E.g., The CICS IBM enterprise application servers.
-* Both involve offline utility programs that assist with mapping application data to and from the external data representation. For example, convert data into a database table.
+<span class="newthought">Web Applications</span>
 
 
-|||[Index](../../)||| [Prev](../)||| [Next](part2)|||
+Relevant topics and the dependencies between topics have been identified. The prerequisites for topics have been integrated into the layout of the material so that learners can personalize their path of study within each topic.  
+
+As a guide to the learner, each module below begins with an Introduction that describes the preliminaries for the topic and this is where we suggest that every learner should begin.  {% include sidenote.html id="note-pgm" note="The materials presented are based on the ontology constructed by [Dr. Rui Wu](http://www.cs.ecu.edu/wu/),  [Grayson Blankenship]() and other research members of the ISPeL System Project Team funded by the [NSF](https://www.nsf.gov) as part of the [PPSE](https://ppse.ecu.edu/)" %}
+
+
+A learner can proceed as they are inclined within the module to create their own path among the topics.   The concepts within the modules are intended to be discovered in any order.  
+
+
+Web Applications available topics: 
+
+6. [Webservice and Flask](part1/)
+- [What are web services?](part1/#what-are-web-services)
+- [Differences: SOAP and JSON](part1/#differences-soap-and-json)
+- [Similarities: SOAP and JSON](part1/#similarities-soap-and-json)
+- [What is Service-Oriented Architecture (SOA)?](part2/#what-is-service-oriented-architecture-soa)
+- [Flask and SOA](part2/#flask-and-soa)
+- [SOA Advantages](part3/#what-are-soa-advantages)
+- [SOA Disadvantages](part3/#what-are-soa-disadvantages)
+- [Web Services Transport Protocols](part4/#web-services-transport-protocols)
+- [HTTP Requests](part4/#http-requests)
+- [GET](part4/#get)
+- [/index.html](part4/#index-html)
+- [Host](part4/#host)
+- [HTTP Responses](part5/#http-responses)
+- [200](part5/#200)
+- [Date… Connection](part5/#date-connection)
+- [!DOCTYPE](part5/#doctype)
+- [HTTP Server Response Codes](part6/#http-server-response-codes)
+- [HTTP Server Response Codes in Detail](part6/#http-server-response-codes-in-detail)
+- [Template Engine: Jinja2](part7/#template-engine-jinja2)
+- [Flask and SOA Cont.](part7/#flask-and-soa)
+- [CS50](part7/#cs50)
+- [Preview a CSV file](part7/#preview-a-csv-file)
+- [Final Group Project: Part 3](part7/#final-group-project-part-3)
+
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="script/ontology.js"></script>
+
+<!-- <div id="ontology_div"></div> -->
+<!-- <div></div> -->
+<body></body>
 
 
 
+|||[Index](file path)||| [Prev](file path)|||[Next](file path)|||
 
-
-
-
-
-
-
-
-
-
+|||[Web Applications](../)|||
 
