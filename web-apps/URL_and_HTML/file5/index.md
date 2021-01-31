@@ -21,11 +21,11 @@ title: HTML
 * Implement a simple webpage with your introduction, your photo (or a cartoon fake photo).
 * Upload your web page to your URL
 * Submit your homework 1, ONLY URL
-* Due...
+* Due <mark>Feb. 8</mark>
 
 ## How to upload files to your URL
-* Download WinSCP: <https://winscp.net/eng/download.php>
-* Here are more details: <https://ecu.teamdynamix.com/TDClient/1409/Portal/Requests/ServiceDet?ID=31623> and <http://core.ecu.edu/psyc/wuenschk/Help/Web-Help/FileZilla.pdf> 
+* Download and install FileZilla: <https://ubuntuhandbook.org/index.php/2020/07/filezilla-client-3-48-1-ppa-ubuntu-20-04/>
+* Here are more details: <https://ecu.teamdynamix.com/TDClient/1409/Portal/KB/ArticleDet?ID=67383> 
 * Demo
 
 ![](demo.png)
@@ -36,9 +36,9 @@ title: HTML
   * Cisco VPN
   * Permissions denied
 * Jobs
-  * Web application development
+  * Android App development
   * At least one more year in ECU
-  * Have some experience on web application
+  * Have some experience on Android App
   * Email me your CV
 
 ## HTML DOM
