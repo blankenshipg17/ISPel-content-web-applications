@@ -13,7 +13,7 @@ title: BootStrap
 * If you don't want to download and host Bootstrap yourself, you can include it from a <font color=red>CDN</font> (Content Delivery Network).
 * MaxCDN provides CDN support for Bootstrap's CSS and JavaScript. You must also include jQuery.
 
-* Example 11
+* [Example 11](https://jsfiddle.net/rxb3ao6y/16/)
 * Charset UTF-8, represent any character in the Unicode standard
   * A character in UTF8 can be from 1 to 4 bytes long. UTF-8 is backwards compatible with ASCII. UTF-8 is the preferred encoding for e-mail and web pages.
 * UTF-16, encode the entire Unicode repertoire.
@@ -51,7 +51,7 @@ Follow the rules, automatically mobile-friendly.
 * <font color=blue>&lt;div class="col-*-*">&lt;/div&gt;</font>
 * <font color=blue>&lt;/div&gt;</font>
 * For example: class="col-sm-4"
-* Example 12
+* [Example 12](https://jsfiddle.net/rxb3ao6y/17/)
   * <font color=blue>.container-fluid</font> 
     * for a full width container, spanning the entire width of the viewport.
 * Demo the mobile-friendly test in Firefox and Google Chrome.

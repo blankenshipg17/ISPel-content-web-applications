@@ -18,7 +18,7 @@ title: CSS
 
 ![](css.png)
 
-* CSS Syntax and Selectors: Example 05
+* CSS Syntax and Selectors: [Example 05](https://jsfiddle.net/rxb3ao6y/7/)
 * ID selector vs Class selector vs Grouping Selector
 * Try to avoid have two styles for the same element
 * HTML tag: &lt;div&gt;
@@ -39,7 +39,7 @@ title: CSS
 * An element can have both an ID and a class.
 
 ## How to insert CSS
-* Three ways to insert: Example 06
+* Three ways to insert: [Example 06](https://jsfiddle.net/rxb3ao6y/8/)
   * Inline style (within tag)
   * Internal style sheet (&lt;style&gt;)
   * External style sheet (external file)
@@ -54,7 +54,7 @@ title: CSS
   * Inline style (inside an HTML element)
   * External and internal style sheets (in the head section, the later one)
   * Browser default
-* Example 07
+* [Example 07](https://jsfiddle.net/rxb3ao6y/10/)
 
 
 ||| [Index](../../)||| [Prev](../)||| [Next](../file3/)|||

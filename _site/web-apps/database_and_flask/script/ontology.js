@@ -1,5 +1,5 @@
-var w = 500;
-var h = 400;
+var w = 800;
+var h = 800;
 
 var color_original = '#4c72ff';
 var color_root_node = '#ff0000';
@@ -13,30 +13,23 @@ var base_url = 'http://127.0.0.1:7000';
 var dataset = {
   nodes:[
  
-      {name:"URL and HTML", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/",color:color_root_node},
-      {name:"Design", url:base_url+"/ISPeL-content-machine-learning/web-apps/design/",color:color_original},
-      {name:"MVC and JavaScript", url:base_url+"/ISPeL-content-machine-learning/web-apps/MVC_JavaScript/",color:color_original},
-      {name:"Software Design and JavaScript", url:base_url+"/ISPeL-content-machine-learning/web-apps/software_design_and_javaScript/",color:color_original},
-      {name:"jQuery", url:base_url+"/ISPeL-content-machine-learning/web-apps/jQuery/",color:color_original},
-      {name:"Webservice and Flask", url:base_url+"/ISPeL-content-machine-learning/web-apps/web_service_and_flask/",color:color_original},
-      {name:"Database and Flask", url:base_url+"/ISPeL-content-machine-learning/web-apps/database_and_flask/",color:color_original},
-      {name:"Message and Flask", url:base_url+"/ISPeL-content-machine-learning/web-apps/message_and_flask/",color:color_original},
-      
-  
-      
+      {name:"Database and Flask", url:base_url+"/ISPeL-content-machine-learning/web-apps/database_and_flask/part1/",color:color_root_node},
+      {name:"Relational Database", url:base_url+"/ISPeL-content-machine-learning/web-apps/database_and_flask/part1/#relational-database",color:color_original},
+      {name:"Relational Database: entity relationship diagram", url:base_url+"/ISPeL-content-machine-learning/web-apps/database_and_flask/part1/#relational-database-entity-relationship-diagram",color:color_original},
+      {name:"Relational DB Advantages vs Disadvantages", url:base_url+"/ISPeL-content-machine-learning/web-apps/database_and_flask/part2/#relational-db-advantages-vs-disadvantages",color:color_original},
+      {name:"Join Example", url:base_url+"/ISPeL-content-machine-learning/web-apps/database_and_flask/part2/#relational-db-join-example",color:color_original},
+      {name:"NoSQL Database", url:base_url+"/ISPeL-content-machine-learning/web-apps/database_and_flask/part2/#nosql-database",color:color_original},
+      {name:"Relational vs NoSQL Database", url:base_url+"/ISPeL-content-machine-learning/web-apps/database_and_flask/part2/#relational-vs-nosql-database",color:color_original},
+      {name:"Choosing a Datbase", url:base_url+"/ISPeL-content-machine-learning/web-apps/database_and_flask/part3/#which-database",color:color_original},
+      {name:"Setup and Hello World", url:base_url+"/ISPeL-content-machine-learning/web-apps/database_and_flask/part3/#setup-and-hello-world",color:color_original},
+      {name:"Data Display and Interaction", url:base_url+"/ISPeL-content-machine-learning/web-apps/database_and_flask/part3/#data-display-and-interaction",color:color_original},
+      {name:"Drag and Drop Upload File", url:base_url+"/ISPeL-content-machine-learning/web-apps/database_and_flask/part4/#how-to-drag-and-drop-to-upload-a-file",color:color_original},
+      {name:"Threshold Method", url:base_url+"/ISPeL-content-machine-learning/web-apps/database_and_flask/part4/#streshold-method",color:color_original}
+       
   ],
   edges:[
-      {source: 0, target: 1},
-      {source: 1, target: 2},
-      {source: 1, target: 3},
-      {source: 2, target: 3},
-      {source: 2, target: 4},
-      {source: 3, target: 4},
-      {source: 4, target: 5},
-      {source: 5, target: 6},
-      {source: 5, target: 7},
-      {source: 6, target: 7}
-    
+     
+      
   ]
 };
 

@@ -21,6 +21,8 @@ Web Applications available topics:
 4. [Software Design and JavaScript](software_design_and_javaScript/)
 5. [jQuery](jQuery/)
 6. [Webservice and Flask](web_service_and_flask)
+7. [Database and Flask](database_and_flask)
+8. [Message and Flask](message_and_flask)
 
 
 

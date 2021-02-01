@@ -1,43 +1,44 @@
 ---
-layout: post
-title: Database and Flask
+layout: default
+title: Web Applications
 ---
-
-## Database is important!
-
-* A database is an organized <font color=red>collection</font> of data, generally <font color=red>stored and accessed</font> electronically from a computer system. Where databases are more complex they are often developed using formal design and modeling techniques (wiki).
-* The most commonly used databases for web applications are those based on the <font color=red>relational model</font>, also called SQL databases in reference to the Structured Query Language they use. In simplest terms, a relational database is one that presents information in tables with rows and columns (oracle).
-* In recent years document-oriented and key-value databases, informally known together as NoSQL databases, have become popular alternatives. 
-
-## Relational Database
-
-* Relational databases store data in <font color=red>tables</font>, which model the different entities in the application’s domain. For example, a database for an order management application will likely have customers, products, and orders tables.
-* A table has a <font color=red>fixed</font> number of columns and a <font color=red>variable</font> number of rows. The columns define the <font color=red>data attributes</font> of the entity represented by the table. For example, a customers table will have columns such as name, address, phone, and so on. Each row in a table defines an actual data element that assigns values to some or all the columns.
-
-* Tables have a special column called the <font color=red>primary key</font>, which holds a <font color=red>unique</font> identifier for each row stored in the table. Tables can also have columns called <font color=red>foreign keys</font>, which reference the primary key of a row in the same or another table. These links between rows are called <font color=red>relationships</font> and are the foundation of the relational database model.
-* Question: provide an example that foreign keys refer to the primary keys of a row in the same table.
-
-## Relational Database: entity relationship diagram
-
-![](database.png)
-* id = Primary Key
-* role_id = Foreign Key
-* One-to-many relationship. One role is associate with many users.
-* This figure shows a diagram of a simple database with two tables that store users and user roles. The line that connects the two tables represents a relationship between the tables.
+<span class="newthought">Web Applications</span>
 
 
-|||[Index](../../)||| [Prev](../)||| [Next](part2)|||
+Relevant topics and the dependencies between topics have been identified. The prerequisites for topics have been integrated into the layout of the material so that learners can personalize their path of study within each topic.  
+
+As a guide to the learner, each module below begins with an Introduction that describes the preliminaries for the topic and this is where we suggest that every learner should begin.  {% include sidenote.html id="note-pgm" note="The materials presented are based on the ontology constructed by [Dr. Rui Wu](http://www.cs.ecu.edu/wu/),  [Grayson Blankenship]() and other research members of the ISPeL System Project Team funded by the [NSF](https://www.nsf.gov) as part of the [PPSE](https://ppse.ecu.edu/)" %}
 
 
+A learner can proceed as they are inclined within the module to create their own path among the topics.   The concepts within the modules are intended to be discovered in any order.  
 
 
+Web Applications available topics: 
+
+7. [Database and Flask](part1/)
+- [Relational Database](part1/#relational-database)
+- [Relational Database: entity relationship diagram](part1/#relational-database-entity-relationship-diagram)
+- [Relational DB Advantages vs Disadvantages](part2/#relational-db-advantages-vs-disadvantages)
+- [Join Example](part2/#relational-db-join-example)
+- [NoSQL Database](part2/#nosql-database)
+- [Relational vs NoSQL Database](part2/#relational-vs-nosql-database)
+- [Choosing a Datbase](part3/#which-database)
+- [Setup and Hello World](part3/#setup-and-hello-world)
+- [Data Display and Interaction](part3/#data-display-and-interaction)
+- [Drag and Drop Upload File](part4/#how-to-drag-and-drop-to-upload-a-file)
+- [Threshold Method](part4/#streshold-method)
 
 
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="script/ontology.js"></script>
 
-
-
-
+<!-- <div id="ontology_div"></div> -->
+<!-- <div></div> -->
+<body></body>
 
 
 
+|||[Index](file path)||| [Prev](file path)|||[Next](file path)|||
+
+|||[Web Applications](../)|||
 

@@ -19,7 +19,7 @@ title: Design
   * HSLA (Hue, Saturation, Light, and Opacity)
     * <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool>
 
-* Example 08
+* [Example 08](https://jsfiddle.net/rxb3ao6y/11/)
 
 ## Which Colors You should Use
 * How to choose theme colors:
@@ -37,7 +37,7 @@ Figure Credit: <https://creativemarket.com/blog/color-combination-tips>
 * Yellow and Purple: grab attention.
 
 ## CSS examples: Horizontal Navigation Bar
-* Example 09
+* [Example 09](https://jsfiddle.net/rxb3ao6y/13/)
 * HTML tag:
   * ul: defines an unordered list
   * li: defines a list item
@@ -50,14 +50,14 @@ plave image here css 1-3
 Figure credit: <https://stackoverflow.com/questions/2189452/when-to-use-margin-vs-padding-in-css>
 
 ## Group Activity 1: 5 minutes
-* Work on Example 09
+* Work on [Example 09](https://jsfiddle.net/rxb3ao6y/12/)
   * Highlight current selected page with color green in the navigation bar
   * Hover color changed to: lawngreen (hint: li a:hover)
 
 ![](group1.png)
 
 ## CSS examples: Vertical Navigation Bar
-* Example 10
+* [Example 10](https://jsfiddle.net/rxb3ao6y/15/)
 * Question: how to avoid repeated navigation bar code? We will learn it when we introduce Jinjia2
 * .active vs .hover:
   * Active: current website you are in

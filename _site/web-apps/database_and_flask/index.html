@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Database and Flask</title>
+  <title>Web Applications</title>
   <meta name="description" content="ISPeL is an interactive system for personalization of learning. It uses topic-based authoring.">
 
   <!---   <link rel="stylesheet" href="/ISPeL-content-machine-learning/css/tufte.css" --->
@@ -40,86 +40,71 @@
 </header>
 
     <article class="group">
-      
+      <p><span class="newthought">Web Applications</span></p>
 
-<h1>Database and flask</h1>
-<p class="subtitle"></p>
+<p>Relevant topics and the dependencies between topics have been identified. The prerequisites for topics have been integrated into the layout of the material so that learners can personalize their path of study within each topic.</p>
 
+<p>As a guide to the learner, each module below begins with an Introduction that describes the preliminaries for the topic and this is where we suggest that every learner should begin.  <label for="note-pgm" class="margin-toggle sidenote-number"></label><input type="checkbox" id="note-pgm" class="margin-toggle" /><span class="sidenote">The materials presented are based on the ontology constructed by <a href="http://www.cs.ecu.edu/wu/">Dr. Rui Wu</a>,  <a href="">Grayson Blankenship</a> and other research members of the ISPeL System Project Team funded by the <a href="https://www.nsf.gov">NSF</a> as part of the <a href="https://ppse.ecu.edu/">PPSE</a></span></p>
 
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    TeX: {
-      Macros: {
-        e: "\\epsilon",
-        xti: "x^{(i)}",
-        yti: "y^{(i)}",
-        bfy: "{\\bf y}",
-        bfx: "{\\bf x}",
-        bfg: "{\\bf g}",
-        bfbeta: "{\\bf \\beta}",
-        tp: "\\tilde p",
-        pt: "p_\\theta",
-        E: "{\\mathbb{E}}",
-        Ind: "{\\mathbb{I}}",
-        KL: "{\\mathbb{KL}}",
-        Re: "{\\mathbb{R}}",
-        Dc: "{\\mathcal{D}}",
-        Tc: "{\\mathcal{T}}",
-        Xc: "{\\mathcal{X}}",
-        note: ["\\textcolor{blue}{[NOTE: #1]}",1]
-      }
-    }
-  });
-</script>
+<p>A learner can proceed as they are inclined within the module to create their own path among the topics.   The concepts within the modules are intended to be discovered in any order.</p>
 
+<p>Web Applications available topics:</p>
 
-<h2 id="database-is-important">Database is important!</h2>
-
-<ul>
-  <li>A database is an organized <font color="red">collection</font> of data, generally <font color="red">stored and accessed</font> electronically from a computer system. Where databases are more complex they are often developed using formal design and modeling techniques (wiki).</li>
-  <li>The most commonly used databases for web applications are those based on the <font color="red">relational model</font>, also called SQL databases in reference to the Structured Query Language they use. In simplest terms, a relational database is one that presents information in tables with rows and columns (oracle).</li>
-  <li>In recent years document-oriented and key-value databases, informally known together as NoSQL databases, have become popular alternatives.</li>
-</ul>
-
-<h2 id="relational-database">Relational Database</h2>
-
-<ul>
-  <li>Relational databases store data in <font color="red">tables</font>, which model the different entities in the application’s domain. For example, a database for an order management application will likely have customers, products, and orders tables.</li>
-  <li>
-    <p>A table has a <font color="red">fixed</font> number of columns and a <font color="red">variable</font> number of rows. The columns define the <font color="red">data attributes</font> of the entity represented by the table. For example, a customers table will have columns such as name, address, phone, and so on. Each row in a table defines an actual data element that assigns values to some or all the columns.</p>
+<ol>
+  <li><a href="part1/">Database and Flask</a>
+    <ul>
+      <li><a href="part1/#relational-database">Relational Database</a></li>
+      <li><a href="part1/#relational-database-entity-relationship-diagram">Relational Database: entity relationship diagram</a></li>
+      <li><a href="part2/#relational-db-advantages-vs-disadvantages">Relational DB Advantages vs Disadvantages</a></li>
+      <li><a href="part2/#relational-db-join-example">Join Example</a></li>
+      <li><a href="part2/#nosql-database">NoSQL Database</a></li>
+      <li><a href="part2/#relational-vs-nosql-database">Relational vs NoSQL Database</a></li>
+      <li><a href="part3/#which-database">Choosing a Datbase</a></li>
+      <li><a href="part3/#setup-and-hello-world">Setup and Hello World</a></li>
+      <li><a href="part3/#data-display-and-interaction">Data Display and Interaction</a></li>
+      <li><a href="part4/#how-to-drag-and-drop-to-upload-a-file">Drag and Drop Upload File</a></li>
+      <li><a href="part4/#streshold-method">Threshold Method</a></li>
+    </ul>
   </li>
-  <li>Tables have a special column called the <font color="red">primary key</font>, which holds a <font color="red">unique</font> identifier for each row stored in the table. Tables can also have columns called <font color="red">foreign keys</font>, which reference the primary key of a row in the same or another table. These links between rows are called <font color="red">relationships</font> and are the foundation of the relational database model.</li>
-  <li>Question: provide an example that foreign keys refer to the primary keys of a row in the same table.</li>
-</ul>
+</ol>
 
-<h2 id="relational-database-entity-relationship-diagram">Relational Database: entity relationship diagram</h2>
+<script src="http://d3js.org/d3.v3.min.js"></script>
 
-<p><img src="database.png" alt="" /></p>
-<ul>
-  <li>id = Primary Key</li>
-  <li>role_id = Foreign Key</li>
-  <li>One-to-many relationship. One role is associate with many users.</li>
-  <li>This figure shows a diagram of a simple database with two tables that store users and user roles. The line that connects the two tables represents a relationship between the tables.</li>
-</ul>
+<script src="script/ontology.js"></script>
+
+<!-- <div id="ontology_div"></div> -->
+<!-- <div></div> -->
+<body></body>
 
 <table>
   <tbody>
     <tr>
       <td> </td>
       <td> </td>
-      <td><a href="../../">Index</a></td>
+      <td><a href="file path">Index</a></td>
       <td> </td>
       <td> </td>
-      <td><a href="../">Prev</a></td>
+      <td><a href="file path">Prev</a></td>
       <td> </td>
       <td> </td>
-      <td><a href="part2">Next</a></td>
+      <td><a href="file path">Next</a></td>
       <td> </td>
       <td> </td>
     </tr>
   </tbody>
 </table>
 
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="../">Web Applications</a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
 
 
     </article>

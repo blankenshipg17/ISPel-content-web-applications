@@ -1,5 +1,5 @@
-var w = 1500;
-var h = 1500;
+var w = 1000;
+var h = 1000;
 
 var color_original = '#4c72ff';
 var color_root_node = '#ff0000';
@@ -18,11 +18,11 @@ var dataset = {
       {name:"W3C", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file1/#web-application",color:color_original},
       {name:"IP Address", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file1/#w3c",color:color_original},
       {name:"Domain Name System", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file1/#ip-address",color:color_original},
-      {name:"How it Works", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file2/#domain-name-system",color:color_original},
+      {name:"How DNS Works", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file2/#domain-name-system",color:color_original},
       {name:"How URL's are Structured", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file2/#how-does-it-work",color:color_original},
       {name:"URLs", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file3/#how-url's-are-structured",color:color_original},
       {name:"TLD and URLs Price", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file3/#tld-and-urls-price",color:color_original},
-      {name:"Homework 1 (Part 1)", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file3/#homework-1-part-1",color:color_original},
+      //{name:"Homework 1", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file3/#homework-1-part-1",color:color_original},
       {name:"W3Schools", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file4/#w3schools",color:color_original},
       {name:"HTML", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file4/#what-is-html",color:color_original},
       {name:"HTML Examples", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/file4/#lets-do-this-first-example",color:color_original},
@@ -43,23 +43,25 @@ var dataset = {
       {source: 1, target: 2},
       {source: 0, target: 3},
       {source: 3, target: 4},
-      {source: 3, target: 5},
+      {source: 4, target: 5},
       {source: 3, target: 6},
       {source: 3, target: 7},
       {source: 7, target: 8},
       {source: 0, target: 9},
       {source: 0, target: 10},
-      {source: 9, target: 15},
-      {source: 9, target: 16},
-      {source: 0, target: 11},
-      {source: 11, target: 12},
-      {source: 11, target: 13},
-      {source: 11, target: 14},
-      {source: 12, target: 17},
-      {source: 0, target: 18},
-      {source: 18, target: 19},
-      {source: 18, target: 20},
-      {source: 20, target: 21}
+      {source: 0, target: 14},
+      {source: 14, target: 16},
+      {source: 16, target: 15},
+      {source: 0, target: 10},
+      {source: 10, target: 11},
+      {source: 10, target: 12},
+      {source: 12, target: 13},
+      {source: 0, target: 17},
+      {source: 17, target: 18},
+      {source: 17, target: 19},
+      {source: 19, target: 20}
+      
+     
       
   ]
 };

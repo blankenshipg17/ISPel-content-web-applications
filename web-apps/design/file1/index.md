@@ -3,6 +3,14 @@ layout: post
 title: Design
 ---
 
+## Overview
+* Form your team
+* Web Page Design
+* Paper Prototype
+* CSS
+* Bootstrap
+* Contents design
+
 ## Form your team
 * Don’t wait until the weekend to form your team.
 * 2 - 3 students in each team.
@@ -18,9 +26,10 @@ title: Design
 * Frontend:
   * JavaScript
   * Jquery
+  * Reactjs
   * HTML
   * BootStrap
-* April 21 and 26 Demo Day, your show time
+* April 21 and 23 Demo, your show time
   * Top 3 team will be announced based on your ranking
   * More details will be announced
 

@@ -1,5 +1,5 @@
-var w = 1500;
-var h = 1500;
+var w = 1000;
+var h = 1000;
 
 var color_original = '#4c72ff';
 var color_root_node = '#ff0000';
@@ -47,19 +47,24 @@ var dataset = {
       {source: 3, target: 6},
       {source: 5, target: 7},
       {source: 5, target: 8},
-      {source: 5, target: 9},
+      {source: 10, target: 9},
       {source: 5, target: 10},
       {source: 0, target: 11},
       {source: 0, target: 12},
       {source: 12, target: 13},
-      {source: 0, target: 14},
+      {source: 19, target: 14},
       {source: 0, target: 15},
-      {source: 15, target: 16},
+      //{source: 15, target: 16},
       {source: 15, target: 17},
-      {source: 15, target: 18},
-      {source: 15, target: 19},
-      {source: 15, target: 20},
-      {source: 15, target: 21}
+      {source: 17, target: 16},
+      {source: 18, target: 19},
+      {source: 17, target: 18},
+      {source: 17, target: 20},
+      {source: 17, target: 21},
+      {source: 14, target: 16},
+      {source: 14, target: 19},
+      {source: 14, target: 20},
+      {source: 14, target: 21}
       
   ]
 };

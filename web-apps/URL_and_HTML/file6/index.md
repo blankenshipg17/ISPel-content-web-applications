@@ -2,11 +2,9 @@
 layout: post
 title: Transport Protocols
 ---
-![](tp1.png)
-![](tp2.png)
-![](tp3.png)
-* text for tp1: Protocols for sensitive data transportation, hospital
-* text for tp3: pstn protocol: Public switched telephone network
+text for tp1: Protocols for sensitive data transportation, hospital
+
+text for tp3: pstn protocol: Public switched telephone network
 
 ## Web Services Transport Protocols
 
@@ -21,20 +19,18 @@ title: Transport Protocols
 * To fully understand HTTP and internet physically work, you may need to enroll Networking course…
 
 
-![](http.png)
-
 text for http.png : IP addresses of the sending and receiving computers in the IP header
 A good tutorial: https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm
 
 * How HTTP and internet physically work is not required in this class. 
 * In this class:
-  * You should know <mark>HTTP provides the basic mechanism for requesting and providing web resources</mark>.
-  * You should learn <mark> how to use JavaScript and JQuery to send requests and process requests on the server side</mark>.
+  * You should know HTTP provides the basic mechanism for requesting and providing web resources.
+  * You should learn how to use JavaScript and JQuery to send requests and process requests on the server side.
 
 * Here are some commonly used request methods 
 * GET
   * Go and grab something
-  * usually, no browser payload included
+  * no browser payload included
   * used for file retrieval
   * E.g., grab an image from server
 * POST
@@ -42,7 +38,7 @@ A good tutorial: https://web.stanford.edu/class/msande91si/www-spr04/readings/we
   * often includes a browser payload
   * generally for submitting forms
   * E.g., send a user information to server (login form)
-* <mark>Payload</mark> is the part of that response that is communicating directly to you, usually JSON format data. We will learn what is JSON later.
+* Payload is the part of that response that is communicating directly to you, usually JSON format data. We will learn what is JSON later.
 
 
 ## Other HTTP Request Types

@@ -3,9 +3,9 @@ layout: post
 title: HTML
 ---
 ## Here are some rules…
-* &lt;head&gt;: a container for metadata (data about data) and is placed between the &lt;html&gt; tag and the &lt;body&gt; tag. Check example 01
+* &lt;head&gt;: a container for metadata (data about data) and is placed between the &lt;html&gt; tag and the &lt;body&gt; tag. Check [example 01](https://jsfiddle.net/rxb3ao6y/1/)
   * The following tags describe metadata: &lt;title&gt;, &lt;style&gt; (CSS, will learn), &lt;meta&gt; (define fonts, website keyword…), &lt;link&gt; (CSS, will learn), &lt;script&gt; (JavaScript, will learn), and &lt;base&gt;.
-  * &lt;base&gt;: example 4_1, defines a base URL
+  * &lt;base&gt;: [example 4_1](https://jsfiddle.net/rxb3ao6y/5/), defines a base URL
 * &lt;body&gt; tag defines the document's body.
   * contains all the contents of an HTML document, such as text, hyperlinks, images, tables, lists, etc.
   * contains the visible page content
@@ -21,11 +21,11 @@ title: HTML
 * Implement a simple webpage with your introduction, your photo (or a cartoon fake photo).
 * Upload your web page to your URL
 * Submit your homework 1, ONLY URL
-* Due <mark>Feb. 8</mark>
+* Due...
 
 ## How to upload files to your URL
-* Download and install FileZilla: <https://ubuntuhandbook.org/index.php/2020/07/filezilla-client-3-48-1-ppa-ubuntu-20-04/>
-* Here are more details: <https://ecu.teamdynamix.com/TDClient/1409/Portal/KB/ArticleDet?ID=67383> 
+* Download WinSCP: <https://winscp.net/eng/download.php>
+* Here are more details: <https://ecu.teamdynamix.com/TDClient/1409/Portal/Requests/ServiceDet?ID=31623> and <http://core.ecu.edu/psyc/wuenschk/Help/Web-Help/FileZilla.pdf> 
 * Demo
 
 ![](demo.png)
@@ -36,9 +36,9 @@ title: HTML
   * Cisco VPN
   * Permissions denied
 * Jobs
-  * Android App development
+  * Web application development
   * At least one more year in ECU
-  * Have some experience on Android App
+  * Have some experience on web application
   * Email me your CV
 
 ## HTML DOM

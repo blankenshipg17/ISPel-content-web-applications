@@ -1,5 +1,5 @@
-var w = 500;
-var h = 400;
+var w = 800;
+var h = 800;
 
 var color_original = '#4c72ff';
 var color_root_node = '#ff0000';
@@ -13,30 +13,26 @@ var base_url = 'http://127.0.0.1:7000';
 var dataset = {
   nodes:[
  
-      {name:"URL and HTML", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/",color:color_root_node},
-      {name:"Design", url:base_url+"/ISPeL-content-machine-learning/web-apps/design/",color:color_original},
-      {name:"MVC and JavaScript", url:base_url+"/ISPeL-content-machine-learning/web-apps/MVC_JavaScript/",color:color_original},
-      {name:"Software Design and JavaScript", url:base_url+"/ISPeL-content-machine-learning/web-apps/software_design_and_javaScript/",color:color_original},
-      {name:"jQuery", url:base_url+"/ISPeL-content-machine-learning/web-apps/jQuery/",color:color_original},
-      {name:"Webservice and Flask", url:base_url+"/ISPeL-content-machine-learning/web-apps/web_service_and_flask/",color:color_original},
-      {name:"Database and Flask", url:base_url+"/ISPeL-content-machine-learning/web-apps/database_and_flask/",color:color_original},
-      {name:"Message and Flask", url:base_url+"/ISPeL-content-machine-learning/web-apps/message_and_flask/",color:color_original},
-      
-  
+      {name:"Message and Flask", url:base_url+"/ISPeL-content-machine-learning/web-apps/message_and_flask/part1/",color:color_root_node},
+      {name:"Final Group Project: Part 3", url:base_url+"/ISPeL-content-machine-learning/web-apps/message_and_flask/part1/#final-group-project-part-3",color:color_original},
+      {name:"How to Store User Input", url:base_url+"/ISPeL-content-machine-learning/web-apps/message_and_flask/part1/#how-to-store-user-information",color:color_original},
+      {name:"Messaging Protocols", url:base_url+"/ISPeL-content-machine-learning/web-apps/message_and_flask/part1/#message-protocols",color:color_original},
+      {name:"XML Introduction", url:base_url+"/ISPeL-content-machine-learning/web-apps/message_and_flask/part2/#a-quick-introduction-to-xml",color:color_original},
+      {name:"XML Message", url:base_url+"/ISPeL-content-machine-learning/web-apps/message_and_flask/part2/#an-example-of-xml-message",color:color_original},
+      {name:"SOAP Introduction", url:base_url+"/ISPeL-content-machine-learning/web-apps/message_and_flask/part2/#a-quick-introduction-to-soap",color:color_original},
+      {name:"SOAP Messages", url:base_url+"/ISPeL-content-machine-learning/web-apps/message_and_flask/part2/#soap-messages",color:color_original},
+      {name:"SOAP Envelopes", url:base_url+"/ISPeL-content-machine-learning/web-apps/message_and_flask/part3/#soap-envelopes",color:color_original},
+      {name:"SOAP Headers", url:base_url+"/ISPeL-content-machine-learning/web-apps/message_and_flask/part3/#soap-headers",color:color_original},
+      {name:"SOAP Bodies", url:base_url+"/ISPeL-content-machine-learning/web-apps/message_and_flask/part3/#soap-bodies",color:color_original},
+      {name:"SOAP Faults", url:base_url+"/ISPeL-content-machine-learning/web-apps/message_and_flask/part3/#soap-faults",color:color_original},
+      {name:"JSON Introduction", url:base_url+"/ISPeL-content-machine-learning/web-apps/message_and_flask/part4/#a-quick-introduction-to-json",color:color_original},
+      {name:"JSON Example", url:base_url+"/ISPeL-content-machine-learning/web-apps/message_and_flask/part4/#a-json-example",color:color_original},
+      {name:"JSON Advantages and Disadvantages", url:base_url+"/ISPeL-content-machine-learning/web-apps/message_and_flask/part4/#advantages-vs-disadvantages",color:color_original}
       
   ],
   edges:[
-      {source: 0, target: 1},
-      {source: 1, target: 2},
-      {source: 1, target: 3},
-      {source: 2, target: 3},
-      {source: 2, target: 4},
-      {source: 3, target: 4},
-      {source: 4, target: 5},
-      {source: 5, target: 6},
-      {source: 5, target: 7},
-      {source: 6, target: 7}
-    
+     
+      
   ]
 };
 

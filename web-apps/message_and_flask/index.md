@@ -1,57 +1,48 @@
 ---
-layout: post
-title: Message and Flask
+layout: default
+title: Web Applications
 ---
+<span class="newthought">Web Applications</span>
 
-## Final Group Project: Part 3
 
-* Demo Day: 
-  * 24 groups in total, each team will have 6 minutes to present using WebEx Online
-  * At least one team member needs to show up to present.
-  * April 23 & 28. The order will be randomly decided and announced after we introduce a random order web application example (example 44).
-* Google Forms will be used to collect opinions from audience.
-* README: team member names and emails
-* <font color=red>Due...</font>
+Relevant topics and the dependencies between topics have been identified. The prerequisites for topics have been integrated into the layout of the material so that learners can personalize their path of study within each topic.  
 
-## How to store user input information
+As a guide to the learner, each module below begins with an Introduction that describes the preliminaries for the topic and this is where we suggest that every learner should begin.  {% include sidenote.html id="note-pgm" note="The materials presented are based on the ontology constructed by [Dr. Rui Wu](http://www.cs.ecu.edu/wu/),  [Grayson Blankenship]() and other research members of the ISPeL System Project Team funded by the [NSF](https://www.nsf.gov) as part of the [PPSE](https://ppse.ecu.edu/)" %}
 
-* Example 43
-* PLACE LINK 43 HERE
-* Dropzone.js library => simplify the drag and drop process 
-  * <https://www.dropzonejs.com/>
-* Extension of Example 37
-* Check if the folder exists, if not create one.
-  * os.path.exists
-* A complex css file, not written by me but very powerful. Support image thumbnail
 
-## How do these map to web services?
+A learner can proceed as they are inclined within the module to create their own path among the topics.   The concepts within the modules are intended to be discovered in any order.  
 
-* GET is used to get something from a web service
-* POST is used to contribute something to a web service, to add new information
-* PUT is used to update existing information
-* DELETE is used to delete existing information
-* Other actions may be used as well, these are the most common
 
-## Messaging Protocols
-![](mp1.png)
+Web Applications available topics: 
 
-## Common message protocols
-
-* SOAP/XML (also called “pox”, “plain old xml”)
-* JSON
-
-|||[Index](../../)||| [Prev](../)||| [Next](part2)|||
+7. [Message and Flask](part1/)
+- [Final Group Project: Part 3](part1/#final-group-project-part-3)
+- [How to Store User Input](part1/#how-to-store-user-input-information)
+- [Messaging Protocols](part1/#messaging-protocols)
+- [XML Introduction](part2/#a-quick-introduction-to-xml)
+- [XML Message](part2/#an-example-of-xml-message)
+- [SOAP Introduction](part2/#a-quick-introduction-to-soap)
+- [SOAP Messages](part2/#soap-messages)
+- [SOAP Envelopes](part3/#soap-envelopes)
+- [SOAP Headers](part3/#soap-headers)
+- [SOAP Bodies](part3/#soap-bodies)
+- [SOAP Faults](part3/#soap-faults)
+- [JSON Introduction](part4/#a-quick-introduction-to-json)
+- [JSON Example](part4/#a-json-example)
+- [JSON Advantages and Disadvantages](part4/#advantages-vs-disadvantages)
 
 
 
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="script/ontology.js"></script>
+
+<!-- <div id="ontology_div"></div> -->
+<!-- <div></div> -->
+<body></body>
 
 
 
+|||[Index](file path)||| [Prev](file path)|||[Next](file path)|||
 
-
-
-
-
-
-
+|||[Web Applications](../)|||
 

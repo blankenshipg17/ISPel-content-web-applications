@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>CSS</title>
+  <title>Message and Flask</title>
   <meta name="description" content="ISPeL is an interactive system for personalization of learning. It uses topic-based authoring.">
 
   <!---   <link rel="stylesheet" href="/ISPeL-content-machine-learning/css/tufte.css" --->
@@ -22,7 +22,7 @@
   ga('send', 'pageview');
   </script>
 
-  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/design/file2/">
+  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/message_and_flask/part1/">
   <link rel="alternate" type="application/rss+xml" title="ISPeL-content-machine-learning" href="http://localhost:7000/ISPeL-content-machine-learning/feed.xml" />
 </head>
 
@@ -42,7 +42,7 @@
     <article class="group">
       
 
-<h1>Css</h1>
+<h1>Message and flask</h1>
 <p class="subtitle"></p>
 
 
@@ -73,99 +73,60 @@
 </script>
 
 
-<h2 id="what-is-css">What is CSS?</h2>
+<h2 id="final-group-project-part-3">Final Group Project: Part 3</h2>
 
 <ul>
-  <li>This is based on W3C tutorial: https://www.w3schools.com/css/</li>
-  <li>Cascading Style Sheets (CSS) is a style sheet language used for describing the <font color="red">presentation</font> of a document written in a markup language like HTML (wiki).
+  <li>Demo Day:
     <ul>
-      <li>CSS is a language that describes the <font color="red">style</font> of an HTML document.</li>
-      <li>CSS can be used to design layout for different <font color="red">devices and screen sizes</font>.</li>
+      <li>24 groups in total, each team will have 6 minutes to present using WebEx Online</li>
+      <li>At least one team member needs to show up to present.</li>
+      <li>April 23 &amp; 28. The order will be randomly decided and announced after we introduce a random order web application example (example 44).</li>
     </ul>
+  </li>
+  <li>Google Forms will be used to collect opinions from audience.</li>
+  <li>README: team member names and emails</li>
+  <li>
+    <font color="red">Due...</font>
   </li>
 </ul>
 
-<h2 id="how">How?</h2>
+<h2 id="how-to-store-user-input-information">How to store user input information</h2>
+
 <ul>
-  <li>You need to select something and define a style.</li>
-  <li>The selector points to the HTML element you want to style.</li>
-  <li>The declaration block contains one or more declarations separated by semicolons.</li>
-  <li>E.g.</li>
+  <li>Example 43</li>
+  <li>PLACE LINK 43 HERE</li>
+  <li>Dropzone.js library =&gt; simplify the drag and drop process
+    <ul>
+      <li><a href="https://www.dropzonejs.com/">https://www.dropzonejs.com/</a></li>
+    </ul>
+  </li>
+  <li>Extension of Example 37</li>
+  <li>Check if the folder exists, if not create one.
+    <ul>
+      <li>os.path.exists</li>
+    </ul>
+  </li>
+  <li>A complex css file, not written by me but very powerful. Support image thumbnail</li>
 </ul>
 
-<p><img src="css.png" alt="" /></p>
+<h2 id="how-do-these-map-to-web-services">How do these map to web services?</h2>
 
 <ul>
-  <li>CSS Syntax and Selectors: <a href="https://jsfiddle.net/rxb3ao6y/7/">Example 05</a></li>
-  <li>ID selector vs Class selector vs Grouping Selector</li>
-  <li>Try to avoid have two styles for the same element</li>
-  <li>HTML tag: &lt;div&gt;
-    <ul>
-      <li>defines a division or a section in an HTML document.</li>
-      <li>is often used as a container for other HTML elements to style them with CSS or to perform certain tasks with JavaScript.</li>
-    </ul>
-  </li>
+  <li>GET is used to get something from a web service</li>
+  <li>POST is used to contribute something to a web service, to add new information</li>
+  <li>PUT is used to update existing information</li>
+  <li>DELETE is used to delete existing information</li>
+  <li>Other actions may be used as well, these are the most common</li>
 </ul>
 
-<h2 id="id-vs-class">ID vs Class</h2>
-<ul>
-  <li>They are like hooks. (pointer in C++)</li>
-  <li>ID are unique.
-    <ul>
-      <li>Each element can have only one ID
-        <ul>
-          <li>E.g. only one &lt;p&gt; has ID “first_paragraph”</li>
-        </ul>
-      </li>
-      <li>Each page (html file) can have only one element with that ID</li>
-    </ul>
-  </li>
-  <li>Class are not unique.
-    <ul>
-      <li>You can use the same class on multiple elements.
-        <ul>
-          <li>E.g. multiple &lt;p&gt; belong to “self_introduction” class</li>
-        </ul>
-      </li>
-      <li>You can use multiple classes on the same element.
-        <ul>
-          <li>E.g. a &lt;p&gt; can belong to “self_introduction” class and also “first_paragraph”</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>An element can have both an ID and a class.</li>
-</ul>
+<h2 id="messaging-protocols">Messaging Protocols</h2>
+<p><img src="mp1.png" alt="" /></p>
 
-<h2 id="how-to-insert-css">How to insert CSS</h2>
-<ul>
-  <li>Three ways to insert: <a href="https://jsfiddle.net/rxb3ao6y/8/">Example 06</a>
-    <ul>
-      <li>Inline style (within tag)</li>
-      <li>Internal style sheet (&lt;style&gt;)</li>
-      <li>External style sheet (external file)</li>
-    </ul>
-  </li>
-  <li>Do not add a space between the property value and the unit (such as margin-left: 20 px;). The correct way is: margin-left: 20px;</li>
-</ul>
+<h2 id="common-message-protocols">Common message protocols</h2>
 
-<h2 id="where-to-define-your-style">Where to define your style?</h2>
 <ul>
-  <li>Which
-    <ul>
-      <li>Very short ones</li>
-      <li>A middle size file</li>
-      <li>A very large file</li>
-    </ul>
-  </li>
-  <li>Cascading Order:
-    <ul>
-      <li>Inline style (inside an HTML element)</li>
-      <li>External and internal style sheets (in the head section, the later one)</li>
-      <li>Browser default</li>
-    </ul>
-  </li>
-  <li><a href="https://jsfiddle.net/rxb3ao6y/10/">Example 07</a></li>
+  <li>SOAP/XML (also called “pox”, “plain old xml”)</li>
+  <li>JSON</li>
 </ul>
 
 <table>
@@ -179,12 +140,13 @@
       <td><a href="../">Prev</a></td>
       <td> </td>
       <td> </td>
-      <td><a href="../file3/">Next</a></td>
+      <td><a href="../part2">Next</a></td>
       <td> </td>
       <td> </td>
     </tr>
   </tbody>
 </table>
+
 
 
     </article>

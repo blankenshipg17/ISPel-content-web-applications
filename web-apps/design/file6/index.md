@@ -20,14 +20,14 @@ title: BootStrap
   * Use the HTML <font color=blue>&lt;td&gt;</font> element to define a table data
   * Use the HTML <font color=blue>&lt;th&gt;</font> element to define a table heading
   * Use the HTML <font color=blue>&lt;thead&gt;</font> element to group header content in an HTML table. After <font color=blue>&lt;table&gt;</font>, <font color=blue>&lt;caption&gt;</font>, before <font color=blue>&lt;tbody&gt;</font> (table body), <font color=blue>&lt;tfoot&gt;</font> (table footer), and <font color=blue>&lt;tr&gt;</font>
-* Example 13_1
+* [Example 13_1](https://jsfiddle.net/rxb3ao6y/18/)
 * One HTML element can have multiple classes:
   * It is like a person can be classified as your friend and teacher.
 * Responsive Tables, defined in <font color=blue>&lt;div&gt;</font> instead of <font color=blue>&lt;table&gt;</font>
 
 ## Group Activity 2
 * 5 minutes
-* Work on Example 13_1, second table
+* Work on [Example 13_1](https://jsfiddle.net/rxb3ao6y/18/), second table
 * First row: italic
 * Other rows: hover ->background color changes to green
 * Other tables should not be affected!
@@ -35,7 +35,7 @@ title: BootStrap
 ![](bootstrap.png)
 
 ## BootStrap Navigation Bar
-* Example 13
+* [Example 13](https://jsfiddle.net/rxb3ao6y/19/)
 * <nav> tag defines a set of navigation links.
 * A standard navigation bar is created with <font color=blue>&lt;nav class="navbar navbar-default"&gt;</font>.
 * Default style looks not bad: style hiding in BootStrap CSS
@@ -54,7 +54,7 @@ title: BootStrap
   * https://www.amazon.com/
   * https://www.ebay.com/
 * Also called slideshow
-* Example 14
+* [Example 14](https://jsfiddle.net/rxb3ao6y/20/)
 * The outermost <font color=blue>&lt;div&gt;</font>:
 * Carousels require the use of an id (in this case id="myCarousel") for carousel controls to function properly.
 * The class="carousel" specifies that this <font color=blue>&lt;div&gt;</font> contains a carousel.

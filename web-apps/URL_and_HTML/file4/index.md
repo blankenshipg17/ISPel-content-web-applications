@@ -27,7 +27,7 @@ title: HTML
 
 ## Let’s do this: First example
 * Editor: Sublime-<http://tipsonubuntu.com/2017/05/30/install-sublime-text-3-ubuntu-16-04-official-way/>
-* Our first example: example_01.html
+* [Our first example](https://jsfiddle.net/rxb3ao6y/1/)
 * About this example-HTML tags:
   * <font color=blue>&lt;h1&gt;</font>
   * <font color=blue>&lt;p&gt;</font>
@@ -37,7 +37,7 @@ title: HTML
 * Even some tags are missing in your HTML file, a browser can still render everything correctly. Try to avoid missing tags, that is not professional.
 
 ## Let’s do this: second example
-* Our second example: example_02.html
+* [Our second example](https://jsfiddle.net/rxb3ao6y/3/)
 * About this example_02 tags:
   * <font color=blue>href</font>
     * (link) attribute
@@ -52,7 +52,7 @@ title: HTML
   * Common way: <font color=blue>&lt;p title="John 'ShotGun' Nelson"&gt;</font>
 
 ## Let’s do this: third example
-* Our third example: example_03.html
+* [Our third example](https://jsfiddle.net/rxb3ao6y/4/)
 * <font color=blue>&lt;head&gt;</font> element contains meta information about the document
 * Different size of text
 * Define your own style (will talk more when we introduce CSS)
@@ -99,7 +99,7 @@ title: HTML
 
 ## There are more tags…
 * For example, tags for Table
-* Example 4
+* [Example 4](https://jsfiddle.net/rxb3ao6y/6/)
 * Don’t worry about the meaning of <font color=blue>&lt;style&gt;</font>, we will learn it in the next class.
 * Other tags: <https://www.w3schools.com/tags/ref_byfunc.asp>
 * Table generator: <https://www.tablesgenerator.com/html_tables>
