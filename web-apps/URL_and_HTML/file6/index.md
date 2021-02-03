@@ -2,9 +2,11 @@
 layout: post
 title: Transport Protocols
 ---
-text for tp1: Protocols for sensitive data transportation, hospital
-
-text for tp3: pstn protocol: Public switched telephone network
+![](tp1.png)
+![](tp2.png)
+![](tp3.png)
+* text for tp1: Protocols for sensitive data transportation, hospital
+* text for tp3: pstn protocol: Public switched telephone network
 
 ## Web Services Transport Protocols
 
@@ -18,8 +20,8 @@ text for tp3: pstn protocol: Public switched telephone network
 * HTTP provides the basic mechanism for <font color=red>requesting</font> and <font color=red>providing</font> web resources.
 * To fully understand HTTP and internet physically work, you may need to enroll Networking course…
 
-
-text for http.png : IP addresses of the sending and receiving computers in the IP header
+![](http.png)
+* IP addresses of the sending and receiving computers in the IP header
 A good tutorial: https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm
 
 * How HTTP and internet physically work is not required in this class. 

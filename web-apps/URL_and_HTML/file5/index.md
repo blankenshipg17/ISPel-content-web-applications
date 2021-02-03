@@ -21,11 +21,12 @@ title: HTML
 * Implement a simple webpage with your introduction, your photo (or a cartoon fake photo).
 * Upload your web page to your URL
 * Submit your homework 1, ONLY URL
-* Due...
+* Due <mark>Feb. 15</mark>
 
 ## How to upload files to your URL
 * Download WinSCP: <https://winscp.net/eng/download.php>
-* Here are more details: <https://ecu.teamdynamix.com/TDClient/1409/Portal/Requests/ServiceDet?ID=31623> and <http://core.ecu.edu/psyc/wuenschk/Help/Web-Help/FileZilla.pdf> 
+* Click "Advanced"->Click "Directories"->Find "Remote directory"-> Input “/student/pirateID/"->Click "OK"
+* Here are more details: <https://ecu.teamdynamix.com/TDClient/1409/Portal/Requests/ServiceDet?ID=31623> 
 * Demo
 
 ![](demo.png)
@@ -36,10 +37,15 @@ title: HTML
   * Cisco VPN
   * Permissions denied
 * Jobs
-  * Web application development
+  * Android application development
   * At least one more year in ECU
-  * Have some experience on web application
+  * Have some experience on Android application
   * Email me your CV
+
+## Problems Left From Previous Class
+* Base Example: example 04_1
+* Load your font Example: example 04_2
+
 
 ## HTML DOM
 * Document Object Model (DOM)

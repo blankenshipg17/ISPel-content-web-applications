@@ -3,10 +3,7 @@ layout: post
 title: Design
 ---
 
-## Demo how to use WinSCP
-* If WinSCP does not work for you:
-  * Click "Advanced"->Click "Directories"->Find "Remote directory"-> Input “/student/pirateID/"->Click "OK"
-
+ 
 
 ## CSS Colors
 * Here are some common ways you can define a color:
