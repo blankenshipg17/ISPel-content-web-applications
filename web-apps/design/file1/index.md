@@ -3,14 +3,6 @@ layout: post
 title: Design
 ---
 
-## Overview
-* Form your team
-* Web Page Design
-* Paper Prototype
-* CSS
-* Bootstrap
-* Contents design
-
 ## Form your team
 * Don’t wait until the weekend to form your team.
 * 2 - 3 students in each team.
@@ -51,12 +43,16 @@ title: Design
   * Use: bold shapes, colors, images (e.g., icons)
 
 * Examples: 
-  * <http://www.sensor.nevada.edu/NRDC/>
-    * Every time you load the webpage, the background image will be different.
-  * <https://github.com/>
-    * A super important version control application
+  * <https://www.microsoft.com/>
+    * Microsoft official website.
   * <https://d3js.org/>
     * A very powerful data visualization library
+
+* Realism Design Example
+  * <https://www.apple.com/iphone-12/>
+    * Apple website, need to use Chrome browser
+
+![](realism_vs_flat.jpg)
 
 * Flat design <font color=red>advantages</font>:
   * It is easier to <font color=red>quickly convey</font> information while still looking visually appealing and approachable. 
@@ -64,10 +60,6 @@ title: Design
   * It enables a user to <font color=red>focus</font> on the contents.
   * With minimal design elements, websites are able to load <font color=red>faster and resize easily</font>.
   * Still look sharp on <font color=red>high-definition</font> screens.
- 
-## Form your team
-* If you do not have a team, please stay after the class for 5 minutes.
-* If you do have a team, email me team member names and email addresses.
 
 
 ||[Index](../../../)||| [Prev](../)|||[Next](../file2)|||
