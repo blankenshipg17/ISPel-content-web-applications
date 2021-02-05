@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>REST and Software Architecture</title>
+  <meta name="description" content="ISPeL is an interactive system for personalization of learning. It uses topic-based authoring.">
+
+  <!---   <link rel="stylesheet" href="/ISPeL-content-machine-learning/css/tufte.css" --->
+  <link rel="stylesheet" href="../../../css/tufte.css">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not--><link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'><!-- Load up MathJax script if needed ... specify in /_data/options.yml file--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75587219-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+  <link rel="canonical" href="http://localhost:7000/ISPeL-content-machine-learning/web-apps/REST_and_software_arch/part1/">
+  <link rel="alternate" type="application/rss+xml" title="ISPeL-content-machine-learning" href="http://localhost:7000/ISPeL-content-machine-learning/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+
+
+<header>
+    <nav class="group">
+    <a href="../../../">Web Applications</a>
+    <a href="http://ispel.cs.ecu.edu/" _target="blank">ISPeL</a>
+    <a href="http://seng5005.cs.ecu.edu/" _target="blank">Fall 2020</a>
+    <a href="https://github.com/vngudivada/ISPeL-content-machine-learning.git" _target="blank">GitHub</a>
+    </nav>
+</header>
+
+    <article class="group">
+      
+
+<h1>Rest and software architecture</h1>
+<p class="subtitle"></p>
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      Macros: {
+        e: "\\epsilon",
+        xti: "x^{(i)}",
+        yti: "y^{(i)}",
+        bfy: "{\\bf y}",
+        bfx: "{\\bf x}",
+        bfg: "{\\bf g}",
+        bfbeta: "{\\bf \\beta}",
+        tp: "\\tilde p",
+        pt: "p_\\theta",
+        E: "{\\mathbb{E}}",
+        Ind: "{\\mathbb{I}}",
+        KL: "{\\mathbb{KL}}",
+        Re: "{\\mathbb{R}}",
+        Dc: "{\\mathcal{D}}",
+        Tc: "{\\mathcal{T}}",
+        Xc: "{\\mathcal{X}}",
+        note: ["\\textcolor{blue}{[NOTE: #1]}",1]
+      }
+    }
+  });
+</script>
+
+
+<h2 id="what-is-rest">What is REST?</h2>
+
+<ul>
+  <li>REST = Representational State Transfer</li>
+  <li>Defined in Roy Fielding’s thesis, chapter 5, available here: http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm</li>
+  <li>This class is also based on: https://restfulapi.net/</li>
+  <li>REST is a software architecture:
+    <ul>
+      <li>A <font color="red">hybrid style, combining several architectural</font> styles</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="what-is-restful-api">What is RESTful API?</h2>
+
+<p><img src="rest.png" alt="" /></p>
+
+<h2 id="software-architectures">Software architectures</h2>
+
+<ul>
+  <li>“A software architecture is an <font color="red">abstraction</font> (high-level) of the run-time elements of a software system during some phase of its operation. A system may be composed of many levels of abstraction and many phases of <font color="red">operation</font>, each with its own software architecture.”
+    <ul>
+      <li>Multiple phases: start-up, normal operation, etc</li>
+      <li>Multiple levels, different levels of architectural details</li>
+      <li>Focus is on <font color="red">run-time</font>, separates the discussion of architecture from the static structure of program source code</li>
+    </ul>
+  </li>
+  <li>“A software architecture is defined by a configuration of architectural elements—<font color="red">components, connectors, and data</font>—constrained in their relationships in order to achieve a desired set of architectural properties.”
+    <ul>
+      <li>Components: Elements that process system data</li>
+      <li>Connectors: Elements that connect pieces of the architecture</li>
+      <li>Data: The information used and transformed in the system</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="components">Components</h2>
+
+<ul>
+  <li>“A component is an abstract unit of software instructions and internal state that provides a transformation of data via its <font color="red">interface</font>.”
+    <ul>
+      <li>Software instructions: what the component actually does (<font color="red">behavior</font>)</li>
+      <li>Internal state: impacts behavior, not seen from the outside</li>
+      <li>abstract unit…via its interface: components accessed through an interface, not directly, we see interface and services but not internal states and implementation details (blackbox)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="connectors">Connectors</h2>
+
+<ul>
+  <li>“A connector is an abstract mechanism that <font color="red">mediates</font> communication, coordination, or cooperation among components.”</li>
+  <li>
+    <font color="red">transfer</font>
+    <p>data elements between components</p>
+  </li>
+  <li>
+    <font color="red">no visible changes</font>
+    <p>to the data — although they may do encoding/decoding steps internally, these are not seen outside the connectors</p>
+  </li>
+</ul>
+
+<h2 id="data">Data</h2>
+<ul>
+  <li>“A datum is an element of information that is <font color="red">transferred</font> from a component, or <font color="red">received</font> by a component, via a connector.” (such as xml and JSON)
+    <ul>
+      <li>information transferred to, or received from, a component using a <font color="red">connector</font></li>
+      <li>does <font color="red">not</font> include internal state information</li>
+      <li>not included in all architectural descriptions, but important for those where data plays a major role (e.g., online purchase system)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="configurations">Configurations</h2>
+<ul>
+  <li>“A configuration is the structure of <font color="red">architectural relationships</font> among components, connectors, and data during a period of system run-time.”
+    <ul>
+      <li>
+        <font color="red">represents</font>
+        <p>collections of interacting components and connectors</p>
+      </li>
+      <li>
+        <font color="red">constrains</font>
+        <p>how components interact</p>
+      </li>
+      <li>allow distinguishing between a given “state” versus the universe of possibilities for component/connector structuring</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="design-patterns">Design Patterns</h2>
+
+<ul>
+  <li>Design patterns, pattern languages are used to describe commonly recurring programming <font color="red">scenarios</font>.</li>
+  <li>Styles give a similar shorthand to describing possibly complex configurations and <font color="red">interactions</font></li>
+</ul>
+
+<p>PLACE EXAMPLE 44 HERE</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="../../">Index</a></td>
+      <td> </td>
+      <td> </td>
+      <td><a href="../">Prev</a></td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+    </article>
+    <footer>
+<hr class="slender">
+<div class="credits">
+This work is supported by the <a href="https://www.nsf.gov/" target="_blank">NSF</a> IUSE/PFE:RED award No. <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1730568" target="_blank">1730568</a>. Site created with <a href="//jekyllrb.com" target="_blank">Jekyll</a> using the <a href="//github.com/clayh53/tufte-jekyll" target="_blank">Tufte theme</a>. &copy; 2021
+</div>
+</footer>
+  </body>
+</html>

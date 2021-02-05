@@ -23,6 +23,8 @@ Web Applications available topics:
 6. [Webservice and Flask](web_service_and_flask)
 7. [Database and Flask](database_and_flask)
 8. [Message and Flask](message_and_flask)
+9. [REST and Software Architecture](REST_and_software_arch)
+10. [REST](REST)
 
 
 

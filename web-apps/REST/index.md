@@ -15,15 +15,28 @@ A learner can proceed as they are inclined within the module to create their own
 
 Web Applications available topics: 
 
-9. [REST and Software Architecture](part1/)
-- [What is REST?](part1/#what-is-rest)
-- [RESTful API](part1/#restful-api)
-- [Software architectures](part1/#software-architectures)
-- [Components](part1/#components)
-- [Connectors](part1/#connectors)
-- [Data](part1/#data)
-- [Configurations](part1/#configurations)
-- [Design Patterns](part1/#design-patterns)
+9. [REST](part2/)
+- [Building REST: Starting with nothing](part2/#building-rest-starting-with-nothing)
+- [Adding in client/server](part2/#building-rest-adding-in-client-/-server)
+- [Enforcing stateless-ness](part2/#building-rest-enforcing-stateless-ness)
+- [Enabling caching](part2/#building-rest-enabling-caching)
+- [Providing a uniform interface](part3/#building-rest-providing-a-uniform-interface)
+- [Code on Demand](part3/#building-rest-code-on-demand)
+- [The REST Architecture](part3/#building-rest-the-rest-architecture)
+- [Final Group Project Presentation](part3/#final-group-project-presentation)
+- [About final exam](part3/#about-final-exam)
+- [RESTful Principles](part4/#restful-principles)
+- [REST: Architectural Elements](part4/#rest-architectural-elements)
+- [REST Resource](part4/#rest-resource)
+- [REST Resource Methods](part5/#rest-resource-methods)
+- [REST != HTTP](part5/#rest-=http)
+- [PostgreSQL and Flask](part5/#postgresql-and-flask)
+- [REST Data Elements](part5/#rest-data-elements)
+- [REST Connectors](part5/#rest-connectors)
+- [REST Components](part5/#rest-components)
+- [REST: Three views](part5/#rest-three-views)
+
+
 
 
 <script src="http://d3js.org/d3.v3.min.js"></script>
