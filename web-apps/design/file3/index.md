@@ -8,30 +8,34 @@ title: Design
 ## CSS Colors
 * Here are some common ways you can define a color:
   * Names: <https://www.w3schools.com/colors/colors_names.asp>
-  * Hex number: <https://www.google.com/search?q=css+color+picker>
+  * Hex number: <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool>
     * #000 black
     * #ffffff white
   * RGB: (Red, Green, Blue)
   * RGBA (red, green, blue, alpha)
   * HSLA (Hue, Saturation, Light, and Opacity)
-    * <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool>
+
 
 * [Example 08](https://jsfiddle.net/rxb3ao6y/11/)
 
 ## Which Colors You should Use
+* Psychology: some colors mean optimism and some mean trust…
+![](color.png)
+* Figure Credit: <https://creativemarket.com/blog/color-combination-tips>
+
 * How to choose theme colors:
   * <https://coolors.co>, free and provide you some suggestions.
-  * <http://paletton.com, design examples provided by the website>
+  * <http://paletton.com>, design examples provided by the website>
 * Some tips on color choosing
-  * Psychology: some colors mean optimism and some mean trust…
 
-IMAGE
-Figure Credit: <https://creativemarket.com/blog/color-combination-tips>
+
+
 
 ## What is the effect of yellow and purple?
-* Purple is used for <color red=red>creative and imaginative</font> projects where wisdom is needed. Yahoo uses purple.
-* Yellow is associated with feelings of <color red=red>warmth, clarity and optimism.</font>
+* Purple is used for <mark>creative and imaginative</mark> projects where wisdom is needed. Yahoo uses purple.
+* Yellow is associated with feelings of <mark>warmth, clarity and optimism.</mark>
 * Yellow and Purple: grab attention.
+  * ![](ecu_icon.jpeg)
 
 ## CSS examples: Horizontal Navigation Bar
 * [Example 09](https://jsfiddle.net/rxb3ao6y/13/)
@@ -42,9 +46,8 @@ Figure Credit: <https://creativemarket.com/blog/color-combination-tips>
   * They all generates space around an element.
   * Positions are different.
 * Class active: indicates the active page or link, the page or link you are in
-
-plave image here css 1-3
-Figure credit: <https://stackoverflow.com/questions/2189452/when-to-use-margin-vs-padding-in-css>
+* ![](margin.jpg)
+* Figure credit: <https://stackoverflow.com/questions/2189452/when-to-use-margin-vs-padding-in-css>
 
 ## Group Activity 1: 5 minutes
 * Work on [Example 09](https://jsfiddle.net/rxb3ao6y/12/)
@@ -65,7 +68,7 @@ Figure credit: <https://stackoverflow.com/questions/2189452/when-to-use-margin-v
 * At least two pages should be functional (e.g. introduction and background)
 * You may split your original contents into two parts
 * Apply your theme colors
-* Due...
+* Due <mark>Feb. 22</mark>
 
 
 
