@@ -39,7 +39,7 @@ var dataset = {
       {source: 3, target: 6},
       {source: 5, target: 6},
       {source: 6, target: 7},
-      {source: 0, target: 8},
+      {source: 8, target: 7},
       {source: 3, target: 9},
       {source: 4, target: 10},
       {source: 6, target: 11}

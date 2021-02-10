@@ -22,7 +22,7 @@ var dataset = {
       {name:"Group Activity 5", url:base_url+"/ISPeL-content-machine-learning/web-apps/software_design_and_javaScript/file5/#group-activity-5-5-minutes",color:color_original},
       {name:"JavaScript Debug", url:base_url+"/ISPeL-content-machine-learning/web-apps/software_design_and_javaScript/file5/#javascript-debug",color:color_original},
       {name:"JavaScript Coding Conventions", url:base_url+"/ISPeL-content-machine-learning/web-apps/software_design_and_javaScript/file5/#javascript-coding-conventions",color:color_original},
-      {name:"Midterm and Sample Questions", url:base_url+"/ISPeL-content-machine-learning/web-apps/software_design_and_javaScript/file5/#midterm-and-sample-questions",color:color_original},
+      //{name:"Midterm and Sample Questions", url:base_url+"/ISPeL-content-machine-learning/web-apps/software_design_and_javaScript/file5/#midterm-and-sample-questions",color:color_original},
       {name:"JSON: Basic", url:base_url+"/ISPeL-content-machine-learning/web-apps/software_design_and_javaScript/file5/#json-basic",color:color_original},
       {name:"JavaScript: Loop", url:base_url+"/ISPeL-content-machine-learning/web-apps/software_design_and_javaScript/file5/#javascript-loop",color:color_original},
       {name:"Homework 4 (Part 1)", url:base_url+"/ISPeL-content-machine-learning/web-apps/software_design_and_javaScript/file5/#homework-4-part-1",color:color_original},
@@ -33,8 +33,8 @@ var dataset = {
       {name:"Group Activity 7", url:base_url+"/ISPeL-content-machine-learning/web-apps/software_design_and_javaScript/file6/#group-activity-7-7-minutes",color:color_original},
       {name:"How to Insert Rows in a Table", url:base_url+"/ISPeL-content-machine-learning/web-apps/software_design_and_javaScript/file6/#how-to-insert-rows-in-a-table",color:color_original},
       {name:"Homework 4", url:base_url+"/ISPeL-content-machine-learning/web-apps/software_design_and_javaScript/file6/#homework-4",color:color_original},
-      {name:"Version Control Tools", url:base_url+"/ISPeL-content-machine-learning/web-apps/software_design_and_javaScript/file7/#version-control-tools",color:color_original},
-      {name:"Github vs Git", url:base_url+"/ISPeL-content-machine-learning/web-apps/software_design_and_javaScript/file7/#github-vs-git",color:color_original},
+      //{name:"Version Control Tools", url:base_url+"/ISPeL-content-machine-learning/web-apps/software_design_and_javaScript/file7/#version-control-tools",color:color_original},
+     // {name:"Github vs Git", url:base_url+"/ISPeL-content-machine-learning/web-apps/software_design_and_javaScript/file7/#github-vs-git",color:color_original},
       {name:"Final Group Project: Part 1", url:base_url+"/ISPeL-content-machine-learning/web-apps/software_design_and_javaScript/file7/#final-group-project-part-1",color:color_original},
       {name:"JavaScript: Scoping", url:base_url+"/ISPeL-content-machine-learning/web-apps/software_design_and_javaScript/file8/#javascript-scoping",color:color_original},
       {name:"JavaScript: Function positions", url:base_url+"/ISPeL-content-machine-learning/web-apps/software_design_and_javaScript/file8/#javascript-function-positions",color:color_original},
@@ -44,7 +44,37 @@ var dataset = {
       
   ],
   edges:[
-      {source: 0, target: 1},
+  	{source: 0, target: 1},
+  	{source: 1, target: 2},
+  	{source: 2, target: 7},
+  	{source: 2, target: 8},
+  	{source: 8, target: 21},
+  	{source: 8, target: 20},
+  	{source: 8, target: 10},
+  	{source: 21, target: 22},
+  	{source: 22, target: 4},
+  	{source: 20, target: 4},
+  	{source: 10, target: 4},
+  	{source: 4, target: 3},
+  	{source: 3, target: 6},
+  	{source: 6, target: 15},
+  	{source: 6, target: 13},
+  	{source: 15, target: 16},
+  	{source: 13, target: 14},
+  	{source: 0, target: 5},
+  	{source: 5, target: 11},
+  	{source: 11, target: 17},
+  	{source: 11, target: 12},
+  	{source: 17, target: 18},
+  	{source: 12, target: 18},
+  	{source: 0, target: 19},
+  	{source: 0, target: 9},
+  	{source: 0, target: 23}
+  	
+  	
+  
+  
+     /* {source: 0, target: 1},
       {source: 1, target: 2},
       {source: 0, target: 3},
       {source: 0, target: 4},
@@ -67,7 +97,7 @@ var dataset = {
       {source: 0, target: 22},
       {source: 2, target: 23},
       {source: 23, target: 24},
-      {source: 24, target: 25}
+      {source: 24, target: 25}*/
       
       
   ]
