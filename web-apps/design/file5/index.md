@@ -18,9 +18,11 @@ title: BootStrap
   * A character in UTF8 can be from 1 to 4 bytes long. UTF-8 is backwards compatible with ASCII. UTF-8 is the preferred encoding for e-mail and web pages.
 * UTF-16, encode the entire Unicode repertoire.
   * UTF-16 is used in major operating systems and environments, like Microsoft Windows, Java and .NET.
-<font color=blue>&lt;&lt;meta&gt;</font> viewport element gives the browser instructions on how to control the page's dimensions and scaling.
+* \<meta\> viewport element gives the browser instructions on how to control the page's dimensions and scaling.
 
-Figure credit: https://www.w3schools.com/css/css_rwd_viewport.asp
+* ![](2.png)
+* ![](1.png)
+* Figure credit: https://www.w3schools.com/css/css_rwd_viewport.asp
 
 * “width=device-width” part sets the width of the page to follow the screen-width of the device.
   * Change based on the device type.
@@ -35,7 +37,7 @@ Figure credit: https://www.w3schools.com/css/css_rwd_viewport.asp
 Allow maximum 12 columns.
 Used to define length of a column, can be applied to an HTML container, such as div.
 Follow the rules, automatically mobile-friendly.
-![](grid.png)
+![](3.png)
 
 * The Bootstrap grid system has four classes:
   * <font color=blue>xs</font>

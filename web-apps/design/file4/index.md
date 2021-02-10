@@ -15,9 +15,9 @@ title: Design
 * Step 2: Gather some paper, pens, markers, scissors, and maybe some cardboard if you have them.
 * Step 3. Cut out the individual components of your prototype.
 * Step 4. Play around with your prototype to make sure that you have all the pieces you need for what you want to test
-*Step 5. Create a video to record the user flow
-
-Based on: https://medium.com/@shengao/paper-prototyping-how-to-pros-cons-and-the-struggles-of-guerrilla-usability-testing-5546dd446d5e
+* Step 5. Create a video to record the user flow
+![](pp.png)
+* Based on: https://medium.com/@shengao/paper-prototyping-how-to-pros-cons-and-the-struggles-of-guerrilla-usability-testing-5546dd446d5e
 
  
 ## Paper Prototyping: Example
@@ -25,8 +25,10 @@ Based on: https://medium.com/@shengao/paper-prototyping-how-to-pros-cons-and-the
 * A video can help record the user flow of your paper prototyping
 * An example about mobile app: <https://www.youtube.com/watch?v=y20E3qBmHpg>
 * An example about web page paper prototyping: <https://www.youtube.com/watch?v=0FCyKf_5qRU>
-* These videos are very good except it does not include color design.
-* Another video about user test using paper prototype testing: <https://www.youtube.com/watch?v=1h0Fj04c_vM>
+* This video is very good except it does not include color design.
+* Another video about user test using paper prototype testing: <https://www.youtube.com/watch?v=aDqbMOI13o4>
+* <mark>WHat did you observe from this user study video?</mark>
+* <mark>WHat are the pros and cons of paper prototyping?</mark>
 
 
 ## Paper Prototyping Pros vs Cons
@@ -34,8 +36,8 @@ Based on: https://medium.com/@shengao/paper-prototyping-how-to-pros-cons-and-the
   * User flows: e.g., can simulate user interactions
   * Rapid sketches: can be done very fast
   * Easy and cheap: cost is very low and is not hard to create a prototype
-* No need programming knowledge: draw and cut
-  * What are the disadvantages?
+  * No need programming knowledge: draw and cut
+* What are the disadvantages?
   * A user may interact differently with paper compared with actual computer GUIs
   * Some interactivities are hard to be demoed. E.g., play a video.
 
@@ -47,15 +49,9 @@ Based on: https://medium.com/@shengao/paper-prototyping-how-to-pros-cons-and-the
 * Create a paper prototype.
 * At least have <font color=red>four</font> web pages, such as team member introduction, with <font color=red>four</font> user interactions, such as classmate feature input form.
 * Record the user flow of your paper prototype (maybe with your phone)
-* <font color=red>No need</font> to submit anything until HW3 Part 2 is introduced.
+* <mark>No need</mark> to submit anything until HW3 Part 2 is introduced.
 
-## BootStrap tutorial
-* Based on: <https://www.w3schools.com/booTsTrap/default.asp>
-* Bootstrap is a free front-end <font color=red>framework</font> for faster and easier web development
-* Bootstrap also gives you the ability to easily create responsive designs
-* <font color=red>Responsive web design</font> is about creating web sites which automatically adjust themselves to look good on all devices, from small phones to large desktops. (mobile friendly)
 
- 
 
 |||[Index](../../../)||| [Prev](../file3)|||[Next](../file5)|||
 
