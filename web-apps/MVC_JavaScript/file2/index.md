@@ -27,7 +27,7 @@ title: MVC and JavaScript
   * Similar to CSS vs BootStrap
   * jQuery is a JavaScript library, we will learning
   * “Fundamental and necessary” vs “make your life easier”
-* Example 15
+* [Example 15](https://jsfiddle.net/rxb3ao6y/21/)
 * HTML tag <font color=blue>&lt;button&gt;</font> defines a clickable button.
 * What can JavaScript do?
   * Change HTML content

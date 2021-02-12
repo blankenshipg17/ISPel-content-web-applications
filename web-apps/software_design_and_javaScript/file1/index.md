@@ -4,7 +4,8 @@ title: Software Design and JavaScript
 ---
 
 ## JavaScript: Where
-* Example 16
+* [Example 16](https://jsfiddle.net/rxb3ao6y/22/)
+* [JS](https://jsfiddle.net/rxb3ao6y/23/)
 * JavaScript code must be inserted between <font color=blue>&lt;script&gt;</font> and <font color=blue>&lt;/script&gt;</font> tags.
 * Head and Body
   * All work.
@@ -15,7 +16,8 @@ title: Software Design and JavaScript
   * Cached JavaScript files can speed up page loads
 
 ## JavaScript: Get Results from Model
-* Example 17
+* [Example 17](https://jsfiddle.net/rxb3ao6y/24/)
+* [JS](https://jsfiddle.net/rxb3ao6y/25/)
 * Functions.
 * Dynamically display results.
 
@@ -33,7 +35,7 @@ title: Software Design and JavaScript
 {% include marginfigure.html id="MVC" url="web-apps/MVC_JavaScript/file3/js.png" description="get syntax binds an object property to a function that will be called when that property is looked up. Figure credit: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes" %}
 
 ## JavaScript Output
-* Example 18
+* [Example 18](https://jsfiddle.net/rxb3ao6y/26/)
 * Important for debugging
 * Four different ways to output information:
   * Writing into an HTML element, using innerHTML.
