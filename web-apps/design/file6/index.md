@@ -74,8 +74,7 @@ title: BootStrap
   * This code adds "left" and "right" buttons that allows the user to go back and forth between the slides manually.
   * The data-slide attribute accepts the keywords "prev" or "next", which alters the slide position relative to its current position.
 * BootStrap icons: <https://getbootstrap.com/docs/3.3/components/>
-
-### Why did we “waste” our time on CSS? Should we just learn BootStrap?
+* <mark> Question </mark> Why did we “waste” our time on CSS? Should we just learn BootStrap?
 
 ## CSS is the base
 * Here are some my personal opinions:
@@ -85,8 +84,8 @@ title: BootStrap
   * One day, you may find existing framework is not perfect and want to create your own framework. You need fundamental knowledge, such as CSS. E.g., React created by Facebook for dynamic content changing in a view (page)
 
 ## Bootstrap Latest version
-* 4.4.1
-* Released 60 days ago
+* 4.5.3
+* Released 3 months ago
 * New things will pop up all the time. But the fundamental theory is the same.
 * For example, CSS vs Bootstrap
 	
