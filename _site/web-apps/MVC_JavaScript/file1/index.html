@@ -77,67 +77,47 @@
 <ul>
   <li>Functional requirement: a functional requirement defines a function of a system or its component (Wiki).
     <ul>
-      <li>Ability to do something. About system behavior or features to a user.</li>
+      <li>Ability to do something. About system <mark>behavior or features</mark> to a user.</li>
       <li>E.g., A user should be able to upload the information of a classmate.</li>
     </ul>
   </li>
-  <li>Non-functional requirement: a non-functional requirement is a requirement that specifies criteria that can be used to judge the operation of a system, rather than specific behaviors (Wiki).
+  <li>Non-functional requirement: a non-functional requirement is a requirement that specifies <mark>criteria</mark> that can be used to judge the operation of a system, rather than specific behaviors (Wiki).
     <ul>
       <li>Specify the system’s quality attributes or characteristics.</li>
-      <li>Typically, it is about: Performance, (response time, throughput), Scalability, Reliability, Environment…</li>
+      <li>Typically, it is about: Performance (response time, throughput), Scalability, Reliability, Environment…</li>
       <li>Simple way: if a requirement is not about a system behavior then, it is non-functional requirement.</li>
-      <li>Question: A user should be able to choose different models, such as decision trees, to process input data in the system.
-        <ul>
-          <li>Behavior</li>
-        </ul>
-      </li>
+      <li><mark>Question:</mark> A user should be able to choose different models, such as decision trees, to process input data in the system.
+<!-- * Behavior --></li>
     </ul>
   </li>
-  <li>Non-functional requirement is usually applied to a component or the whole system.</li>
+  <li>Non-functional requirement is usually applied to <mark>a component or the whole system.</mark></li>
 </ul>
 
 <h2 id="functional-vs-non-function-requirements-1">Functional vs Non-function Requirements</h2>
 <ul>
   <li>HW3: Is my roommate a vampire?</li>
   <li>Decide based on four features (shadow, garlic, complexion, and accent)</li>
-  <li>
-    <p>In your opinion, which of the following should be functional requirements (behaviors) and which should be non-functional requirements (quality attributes or characteristics)?</p>
-  </li>
-  <li>A user can upload the information of his/her classmate.
+  <li>In your opinion, which of the following should be functional requirements (behaviors) and which should be non-functional requirements (quality attributes or characteristics)?
     <ul>
-      <li>Functional</li>
-    </ul>
-  </li>
-  <li>The backend of the application should be implemented with Flask.
-    <ul>
-      <li>Environmental (non-functional)</li>
-    </ul>
-  </li>
-  <li>A system manager can easily increase the number of database instances.
-    <ul>
-      <li>Scalability (non-functional)</li>
-    </ul>
-  </li>
-  <li>The application should be able to generate a JSON file based on the input classmate information.
-    <ul>
-      <li>Functional</li>
-    </ul>
-  </li>
-  <li>The application should be able to display suspicious classmate names in a table.
-    <ul>
-      <li>Functional</li>
-    </ul>
-  </li>
-  <li>The system data visualization component should be implemented with D3.js library.
-    <ul>
-      <li>Environmental (non-functional)</li>
+      <li>A user can upload the information of his/her classmate.
+<!-- * Functional --></li>
+      <li>The backend of the application should be implemented with Flask.
+<!-- * Environmental (non-functional) --></li>
+      <li>A system manager can easily increase the number of database instances.
+<!-- * Scalability (non-functional) --></li>
+      <li>The application should be able to generate a JSON file based on the input classmate information.
+<!-- * Functional --></li>
+      <li>The application should be able to display suspicious classmate names in a table.
+<!-- * Functional --></li>
+      <li>The system data visualization component should be implemented with D3.js library. 
+<!-- * Environmental (non-functional) --></li>
     </ul>
   </li>
 </ul>
 
 <h2 id="software-developer-and-customer">Software Developer and Customer</h2>
 <ul>
-  <li>It is <fony color="red">unusual&lt;/font&gt; to code without talking with your customers.</fony></li>
+  <li>It is <font color="red">unusual</font> to code without talking with your customers.</li>
   <li>Weird but true: your customers may not even know what they want… All they want is a working application.</li>
   <li>Need to convert your customers’ ideas into functional requirements and non-functional requirements.</li>
   <li>To further organize these requirements, let’s learn MVC: Model View Control
@@ -173,6 +153,7 @@
   <li>Controller dictates how user interacts with model</li>
   <li>View provides actions that use controller to manipulate model (or modify view)</li>
   <li>Controller tells model what should be done.</li>
+  <li><mark>Question:</mark> why we want to split a system into these components? Why not just one component?</li>
 </ul>
 
 <h2 id="what-are-the-advantages-of-mvc-architecture">What are the advantages of MVC Architecture?</h2>
@@ -214,9 +195,13 @@
 
 <h2 id="group-homework-3-part-2">Group Homework 3 (Part 2)</h2>
 <ul>
-  <li>“Is my classmate a vampire?” Project design
+  <li>“Is my classmate a vampire?” Project design</li>
+  <li>Decide based on four features (shadow, garlic, complexion, and accent)</li>
+  <li>A user can input his/her classmate data and check if the student is a vampire.</li>
+  <li>Create a paper prototype.
     <ul>
-      <li>Decide based on four features (shadow, garlic, complexion, and accent)</li>
+      <li>At least have four web pages, such as team member introduction, with four user interactions, such as classmate feature input form.</li>
+      <li>Record the user flow of your paper prototype (maybe with your phone)</li>
     </ul>
   </li>
   <li>Functional requirements:
@@ -225,7 +210,7 @@
     </ul>
   </li>
   <li>Non-functional requirements <font color="red">at least</font> four.</li>
-  <li>HW3… (include part 1).</li>
+  <li>Due <mark>March 3</mark>.</li>
 </ul>
 
 <table>

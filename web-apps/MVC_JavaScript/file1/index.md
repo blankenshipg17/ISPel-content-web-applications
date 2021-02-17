@@ -5,36 +5,35 @@ title: MVC and JavaScript
 
 ## Functional vs Non-function Requirements
 * Functional requirement: a functional requirement defines a function of a system or its component (Wiki). 
-  * Ability to do something. About system behavior or features to a user. 
+  * Ability to do something. About system <mark>behavior or features</mark> to a user. 
   * E.g., A user should be able to upload the information of a classmate.
-* Non-functional requirement: a non-functional requirement is a requirement that specifies criteria that can be used to judge the operation of a system, rather than specific behaviors (Wiki). 
+* Non-functional requirement: a non-functional requirement is a requirement that specifies <mark>criteria</mark> that can be used to judge the operation of a system, rather than specific behaviors (Wiki). 
   * Specify the system’s quality attributes or characteristics.
-  * Typically, it is about: Performance, (response time, throughput), Scalability, Reliability, Environment…
+  * Typically, it is about: Performance (response time, throughput), Scalability, Reliability, Environment…
   * Simple way: if a requirement is not about a system behavior then, it is non-functional requirement.
-  * Question: A user should be able to choose different models, such as decision trees, to process input data in the system.
-    * Behavior
-* Non-functional requirement is usually applied to a component or the whole system.
+  * <mark>Question:</mark> A user should be able to choose different models, such as decision trees, to process input data in the system.
+    <!-- * Behavior -->
+* Non-functional requirement is usually applied to <mark>a component or the whole system.</mark>
 
 ## Functional vs Non-function Requirements
 * HW3: Is my roommate a vampire?
 * Decide based on four features (shadow, garlic, complexion, and accent)
 * In your opinion, which of the following should be functional requirements (behaviors) and which should be non-functional requirements (quality attributes or characteristics)?
-
-* A user can upload the information of his/her classmate.
-  * Functional
-* The backend of the application should be implemented with Flask.
-  * Environmental (non-functional)
-* A system manager can easily increase the number of database instances.
-  * Scalability (non-functional)
-* The application should be able to generate a JSON file based on the input classmate information.
-  * Functional
-* The application should be able to display suspicious classmate names in a table.
-  * Functional
-* The system data visualization component should be implemented with D3.js library. 
-  * Environmental (non-functional)
+  * A user can upload the information of his/her classmate.
+    <!-- * Functional -->
+  * The backend of the application should be implemented with Flask.
+    <!-- * Environmental (non-functional) -->
+  * A system manager can easily increase the number of database instances.
+    <!-- * Scalability (non-functional) -->
+  * The application should be able to generate a JSON file based on the input classmate information.
+    <!-- * Functional -->
+  * The application should be able to display suspicious classmate names in a table.
+    <!-- * Functional -->
+  * The system data visualization component should be implemented with D3.js library. 
+    <!-- * Environmental (non-functional) -->
 
 ## Software Developer and Customer
-* It is <fony color=red>unusual</font> to code without talking with your customers.
+* It is <font color=red>unusual</font> to code without talking with your customers.
 * Weird but true: your customers may not even know what they want… All they want is a working application.
 * Need to convert your customers’ ideas into functional requirements and non-functional requirements.
 * To further organize these requirements, let’s learn MVC: Model View Control
@@ -59,6 +58,7 @@ title: MVC and JavaScript
 * Controller dictates how user interacts with model
 * View provides actions that use controller to manipulate model (or modify view)
 * Controller tells model what should be done.
+* <mark>Question:</mark> why we want to split a system into these components? Why not just one component?
 
 ## What are the advantages of MVC Architecture?
 * Advantages:
@@ -79,11 +79,15 @@ title: MVC and JavaScript
 
 ## Group Homework 3 (Part 2)
 * “Is my classmate a vampire?” Project design
-  * Decide based on four features (shadow, garlic, complexion, and accent)
+* Decide based on four features (shadow, garlic, complexion, and accent)
+* A user can input his/her classmate data and check if the student is a vampire.
+* Create a paper prototype.
+  * At least have four web pages, such as team member introduction, with four user interactions, such as classmate feature input form.
+  * Record the user flow of your paper prototype (maybe with your phone)
 * Functional requirements:
   * MVC each component at least four functional requirements
 * Non-functional requirements <font color=red>at least</font> four.
-* HW3... (include part 1).
+* Due <mark>March 3</mark>.
 
 ||| [Index](../../)||| [Prev](../)||| [Next](../file2/)|||
 

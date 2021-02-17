@@ -36,11 +36,6 @@ title: HTML
 * HW1
   * Cisco VPN
   * Permissions denied
-* Jobs
-  * Android application development
-  * At least one more year in ECU
-  * Have some experience on Android application
-  * Email me your CV
 
 ## Problems Left From Previous Class
 * Base Example: example 04_1

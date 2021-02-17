@@ -46,7 +46,7 @@ title: MVC and JavaScript
 
 ![](ga3.png)
 
-||| [Index](../../)||| [Prev](../)||| [Next](../file3/)|||
+||| [Index](../../)||| [Prev](../)|||
 
 
 
