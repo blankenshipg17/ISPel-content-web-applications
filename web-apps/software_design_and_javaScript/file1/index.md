@@ -32,7 +32,7 @@ title: Software Design and JavaScript
 * <font color=red>Basic types</font> include numbers, arrays, objects, strings, booleans
 * You can also define a class.
 
-{% include marginfigure.html id="MVC" url="web-apps/MVC_JavaScript/file3/js.png" description="get syntax binds an object property to a function that will be called when that property is looked up. Figure credit: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes" %}
+{% include marginfigure.html id="MVC" url="web-apps/software_design_and_javaScript/file1/js.png" description="get syntax binds an object property to a function that will be called when that property is looked up. Figure credit: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes" %}
 
 ## JavaScript Output
 * [Example 18](https://jsfiddle.net/rxb3ao6y/26/)

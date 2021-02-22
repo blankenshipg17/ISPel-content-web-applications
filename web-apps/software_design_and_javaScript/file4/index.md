@@ -7,17 +7,17 @@ title: Software Design and JavaScript
 
 * In HTML, JavaScript programs are executed by the web browser.
 * A JavaScript program is a list of programming statements.
-  * Values: var x = 8;
-  * Operators: var x = 8;
+  * Values: var x = <mark>8</mark>;
+  * Operators: var x <mark>=</mark> 8;
   * Expressions: any valid set of literals, variables, operators, and expressions that evaluates to a single value. E.g., x = 7; 3+4
-    * Conditional Expressions: var status = (age >= 18) ? "adult" : "minor"
+    * <mark>Conditional Expressions:</mark> var status = (age >= 18) ? "adult" : "minor"
   * Keywords: for, if … else
   * Comments: after //, won’t be executed.
 * Semicolons (;) separate JavaScript statements.
 * For best readability, programmers often like to avoid code lines longer than 80 characters. => break a line after an operator.
 * Example 19
 
-{% include marginfigure.html id="MVC" url="web-apps/MVC_JavaScript/file4/js1.png" description="Object literal Example
+{% include marginfigure.html id="MVC" url="web-apps/software_design_and_javaScript/file4/js1.png" description="Object literal Example
 Figure Credit: <https://www.dyn-web.com/tutorials/object-literal/>" %}
 
 ## Group Activity 4: 5 minutes
@@ -32,7 +32,7 @@ Figure Credit: <https://www.dyn-web.com/tutorials/object-literal/>" %}
 ![](ga.png)
 
 ## Basic Data Visualization: Google Chart
-* Last class, I showed you “View” components using tables.
+* We have learned how to implement “View” components using tables.
 * Example 20
 * A <font color=red>callback function</font> is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
 * Google Chart four steps:
@@ -41,7 +41,7 @@ Figure Credit: <https://www.dyn-web.com/tutorials/object-literal/>" %}
   * Choose a visualization method
   * Create an HTML element to render the chart
   
-{% include marginfigure.html id="MVC" url="web-apps/MVC_JavaScript/file4/googlechart.png" description="Callback function chart example" %}
+{% include marginfigure.html id="MVC" url="web-apps/software_design_and_javaScript/file4/googlechart.png" description="Callback function chart example" %}
 
 ## Basic Data Visualization: HW3 View Example
 * Example 21
@@ -62,7 +62,7 @@ Figure Credit: <https://www.dyn-web.com/tutorials/object-literal/>" %}
     * var d = new Date(2018, 11, 24, 10, 33, 30, 0);
     * 11 means December, because month is starting from 0
  * Can also be defined as the below table. E.g., var d = new Date("2015-03-25");
- * var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+ * var oneDay = 24\*60\*60\*1000; // hours\*minutes\*seconds\*milliseconds
  * var diffDays = Math.abs((dat1.getTime() - dat2.getTime())/(oneDay)); alert(diffDays); //calculate differences
 
 

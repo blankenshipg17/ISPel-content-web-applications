@@ -37,7 +37,7 @@ title: MVC and JavaScript
 * Semicolon (;) is used to separate each line of your code.
 * We will learn how to dynamically generate the page contents.
 
-## Group Activity 3: 10 minutes
+## Group Activity 3: 5 minutes
 * Work on Example 15
 * Add the third icon column
   * At first: human icon
