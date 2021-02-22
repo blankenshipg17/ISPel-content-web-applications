@@ -1,5 +1,5 @@
-var w = 800;
-var h = 800;
+var w = 1000;
+var h = 1000;
 
 var color_original = '#4c72ff';
 var color_root_node = '#ff0000';
@@ -15,9 +15,10 @@ var dataset = {
  
       {name:"Webservice and Flask", url:base_url+"/ISPeL-content-machine-learning/web-apps/web_service_and_flask/part1/",color:color_root_node},
       {name:"What are web services?", url:base_url+"/ISPeL-content-machine-learning/web-apps/web_service_and_flask/part1/#what-are-web-services",color:color_original},
-      {name:"Differences: SOAP and JSON", url:base_url+"/ISPeL-content-machine-learning/web-apps/web_service_and_flask/part1/#differences-soap-and-json",color:color_original},
-      {name:"Similarities: SOAP and JSON", url:base_url+"/ISPeL-content-machine-learning/web-apps/web_service_and_flask/part1/#similarities-soap-and-json",color:color_original},
-      {name:"What is Service-Oriented Architecture (SOA)?", url:base_url+"/ISPeL-content-machine-learning/web-apps/web_service_and_flask/part2/#what-is-service-oriented-architecture-soa",color:color_original},
+      //{name:"Differences: SOAP and JSON", url:base_url+"/ISPeL-content-machine-learning/web-apps/web_service_and_flask/part1/#differences-soap-and-json",color:color_original},
+      //{name:"Similarities: SOAP and JSON", url:base_url+"/ISPeL-content-machine-learning/web-apps/web_service_and_flask/part1/#similarities-soap-and-json",color:color_original},
+      {name:"SOAP vs JSON", url:base_url+"/ISPeL-content-machine-learning/web-apps/web_service_and_flask/part1/#differences-soap-and-json",color:color_original},
+      {name:"SOA", url:base_url+"/ISPeL-content-machine-learning/web-apps/web_service_and_flask/part2/#what-is-service-oriented-architecture-soa",color:color_original},
       {name:"Flask and SOA", url:base_url+"/ISPeL-content-machine-learning/web-apps/web_service_and_flask/part2/#flask-and-soa",color:color_original},
       {name:"SOA Advantages", url:base_url+"/ISPeL-content-machine-learning/web-apps/web_service_and_flask/part3/#what-are-soa-advantages",color:color_original},
       {name:"SOA Disadvantages", url:base_url+"/ISPeL-content-machine-learning/web-apps/web_service_and_flask/part3/#what-are-soa-disadvantages",color:color_original},
@@ -28,7 +29,7 @@ var dataset = {
       {name:"Host", url:base_url+"/ISPeL-content-machine-learning/web-apps/web_service_and_flask/part4/#host",color:color_original},
       {name:"HTTP Responses", url:base_url+"/ISPeL-content-machine-learning/web-apps/web_service_and_flask/part5/#http-responses",color:color_original},
       {name:"200", url:base_url+"/ISPeL-content-machine-learning/web-apps/web_service_and_flask/part5/#200",color:color_original},
-      {name:"Date… Connection", url:base_url+"/ISPeL-content-machine-learning/web-apps/web_service_and_flask/part5/#date-connection",color:color_original},
+      {name:"Data… Connection", url:base_url+"/ISPeL-content-machine-learning/web-apps/web_service_and_flask/part5/#date-connection",color:color_original},
       {name:"!DOCTYPE", url:base_url+"/ISPeL-content-machine-learning/web-apps/web_service_and_flask/part5/#doctype",color:color_original},
       {name:"HTTP Server Response Codes", url:base_url+"/ISPeL-content-machine-learning/web-apps/web_service_and_flask/part6/#http-server-response-codes",color:color_original},
       {name:"HTTP Server Response Codes in Detail", url:base_url+"/ISPeL-content-machine-learning/web-apps/web_service_and_flask/part6/#http-server-response-codes-in-detail",color:color_original},
@@ -41,7 +42,39 @@ var dataset = {
      
   ],
   edges:[
-     
+     		{source: 0, target: 1},
+     		{source: 1, target: 2},
+     		
+     		
+     		{source: 0, target: 3},
+     		{source: 3, target: 4},
+     		{source: 4, target: 5},
+     		{source: 5, target: 6},
+     		
+     		{source: 0, target: 7},
+     		{source: 7, target: 8},
+     		{source: 8, target: 9},
+     		{source: 9, target: 10},
+     		{source: 10, target: 11},
+     		{source: 11, target: 12},
+     		{source: 12, target: 13},
+     		{source: 13, target: 14},
+     		{source: 14, target: 15},
+     		{source: 15, target: 16},
+     		{source: 16, target: 17},
+     		
+     		
+     		
+     		{source: 2, target: 18},
+     		{source: 6, target: 18},
+     		{source: 17, target: 18},
+     		
+     		{source: 18, target: 19},
+     		{source: 19, target: 20},
+     		{source: 20, target: 21},
+     		{source: 21, target: 22}
+     		
+     		
       
   ]
 };

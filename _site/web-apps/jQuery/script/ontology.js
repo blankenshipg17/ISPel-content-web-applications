@@ -16,7 +16,7 @@ var dataset = {
       {name:"jQuery", url:base_url+"/ISPeL-content-machine-learning/web-apps/jQuery/file1/",color:color_root_node},
       {name:"jQuery: Include", url:base_url+"/ISPeL-content-machine-learning/web-apps/jQuery/file1/#jquery-include",color:color_original},
       {name:"jQuery: Syntax", url:base_url+"/ISPeL-content-machine-learning/web-apps/jQuery/file1/#jquery-syntax",color:color_original},
-      {name:"JSFiddle", url:base_url+"/ISPeL-content-machine-learning/web-apps/jQuery/file1/#jsfiddle",color:color_original},
+      //{name:"JSFiddle", url:base_url+"/ISPeL-content-machine-learning/web-apps/jQuery/file1/#jsfiddle",color:color_original},
       {name:"jQuery: Selector", url:base_url+"/ISPeL-content-machine-learning/web-apps/jQuery/file2/#jquery-selector",color:color_original},
       {name:"HTML Canvas & Data Visualization Example", url:base_url+"/ISPeL-content-machine-learning/web-apps/jQuery/file2/#html-canvas-&-data-visualization-example",color:color_original},
       {name:"Hands-on Activity: Fill Canvas with Color", url:base_url+"/ISPeL-content-machine-learning/web-apps/jQuery/file2/#hands-on-activity-fill-canvas-with-color",color:color_original},
@@ -31,13 +31,13 @@ var dataset = {
   edges:[
       {source: 0, target: 1},
       {source: 1, target: 2},
-      {source: 0, target: 3},
-      {source: 2, target: 4},
-      {source: 0, target: 5},
-      {source: 0, target: 6},
-      {source: 6, target: 7},
-      {source: 0, target: 8},
-      {source: 0, target: 9}
+      {source: 2, target: 3},
+      {source: 3, target: 4},
+      {source: 3, target: 8},
+      {source: 4, target: 5},
+      {source: 8, target: 5},
+      {source: 5, target: 6},
+      {source: 6, target: 7}
       
   ]
 };

@@ -30,7 +30,7 @@ Web Applications available topics:
 - [Host](part4/#host)
 - [HTTP Responses](part5/#http-responses)
 - [200](part5/#200)
-- [Date… Connection](part5/#date-connection)
+- [Data… Connection](part5/#date-connection)
 - [!DOCTYPE](part5/#doctype)
 - [HTTP Server Response Codes](part6/#http-server-response-codes)
 - [HTTP Server Response Codes in Detail](part6/#http-server-response-codes-in-detail)

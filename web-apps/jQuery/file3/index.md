@@ -5,7 +5,7 @@ title: jQurey
 
 ## Hands-on Activity: jQuery Events
 * 5 Minutes
-* Example 32_hole
+* [Example 32_hole](https://jsfiddle.net/0158vdxa/)
   * TODO click paragraph and make it disappear
   * hint: .click(function{});
 * Demo frequently-used Events:
@@ -29,7 +29,7 @@ title: jQurey
 
 ## BootStrap Modal
 * Modal: a popup window, similar to a separate webpage
-* Example 33
+* [Example 33](https://jsfiddle.net/r2exkcf1/)
 * data-target should point the modal part.
 * A modal has:
   * Content
