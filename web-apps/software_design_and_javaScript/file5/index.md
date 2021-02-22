@@ -7,6 +7,8 @@ title: Software Design and JavaScript
 
 * Work on Example 22
 Use Google Line chart to show the following data.
+* ![](1.png)
+* ![](2.png)
 
 
 # JavaScript Debug
