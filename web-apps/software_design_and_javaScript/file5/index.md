@@ -26,8 +26,8 @@ Use Google Line chart to show the following data.
   * Programming practices and principles
 * Why? Example 23
 * Variable and function names:
-  * camelCase: e.g. myDataTable, vampireModelFeature
-  * snake_case: e.g. my_data_table, vampire_model_feature
+  * <mark>camelCase</mark>: e.g. myDataTable, vampireModelFeature
+  * <mark>snake_case</mark>: e.g. my_data_table, vampire_model_feature
 * Spaces around operators. E.g.:
   * Always put spaces around operators ( = + - * / ), and after commas
   * var x = y + z;
@@ -35,9 +35,9 @@ Use Google Line chart to show the following data.
 * No perfect rules. But we need a rule…
 
 ## Midterm and Sample Questions
-* Sample Questions available on Blackboard.
+* Sample Questions available on Canvas.
 * I will go through them on March 3.
-* Midterm will be on March 5. Regular class time.
+* Midterm will be avaiable from March 8 - 9.
   * 20 multiple choice questions
   * 4 short answer questions (do not require you to write a complete program)
   * Review slides and sample codes

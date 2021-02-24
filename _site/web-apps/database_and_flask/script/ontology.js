@@ -41,7 +41,6 @@ var dataset = {
      		{source: 7, target: 9},
      		{source: 7, target: 10},
      		{source: 7, target: 11}
-
   ]
 };
 
