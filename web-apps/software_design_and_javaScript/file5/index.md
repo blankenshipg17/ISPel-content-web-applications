@@ -40,7 +40,8 @@ Use Google Line chart to show the following data.
 * Midterm will be avaiable from March 8 - 9.
   * 20 multiple choice questions
   * 4 short answer questions (do not require you to write a complete program)
-  * Review slides and sample codes
+  * Review content on course website and sample codes
+  * <mark>No Class March 8.</mark>
 
 ## JSON: Basic
 * JSON: JavaScript Object Notation
@@ -51,8 +52,8 @@ Use Google Line chart to show the following data.
   * a number: 10
   * an object (JSON object)
   * an array: [1,2,3,4,5 …]
-  * a Boolean: True/False
-  * Null: means empty
+  * a Boolean: true/false
+  * null: means empty
 * <font color=red> Cannot</font>
   * a function
   * a date (usually use string in JSON for date)
@@ -68,7 +69,7 @@ Use Google Line chart to show the following data.
 * JSON Booleans: { "sale":true }
 * JSON null: { "middlename":null }
 
-{% include marginfigure.html id="MVC" url="web-apps/MVC_JavaScript/file5/json.png" description="Example: How to use a JSON file in html code. Figure credit: https://stackoverflow.com/questions/12070631/how-to-use-json-file-in-html-code" %}
+{% include marginfigure.html id="MVC" url="web-apps/software_design_and_javaScript/file5/json.png" description="Example: How to use a JSON file in html code. Figure credit: https://stackoverflow.com/questions/12070631/how-to-use-json-file-in-html-code" %}
 
 * HW3: Model Example 24
   * JavaScript for loop
@@ -78,7 +79,7 @@ Use Google Line chart to show the following data.
 * If you want to pass a parameter to google.setOnLoadCallback()
   * google.setOnLoadCallback(function() { drawChart(input_data); });
 * Be consistent for the same function…
-* In software engineering, dependency injection is a technique whereby one object (or static method) supplies the dependencies of another object (wiki).
+<!-- * In software engineering, dependency injection is a technique whereby one object (or static method) supplies the dependencies of another object (wiki). -->
 
 ## JavaScript: Loop
 * Statement 1 is executed (one time) before the execution of the code block.
