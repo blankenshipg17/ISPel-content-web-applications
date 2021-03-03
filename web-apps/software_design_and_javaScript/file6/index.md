@@ -5,7 +5,6 @@ title: MVC and JavaScript
 
 ## Flowchart
 
-* Let’s use a flowchart to clarify HW4 part 1.
 * A flowchart is a type of diagram that represents an algorithm, workflow or process.
 * Five basic flowchart elements:
   * Terminal Box - Start / End
@@ -16,11 +15,13 @@ title: MVC and JavaScript
 * A flowchart can represent an algorithm.
 * A flowchart is pictorial representation of an algorithm.
 * An algorithm can be expressed and analyzed through a flowchart.
-* The high-level algorithm of HW4 can be expressed as the next page flowchart.
+* ![](1.png)
+* ![](2.png)
+* ![](3.png)
 
 {% include marginfigure.html id="MVC" url="web-apps/software_design_and_javaScript/file6/flowchart.png" description="Flowchart example based on: https://www.quora.com/What-is-the-difference-between-a-flowchart-and-an-algorithm-1/answer/Jane-Jacobs-7" %}
 
-![](flowchart1.png)
+
 
 ## BootStrap Select List
 * Example 25
@@ -83,7 +84,7 @@ title: MVC and JavaScript
   * The table should be updated if a piece of new classmate information is input. Example 27.
 * Existing student data: Example 24 (classmate_data).
 * A flowchart about your vampire app, try Microsoft Visio => onthehub free
-* Submit using Github, add Rui (ruiwu1990) and TA as collaborator, one github manager from your team. Due March 16
+* Submit using Github, add Rui (ruiwu1990) and TA as collaborator, one github manager from your team. Due <mark>March 16</mark>
 
 
 ||| [Index](../../)||| [Prev](../file5/)||| [Next](../file7/)|||

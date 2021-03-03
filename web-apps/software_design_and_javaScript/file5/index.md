@@ -103,7 +103,7 @@ Use Google Line chart to show the following data.
   * Random guess: randomly decide if a student is a vampire.
   * (Optional) Learn more about how to build a decision tree to solve this problem if you want: https://www.youtube.com/watch?v=SXBG3RGr_Rc
 * “Control”: a user should be able to choose different data processing methods (“Model” logic) with a list select box. Sample code introduced in Example 25.
-* Temporarily use data in Example 24  (classmate_data), I will introduce how to load data next week.
+* Temporarily use data in Example 24  (classmate_data), I will introduce how to load data in the future.
 
 
 ||| [Index](../../)||| [Prev](../file4/)||| [Next](../file6/)|||
