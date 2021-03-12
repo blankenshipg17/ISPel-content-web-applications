@@ -52,7 +52,7 @@ title: MVC and JavaScript
 * We will learn how to build a JSON object based on input data when we learn jQuery.
 * Example 26
 
-## Group Activity 7: 7 minutes
+## Group Activity 7: 5 minutes
 * Work on Example 26:
 * Complete the “hole” to display inputs
 * Hint:
@@ -78,13 +78,13 @@ title: MVC and JavaScript
     * Total score > 6, yes; <=6 no
   * Random guess: randomly decide if a student is a vampire.
   * (Optional) Learn more about how to build a decision tree to solve this problem if you want: <https://www.youtube.com/watch?v=SXBG3RGr_Rc>
-* “Control”
+* “Controller”
   * a user should be able to choose different data processing methods (“Model” logic) with a list select box. Sample code introduced in Example 25.
   * A user should be able to upload and display a classmate information with a table. Example 26. 
   * The table should be updated if a piece of new classmate information is input. Example 27.
 * Existing student data: Example 24 (classmate_data).
 * A flowchart about your vampire app, try Microsoft Visio => onthehub free
-* Submit using Github, add Rui (ruiwu1990) and TA as collaborator, one github manager from your team. Due <mark>March 16</mark>
+* Submit using Github, add Rui (ruiwu1990) and TA as collaborator, one github manager from your team. Due <mark>March 22</mark>
 
 
 ||| [Index](../../)||| [Prev](../file5/)||| [Next](../file7/)|||

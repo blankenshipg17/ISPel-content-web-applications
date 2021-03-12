@@ -19,24 +19,20 @@ title: MVC and JavaScript
 ## How to manage your software version?
 * Git
   * Pros
-  * Super-fast and efficient performance.
-  * Cross-platform
-  * Code changes can be very easily and clearly tracked.
-  * Easily maintainable and robust.
-  * Offers an amazing command line utility known as git bash.
-  * Also offers GIT GUI where you can very quickly re-scan, state change, sign off, commit & push the code quickly with just a few clicks.
-* Cons
-  * Complex and bigger history log become difficult to understand.
-  * Does not support keyword expansion and timestamp preservation.
+    * Super-fast and efficient performance.
+    * Cross-platform
+    * Code changes can be very easily and clearly tracked.
+    * Easily maintainable and robust.
+    * Offers an amazing command line utility known as git bash.
+    * Also offers GIT GUI where you can very quickly re-scan, state change, sign off, commit & push the code quickly with just a few clicks.
+  * Cons
+    * Complex and bigger history log become difficult to understand.
+    * Does not support keyword expansion and timestamp preservation.
 
 ## Github vs Git
 * What is Github: GitHub is a code hosting <font color=red>platform</font> for version control and collaboration. It lets you and others work together on projects from anywhere.
 * Git is a <font color=red>revision control system</font>, a tool to manage your source code history. GitHub is a hosting <font color=red>service</font> (working blackbox) for Git repositories. So they are not the same thing: Git is the tool, GitHub is the service for projects that use Git.
 
-
-## How does it work?
-![](hdiw.png)
-* Figure credit: http://massivetechinterview.blogspot.com/2015/12/dns-internal.html
 
 ## Demo Github 
 * Add collaborators
@@ -65,7 +61,7 @@ title: MVC and JavaScript
   * Why: Introduce the motivation of your project.
   * What: ideas and problems to solve
 * No less than 200 words.
-* Due...
+* Due <mark>March 22</mark>
 
 
 

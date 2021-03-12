@@ -5,7 +5,7 @@ title: MVC and JavaScript
 
 ## JavaScript: Scoping
 
-* JavaScript has function-level scope. Different from C: block-level scope.
+* JavaScript has function-level scope. Different from C: block-level scope (use slides from here).
 * Demo
 
 function test(){
