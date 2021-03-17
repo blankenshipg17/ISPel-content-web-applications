@@ -37,9 +37,6 @@ title: jQurey
   * hide an element that is not created yet
   * Get the size of an image that is not loaded yet
 
-## JSFiddle
-* <https://jsfiddle.net/3kche5fy/1/>
-
 ||[Index](../../../)||| [Prev](../)|||[Next](../file2/)|||
 
 
