@@ -3,11 +3,9 @@ layout: post
 title: jQurey
 ---
 
-## Hands-on Activity: jQuery Events
-* 5 Minutes
-* [Example 32_hole](https://jsfiddle.net/0158vdxa/)
-  * TODO click paragraph and make it disappear
-  * hint: .click(function{});
+## jQuery Events
+* [Example 32](https://jsfiddle.net/0158vdxa/)
+  * Click paragraph and make it disappear
 * Demo frequently-used Events:
   * click(): click once
   * dblclick(): double click
@@ -24,8 +22,8 @@ title: jQurey
 * What you should submit:
   * A demo video. It can be either paper prototype demo video or digital prototype video (not introduced but accepted).
   * At least three webpages (html files), such as team introduction, project motivation, project contents.
-* Your design should be implemented in the next homework. Part 3 implementation should be done within 2 two weeks. Please do not wait until next homework. Start your implementation from now.
-* Due...
+* Your design should be implemented in the next homework. Part 3 implementation should be done within four weeks. Please do not wait until next homework. Start your implementation from now.
+* Due <mark>April 2.</mark>
 
 ## BootStrap Modal
 * Modal: a popup window, similar to a separate webpage
