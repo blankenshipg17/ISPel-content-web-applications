@@ -123,7 +123,7 @@
   </li>
   <li>All Flask applications must create an application instance
     <ul>
-      <li>app = Flask(<strong>name</strong>)</li>
+      <li>app = Flask(__name__)</li>
       <li>The web server passes all requests it receives from clients to this object for handling, using a protocol called Web Server Gateway Interface (WSGI).</li>
       <li>Flask keeps a mapping of URLs to Python functions. The association between a URL and the function that handles it is called a route.</li>
       <li>Default port number is 5000.</li>
@@ -138,12 +138,12 @@
   </li>
   <li>Dynamically generate a HTML page with Jinja2.
     <ul>
-      <li></li>
+      <li>{{python_variable}}</li>
       <li>There are some other fancy ways…</li>
       <li>We will learn in the future.</li>
     </ul>
   </li>
-  <li>Let’s create a very simple service: generate a random number. Example 35.</li>
+  <li>Let’s create a very simple service: generate a random number. <mark>Example 35</mark>.</li>
   <li>Server generate a JSON object and the client display the generated random number</li>
   <li>Python dictionary:
     <ul>

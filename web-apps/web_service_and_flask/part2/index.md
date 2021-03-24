@@ -36,7 +36,7 @@ title: Web Service and Flask
   * I will also introduce some basic things about Python through examples.
 
 * All Flask applications must create an application instance
-  * app = Flask(__name__)
+  * app = Flask(\_\_name\_\_)
   * The web server passes all requests it receives from clients to this object for handling, using a protocol called Web Server Gateway Interface (WSGI).
   * Flask keeps a mapping of URLs to Python functions. The association between a URL and the function that handles it is called a route.
   * Default port number is 5000.
@@ -45,11 +45,11 @@ title: Web Service and Flask
   * it activates the automatic reloader
   * it enables the debug mode on the Flask application.
 * Dynamically generate a HTML page with Jinja2.
-  * {{python_variable}}
+  * \{\{python_variable\}\}
   * There are some other fancy ways…
   * We will learn in the future.
   
-* Let’s create a very simple service: generate a random number. Example 35.
+* Let’s create a very simple service: generate a random number. <mark>Example 35</mark>.
 * Server generate a JSON object and the client display the generated random number
 * Python dictionary:
   * Similar to JSON

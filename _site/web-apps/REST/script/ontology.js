@@ -13,14 +13,29 @@ var base_url = 'http://127.0.0.1:7000';
 var dataset = {
   nodes:[
  
-      {name:"URL and HTML", url:base_url+"/ISPeL-content-machine-learning/web-apps/URL_and_HTML/",color:color_root_node},
-      {name:"Design", url:base_url+"/ISPeL-content-machine-learning/web-apps/design/",color:color_original},
-      {name:"MVC and JavaScript", url:base_url+"/ISPeL-content-machine-learning/web-apps/MVC_JavaScript/",color:color_original},
-      {name:"Software Design and JavaScript", url:base_url+"/ISPeL-content-machine-learning/web-apps/software_design_and_javaScript/",color:color_original},
-      {name:"jQuery", url:base_url+"/ISPeL-content-machine-learning/web-apps/jQuery/",color:color_original},
-      {name:"Webservice and Flask", url:base_url+"/ISPeL-content-machine-learning/web-apps/web_service_and_flask/",color:color_original},
-      {name:"Database and Flask", url:base_url+"/ISPeL-content-machine-learning/web-apps/database_and_flask/",color:color_original},
-      {name:"Message and Flask", url:base_url+"/ISPeL-content-machine-learning/web-apps/message_and_flask/",color:color_original},
+      {name:"REST", url:base_url+"/ISPeL-content-machine-learning/web-apps/REST/part2/",color:color_root_node},
+      {name:"Building REST: Starting with nothing", url:base_url+"/ISPeL-content-machine-learning/web-apps/REST/part2/#building-rest-starting-with-nothing",color:color_original},
+      {name:"Adding in client/server", url:base_url+"/ISPeL-content-machine-learning/web-apps/REST/part2/#building-rest-adding-in-client-/-server",color:color_original},
+      {name:"Enforcing stateless-ness", url:base_url+"/ISPeL-content-machine-learning/web-apps/REST/part2/#building-rest-enforcing-stateless-ness",color:color_original},
+      {name:"Enabling caching", url:base_url+"/ISPeL-content-machine-learning/web-apps/REST/part2/#building-rest-enabling-caching",color:color_original},
+      {name:"Providing a uniform interface", url:base_url+"/ISPeL-content-machine-learning/web-apps/REST/part3/#building-rest-providing-a-uniform-interface",color:color_original},
+      {name:"Code on Demand", url:base_url+"/ISPeL-content-machine-learning/web-apps/REST/part3/#building-rest-code-on-demand",color:color_original},
+      {name:"The REST Architecture", url:base_url+"/ISPeL-content-machine-learning/web-apps/REST/part3/#building-rest-the-rest-architecture",color:color_original},
+      
+      {name:"Final Group Project Presentation", url:base_url+"/ISPeL-content-machine-learning/web-apps/REST/part3/#final-group-project-presentation",color:color_original},
+      {name:"About final exam", url:base_url+"/ISPeL-content-machine-learning/web-apps/REST/part3/#about-final-exam",color:color_original},
+      {name:"RESTful Principles", url:base_url+"/ISPeL-content-machine-learning/web-apps/REST/part4/#restful-principles",color:color_original},
+      {name:"REST: Architectural Elements", url:base_url+"/ISPeL-content-machine-learning/web-apps/REST/part4/#rest-architectural-elements",color:color_original},
+      {name:"REST Resource", url:base_url+"/ISPeL-content-machine-learning/web-apps/REST/part5/#rest-resource-methods",color:color_original},
+      {name:"REST Resource Methods", url:base_url+"/ISPeL-content-machine-learning/web-apps/REST/part3/#building-rest-the-rest-architecture",color:color_original},
+      {name:"REST != HTTP", url:base_url+"/ISPeL-content-machine-learning/web-apps/REST/part5/#rest-=http",color:color_original},
+      {name:"PostgreSQL and Flask", url:base_url+"/ISPeL-content-machine-learning/web-apps/REST/part5/#postgresql-and-flask",color:color_original},
+      
+      {name:"REST Data Elements", url:base_url+"/ISPeL-content-machine-learning/web-apps/REST/part5/#rest-data-elements",color:color_original},
+      {name:"REST Connectors", url:base_url+"/ISPeL-content-machine-learning/web-apps/REST/part5/#rest-connectors",color:color_original},
+      {name:"REST Components", url:base_url+"/ISPeL-content-machine-learning/web-apps/REST/part5/#rest-components",color:color_original},
+      {name:"REST: Three views", url:base_url+"/ISPeL-content-machine-learning/web-apps/REST/part5/#rest-three-views",color:color_original},
+      
       
   
       

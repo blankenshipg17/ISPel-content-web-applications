@@ -76,6 +76,7 @@
 <h2 id="http-server-response-codes">HTTP Server Response Codes</h2>
 
 <ul>
+  <li>100-level codes = Continue!</li>
   <li>200-level codes = success!</li>
   <li>300-level codes = redirections</li>
   <li>400-level codes = client-side errors (e.g., the dreaded 404 error!)</li>
@@ -83,8 +84,11 @@
 </ul>
 
 <h2 id="http-server-response-codes-in-detail">HTTP Server Response Codes in Detail</h2>
-
 <ul>
+  <li>
+    <font color="red">100</font>
+    <p>(Continue): This indicates that everything so far is OK and that the client should continue with the request or ignore it if it is already finished.</p>
+  </li>
   <li>
     <font color="red">200</font>
     <p>(OK): Everything is fine, the response has the information you requested (if any)</p>

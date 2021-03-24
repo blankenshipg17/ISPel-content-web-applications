@@ -5,13 +5,14 @@ title: Web Service and Flask
 
 ## HTTP Server Response Codes
 
+* 100-level codes = Continue!
 * 200-level codes = success!
 * 300-level codes = redirections
 * 400-level codes = client-side errors (e.g., the dreaded 404 error!)
 * 500-level codes = server-side errors
 
 ## HTTP Server Response Codes in Detail
-
+* <font color=red>100</font> (Continue): This indicates that everything so far is OK and that the client should continue with the request or ignore it if it is already finished.
 * <font color=red>200</font> (OK): Everything is fine, the response has the information you requested (if any)
 * <font color=red>400</font> (Bad Request): There is a problem in the client request, there may be error information in the response
 * <font color=red>500</font> (Internal Server Error): There is a problem on the server side, there may be error information in the response (but, it may not help much unless you control the server)
