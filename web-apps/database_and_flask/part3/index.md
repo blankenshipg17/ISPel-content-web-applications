@@ -38,17 +38,7 @@ title: Database and Flask
 
 * db.session.commit(), you need to commit your <font color=red>changes</font> (insert, delete, modify) and then the DB will be updated
 
-## Data Display and Interaction
-* Example 40_hole
-* Buttons to interact with DB
-* Interactions:
-  * Querying rows 
-  * Delete rows.
-* <font color=red>Challenge:</font> 
-  * place all existing users in the select list
-* Deleting chosen user with MY_DELET request.
-  * user filter to find the chosen user
-* We will learn how to clean Example 40 when we learn Flask migration and web forms.
+
 
 |||[Index](../../)||| [Prev](../part2/)||| [Next](../part4)|||
 

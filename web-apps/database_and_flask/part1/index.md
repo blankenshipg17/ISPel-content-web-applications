@@ -15,7 +15,7 @@ title: Database and Flask
 * A table has a <font color=red>fixed</font> number of columns and a <font color=red>variable</font> number of rows. The columns define the <font color=red>data attributes</font> of the entity represented by the table. For example, a customers table will have columns such as name, address, phone, and so on. Each row in a table defines an actual data element that assigns values to some or all the columns.
 
 * Tables have a special column called the <font color=red>primary key</font>, which holds a <font color=red>unique</font> identifier for each row stored in the table. Tables can also have columns called <font color=red>foreign keys</font>, which reference the primary key of a row in the same or another table. These links between rows are called <font color=red>relationships</font> and are the foundation of the relational database model.
-* Question: provide an example that foreign keys refer to the primary keys of a row in the same table.
+* <mark>Question</mark>: provide an example that foreign keys refer to the primary keys of a row in the same table.
 
 ## Relational Database: entity relationship diagram
 
@@ -24,7 +24,7 @@ title: Database and Flask
 * role_id = Foreign Key
 * One-to-many relationship. One role is associate with many users.
 * This figure shows a diagram of a simple database with two tables that store users and user roles. The line that connects the two tables represents a relationship between the tables.
-
+* <mark>Question</mark>: Do you still remember the advantages and disadvantages of relational database?
 
 |||[Index](../../)||| [Prev](../)||| [Next](../part2)|||
 

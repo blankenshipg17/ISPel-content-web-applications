@@ -7,9 +7,8 @@ title: Database and Flask
 
 {% include marginfigure.html id="SVM" url="web-apps/database_and_flask/part4/ex40.png" description="Example database for reference." %}
 
-* 7-minute hands-on activity
+* 5-minute hands-on activity
 * Example 40_hole
-* PLACE LINK 40_HOLE HERE
 * Buttons to interact with DB
 * Interactions:
   * Querying rows 
@@ -27,7 +26,6 @@ title: Database and Flask
 ## How to drag and drop to upload a file
 
 * Example 41
-* PLACE LINK 41 HERE
 * Dropzone.js library => simplify the drag and drop process 
   * <https://www.dropzonejs.com/>
 * Extension of Example 37
@@ -37,7 +35,6 @@ title: Database and Flask
 
 ## Threshold Method
 * Example 42
-* PLACE LINK 42 HERE
 * Threshold method to process a CSV file
 * pandas is a software library written for the Python programming language for data <font color=red>manipulation and analysis</font>.
   * You will use it a lot in data research.
