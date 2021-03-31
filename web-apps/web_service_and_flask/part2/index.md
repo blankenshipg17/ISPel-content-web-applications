@@ -64,6 +64,7 @@ title: Web Service and Flask
   * .get(ULR, function(data){ do something with data})
   * JSON.parse: turn your data into a JavaScript object
  
+* <mark>Question</mark>: what are the advantages vs. disadvantages of SOA?
   
 |||[Index](../../)||| [Prev](../)||| [Next](../part3)|||
 
