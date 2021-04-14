@@ -20,8 +20,8 @@ title: Message and Flask
   * Smaller message size, faster loading speed
   * Easier to be parsed by JavaScript
 * Disadvantages:
-  * No error handling for JSON calls
-  * unsecure, a JSON service returns a JSON response wrapped in a function call. if a service from untrusted server, it can cause a security issue
+  * <mark>No error handling for JSON calls</mark>
+  * <mark>unsecure</mark>, a JSON service returns a JSON response wrapped in a function call. if a service from untrusted server, it can cause a security issue
 
 |||[Index](../../)||| [Prev](../part3/)|||
 
